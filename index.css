@@ -7,7 +7,12 @@
 }
 
 body {
-  font-family: cursive;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+h1 {
+  text-align: center;
+  line-height: 4rem;
 }
 
 a {
@@ -112,6 +117,14 @@ input[type=checkbox] {
 
 .indent {
   margin-left: 2vw;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5vw;
+  width: 30%;
 }
 
 /* APPLYING MEDIA QUERIES */
