@@ -13,6 +13,7 @@ body {
 h1 {
   text-align: center;
   line-height: 4rem;
+  font-size: 1vw;
 }
 
 p {
@@ -104,14 +105,14 @@ li {
 /* Float four columns side by side */
 .column {
   float: left;
-  width: 18%;
+  width: 33.33%;
   padding: 0 10px;
-  margin: 1%;
+
 }
 
 /* Remove extra left and right margins, due to padding */
 .row {
-  margin: 1vw;
+  margin: 0.5vw;
 }
 
 /* Clear floats after the columns */
@@ -128,6 +129,7 @@ li {
   text-align: center;
   background-color: rgb(0, 39, 39);
   border-radius: 20px;
+  margin: 70px;
 }
 
 .card-empty {
@@ -161,13 +163,13 @@ input[type=checkbox] {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 2vw;
-  width: 12%;
+  margin-top: 1vw;
+  max-width: 100%;
 }
 
 .img-card {
   margin-bottom: 1vw;
-  width: 50%;
+  width: 20%;
 }
 
 /* APPLYING MEDIA QUERIES */
@@ -233,6 +235,14 @@ input[type=checkbox] {
     width: 100%;
     display: block;
     margin-bottom: 10vw;
+  }
+
+  .img-title {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1vw;
+    max-width: 60%
   }
 
 }
