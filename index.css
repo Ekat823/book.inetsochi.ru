@@ -132,11 +132,6 @@ li {
   margin: 70px;
 }
 
-.card-empty {
-  padding: 16px;
-  text-align: center;
-}
-
 /*RESPONSIVE NAVBAR MENU STARTS*/
 /* CHECKBOX HACK */
 input[type=checkbox] {
