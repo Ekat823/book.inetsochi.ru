@@ -164,7 +164,7 @@ input[type=checkbox] {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
-  text-align: center;
+  text-align: right;
   background-color: rgb(243, 243, 243);
   border-radius: 20px;
   margin: 2vw;
