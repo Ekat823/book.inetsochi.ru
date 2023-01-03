@@ -7,17 +7,24 @@
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: Candara;
+}
+
+.container {
+  max-width: 1600px;
+  margin: auto;
+  height: auto;
 }
 
 h1 {
   text-align: center;
-  line-height: 4rem;
-  font-size: 1vw;
+  font-size: 3vw;
+  color: #2d1b07;
 }
 
 p {
-  font-size: 1rem;
+  font-size: 0.9vw;
+  color: #2d1b07;
 }
 
 a {
@@ -34,8 +41,8 @@ li {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 20px;
-  background-color: rgb(243, 243, 243);
+  padding: 10px 20px 10px 20px;
+  background-color: white;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   color: black;
 }
@@ -44,11 +51,6 @@ li {
   color: black;
 }
 
-/* LOGO */
-
-.logo {
-  font-size: 32px;
-}
 
 /* NAVBAR MENU */
 
@@ -75,7 +77,7 @@ li {
 }
 
 .dropdown {
-  background-color: rgb(243, 243, 243);
+  background-color: white;
   padding: 1em 0;
   right: 0.5%;
   position: absolute;
@@ -140,11 +142,18 @@ input[type=checkbox] {
 }
 
 .imgnav {
-  max-width: 100%;
+  max-width: 80%;
 }
 
 .indent {
   margin-left: 2vw;
+}
+
+.img-cover {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
 }
 
 .img-title {
@@ -165,7 +174,7 @@ input[type=checkbox] {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   padding: 16px;
   text-align: right;
-  background-color: rgb(243, 243, 243);
+  background-color: white;
   border-radius: 20px;
   margin: 2vw;
 }
@@ -176,7 +185,7 @@ input[type=checkbox] {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
-    background-color: rgb(243, 243, 243);
+    background-color: white;
     border-radius: 20px;
     margin: 1vw;
   }
@@ -203,7 +212,7 @@ input[type=checkbox] {
     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
     padding: 16px;
     text-align: center;
-    background-color: rgb(243, 243, 243);
+    background-color: white;
     border-radius: 20px;
     margin: 1vw;
   }
@@ -231,7 +240,7 @@ input[type=checkbox] {
   .menu {
     display: none;
     position: absolute;
-    background-color: rgb(243, 243, 243);
+    background-color: white;
     right: 0;
     left: 0;
     text-align: center;
