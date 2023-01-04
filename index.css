@@ -11,23 +11,23 @@ body {
 hr.line {
   margin-top: 3rem;
   margin-bottom: 3rem;
-  border: 1px solid #4a300f;
+  border: 1px solid #271a09;
 }
 
 h1 {
   text-align: center;
   font-size: 3.5rem;
-  color: #4a300f;
+  color: #271a09;
 }
 
 h2 {
   font-size: 1.5rem;
-  color: #4a300f;
+  color: #271a09;
 }
 
 p {
   font-size: 1.2rem;
-  color: #4a300f;
+  color: #271a09;
 }
 
 .container {
@@ -82,11 +82,11 @@ li {
   justify-content: space-between;
   padding: 0px 20px 0px 20px;
   background-color: white;
-  color: #4a300f;
+  color: #271a09;
 }
 
 .nav-links a {
-  color: #4a300f;
+  color: #271a09;
 }
 
 /* NAVBAR MENU */
@@ -193,6 +193,13 @@ input[type=checkbox] {
 }
 
 .img-cover-hor-s {
+  display: none;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
+.img-cover-ver {
   display: none;
   margin-left: auto;
   margin-right: auto;
@@ -415,6 +422,18 @@ input[type=checkbox] {
 
   .card {
     margin: 0% 5% 0% 5%;
+  }
+
+  .img-cover-hor-l {
+    display: none;
+  }
+  
+  .img-cover-hor-s {
+    display: none;
+  }
+  
+  .img-cover-ver {
+    display: block;
   }
 
 }
