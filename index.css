@@ -11,34 +11,42 @@ body {
 hr.line {
   margin-top: 3rem;
   margin-bottom: 3rem;
-  border: 1px solid #2d1b07;
+  border: 1px solid #4a300f;
 }
 
 h1 {
   text-align: center;
   font-size: 4rem;
-  color: #2d1b07;
+  color: #4a300f;
 }
 
 h2 {
   font-size: 1.7rem;
-  color: #2d1b07;
+  color: #4a300f;
 }
 
 h3 {
   font-size: 1.1vw;
-  color: #2d1b07;
+  color: #4a300f;
 }
 
 p {
   font-size: 1.2rem;
-  color: #2d1b07;
+  color: #4a300f;
 }
 
 .container {
   max-width: 1600px;
   margin: auto;
   height: auto;
+}
+
+footer {
+  background: linear-gradient(0.25turn, #020001, #9d752d);
+  margin-top: 2rem;
+  padding: 10px;
+
+  color: white;
 }
 
 .button {
@@ -48,7 +56,7 @@ p {
   margin: -1rem;
   width: 100%;
   border-radius: 20px;
-  background: url('button.jpg') no-repeat;
+  background: linear-gradient(0.25turn, #020001, #9d752d);
 }
 
 a {
@@ -67,11 +75,11 @@ li {
   justify-content: space-between;
   padding: 0px 20px 0px 20px;
   background-color: white;
-  color: black;
+  color: #4a300f;
 }
 
 .nav-links a {
-  color: black;
+  color: #4a300f;
 }
 
 /* NAVBAR MENU */
@@ -194,7 +202,6 @@ input[type=checkbox] {
 .card {
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   border: 1px solid #9c958d;
-  color: white;
   padding: 1% 3% 1% 3%;
   background-color: white;
   border-radius: 7px;
@@ -218,17 +225,17 @@ input[type=checkbox] {
 
   h2 {
     font-size: 1.5vw;
-    color: #2d1b07;
+    color: #4a300f;
   }
 
   h3 {
     font-size: 1.4vw;
-    color: #2d1b07;
+    color: #4a300f;
   }
 
   p {
     font-size: 1vw;
-    color: #2d1b07;
+    color: #4a300f;
   }
 
 }
