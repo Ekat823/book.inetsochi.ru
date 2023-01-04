@@ -50,18 +50,6 @@ footer {
 
 }
 
-/* Remove extra left and right margins, due to padding */
-.row-footer {
-  margin: 0.5vw;
-}
-
-/* Clear floats after the columns */
-.row-footer:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
 .button {
   font-size: 1rem;
   color: white;
@@ -70,6 +58,12 @@ footer {
   width: 100%;
   border-radius: 20px;
   background: linear-gradient(0.25turn, #020001, #9d752d);
+}
+
+.button:hover {
+  color: rgb(223, 222, 222);
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 
 a {
@@ -191,24 +185,18 @@ input[type=checkbox] {
   margin-left: 2vw;
 }
 
-.img-cover {
+.img-cover-hor-l {
   display: block;
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
 }
 
-.img-title {
-  display: block;
+.img-cover-hor-s {
+  display: none;
   margin-left: auto;
   margin-right: auto;
-  margin-top: 1vw;
   max-width: 100%;
-}
-
-.img-card {
-  margin-bottom: 1vw;
-  width: 20%;
 }
 
 /* Style the counter cards */
@@ -234,22 +222,43 @@ input[type=checkbox] {
   h1 {
     font-size: 3rem;
   }
-  
+
   h2 {
     font-size: 1.2rem;
   }
-  
+
   p {
     font-size: 1.1rem;
   }
 
 }
 
+@media screen and (min-width: 760px) and (max-width:957px) {
 
+  .card {
+    margin: 0% 5% 0% 5%;
+  }
+
+  .img-cover-hor-l {
+    display: none;
+  }
+  
+  .img-cover-hor-s {
+    display: block;
+  }
+
+  .button {
+    width: 60%;
+  }
+
+  .column {
+    width: 100%;
+  }
+}
 
 /* APPLYING MEDIA QUERIES */
 
-@media (max-width: 800px) {
+@media screen and (min-width: 577px) and (max-width:759px){
 
   .menu {
     display: none;
@@ -305,19 +314,107 @@ input[type=checkbox] {
   }
 
   /* Responsive columns */
+  .column {
+    width: 100%;
+  }
+
+  .button {
+    width: 80%;
+  }
+
+  .img-cover-hor-l {
+    display: none;
+  }
+  
+  .img-cover-hor-s {
+    display: block;
+  }
+
+  .card {
+    margin: 0% 5% 0% 5%;
+  }
+
+}
+
+@media (max-width: 576px) {
+
+  .menu {
+    display: none;
+    position: absolute;
+    background-color: white;
+    right: 0;
+    left: 0;
+    text-align: center;
+    padding: 16px 0;
+  }
+
+  .menu li:hover {
+    display: inline-block;
+    background-color: rgb(225, 224, 224);
+    transition: 0.3s ease;
+  }
+
+  .menu li+li {
+    margin-top: 12px;
+  }
+
+  input[type=checkbox]:checked~.menu {
+    display: block;
+  }
+
+  .hamburger {
+    display: block;
+  }
+
+  .dropdown {
+    right: 0.5%;
+    top: 30px;
+    line-height: 0.5rem;
+    transform: translateX(35%);
+  }
+
+  .dropdown li {
+    padding: 0.5em 1em;
+    width: 19em;
+    text-align: left;
+  }
+
+  .dropdown li:hover {
+    background-color: rgb(225, 224, 224);
+  }
+
+  .imgnav {
+    max-width: 80%;
+  }
+
+  .indent {
+    margin-left: 10vw;
+  }
+
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.1rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
 
   .column {
     width: 100%;
-    display: block;
-    margin-bottom: 10vw;
   }
 
-  .img-title {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 1vw;
-    max-width: 60%
+  .button {
+    margin: -0.4rem;
+    width: 90%;
+  }
+
+  .card {
+    margin: 0% 5% 0% 5%;
   }
 
 }
