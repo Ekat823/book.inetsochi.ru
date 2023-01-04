@@ -16,19 +16,19 @@ hr.line {
 
 h1 {
   text-align: center;
-  font-size: 3.5rem;
+  font-size: 3rem;
   color: #271a09;
 }
 
 h2 {
   text-align: center;
-  font-size: 2.5rem;
+  font-size: 2rem;
   color: #271a09;
 }
 
 h3 {
   text-align: center;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-weight: normal;
   color: #271a09;
 }
@@ -119,6 +119,7 @@ li {
 
 .services {
   position: relative;
+  display: inline-block;
 }
 
 .dropdown {
@@ -130,7 +131,6 @@ li {
   /*WITH RESPECT TO PARENT*/
   display: none;
   border-radius: 8px;
-  top: 35px;
 }
 
 .dropdown li+li {
@@ -209,6 +209,21 @@ input[type=checkbox] {
   background-color: white;
   border-radius: 7px;
   margin: 0% 20% 0% 20%;
+}
+
+.card-art {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  border: 1px solid #cdcccc;
+  background-color: white;
+  border-radius: 7px;
+  margin: 5% 15% 5% 15%;
+  align-items: center;
+  text-align: center;
+}
+
+.img {
+  width: 100%;
+  border-radius: 7px 7px 0 0;
 }
 
 @media screen and (min-width: 958px) and (max-width:1200px) {

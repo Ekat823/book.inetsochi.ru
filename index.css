@@ -103,12 +103,6 @@ li {
 }
 
 
-.logo {
-
-   font-size: 32px;
-  
-  }
-
 /* NAVBAR MENU */
 
 .menu {
@@ -142,7 +136,6 @@ li {
   /*WITH RESPECT TO PARENT*/
   display: none;
   border-radius: 8px;
-  top: 35px;
 }
 
 .dropdown li+li {
