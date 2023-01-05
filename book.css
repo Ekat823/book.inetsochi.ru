@@ -8,6 +8,64 @@ body {
   font-family: "Times New Roman", Times, serif;
 }
 
+/* Popup container - can be anything you want */
+.popup {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* The actual popup */
+.popup .popuptext {
+  visibility: hidden;
+  width: 10rem;
+  background-color: #03584b;
+  color: white;
+  text-align: left;
+  font-size: 1rem;
+  border-radius: 6px;
+  padding: 5%;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%;
+  left: 50%;
+  margin-left: -70px;
+}
+
+/* Popup arrow */
+.popup .popuptext::after {
+  content: "";
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: #555 transparent transparent transparent;
+}
+
+/* Toggle this class - hide and show the popup */
+.popup .show {
+  visibility: visible;
+  -webkit-animation: fadeIn 0.5s;
+  animation: fadeIn 0.5s;
+}
+
+/* Add animation (fade in the popup) */
+@-webkit-keyframes fadeIn {
+  from {opacity: 0;} 
+  to {opacity: 1;}
+}
+
+@keyframes fadeIn {
+  from {opacity: 0;}
+  to {opacity:1 ;}
+}
+
 hr.line {
   margin-top: 3rem;
   margin-bottom: 3rem;
@@ -235,6 +293,17 @@ input[type=checkbox] {
   background-color: white;
   border-radius: 7px;
   margin: 5% 15% 5% 15%;
+  padding: 2.5% 2.5% 0 2.5%;
+  align-items: center;
+  text-align: center;
+}
+
+.card-video {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4);
+  border: 1px solid #cdcccc;
+  background-color: white;
+  border-radius: 7px;
+  margin: 5% 15% 5% 15%;
   padding: 2.5%;
   align-items: center;
   text-align: center;
@@ -243,6 +312,10 @@ input[type=checkbox] {
 .img {
   width: 100%;
   border: 1px solid rgb(207, 206, 206);
+}
+
+.video {
+  width: 100%;
 }
 
 @media screen and (min-width: 958px) and (max-width:1200px) {
