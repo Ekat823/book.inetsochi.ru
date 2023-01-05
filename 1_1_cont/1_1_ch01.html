@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../book.css">
+  <script src="../book.js"></script>
   <link rel="shortcut icon" href="../images/favicon.gif" type="image/gif">
   <title>Прогулка по висячему мостику</title>
 </head>
@@ -84,7 +85,8 @@
       </ul>
     </nav>
 
-    <!--Title-->
+    <!--HEADER IMAGE-->
+
     <div>
       <img src="../images/asCoverNar.jpg" alt="Аз Фита Ижица" class="img-cover-nar">
       <img src="../images/asCoverNarSmall.jpg" alt="Аз Фита Ижица" class="img-cover-nar-small">
@@ -93,8 +95,6 @@
     <!--CHAPTER-->
 
     <div class="card">
-
-      
 
       <p style="text-align: center;">Екатерина Трубицина</p>
       <p style="text-align: center;"><img src="../images/azNavbar.png" alt="Аз Фита Ижица" class="imgtitle"></p>
@@ -331,9 +331,7 @@
         Потом прекрасные порывы любви в душе Николаева напрочь иссякали. Конечно, не обходилось без слез и истерик, но
         Игорю Александровичу удавалось выпутываться с честью.</p>
       <p>С Ирой он познакомился давно, где-то в начале девяностых. Тогда она трудилась в швейной мастерской, а по
-        выходным подрабатывала, рисуя портреты всех желающих в парке <span
-          title="Ривьера — парк культуры и отдыха в Центральном районе г. Сочи. Один из самых популярных сочинских парков.">*Ривьера*</span>.
-        В те времена ей было чуть больше двадцати, но она и тогда, да и в более ранние годы, не претендовала на
+        выходным подрабатывала, рисуя портреты всех желающих в парке <span class="popup" onclick="popUP()" style="color: #03584b;">Ривьера<span class="popuptext" id="exp">Ривьера — парк культуры и отдыха в Центральном районе г. Сочи. Один из самых популярных сочинских парков.</span></span>. В те времена ей было чуть больше двадцати, но она и тогда, да и в более ранние годы, не претендовала на
         ангелоподобность, представляя собой полную противоположность идеалам Игоря Александровича.</p>
 
       <div class="card-art">
@@ -484,9 +482,7 @@
       <div class="card-art">
         <img src="./1_1_img_art/1_1_01_04_kushlani_jayasinha_surprise.jpg" class="img"
           alt="Аз Фита Ижица. Художник: Кушлани Джаясинха (США). Абстрактное искусство"></p>
-        <p><small><em><strong>Непонятное по оттенку удивление</strong><br><small>художник: Кушлани Джаясинха
-                (США)<br><span title="For Sri Lanka (англ.) — Для Шри-Ланки">*«For Sri
-                  Lanka»*</span></small></em></small></p>
+        <p><small><em><strong>Непонятное по оттенку удивление</strong><br><small>художник: Кушлани Джаясинха (США)</small></em></small></p>
       </div>
 
       <p>- Ой… простите… они никогда такого не вытворяли… — отдавая дань протоколу, попытался он извиниться за своих
@@ -605,8 +601,7 @@
       <div class="card-art">
         <img src="./1_1_img_art/1_1_01_06_setsuko_nomoto_love.jpg" class="img"
           alt="Аз Фита Ижица. Художник: Сецуко Номото (Япония). Абстрактное искусство"></p>
-        <p><small><em><strong>А дальше…</strong><br><small>художник: Сецуко Номото (Япония)<br> <span
-                  title="Love in Paris (англ.) — Любовь в Париже">*«Love in Paris»*</span></small></em></small></p>
+        <p><small><em><strong>А дальше…</strong><br><small>художник: Сецуко Номото (Япония)</small></em></small></p>
       </div>
 
       <p>Когда вспыхнул их бурный роман, никто не знал. Первые полгода ничего крамольного вовсе не наблюдалось. На
@@ -665,9 +660,7 @@
         работала в ЗАГСе). По слухам, в Академии Виктор Валентинович курс больше не ведет, только в училище преподает —
         общие дисциплины.</p>
 
-      <p style="text-align: center;"><a href="./1_1_ch02.html">Глава 2. Повторный просмотр</a></p>
-
-
+      <p style="text-align: center;"><a class="next-chapter" href="./1_1_ch02.html">Глава 2. Повторный просмотр</a></p>
 
     </div>
 
