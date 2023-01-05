@@ -198,12 +198,6 @@ input[type=checkbox] {
   max-width: 80%;
 }
 
-.img-author {
-  float: left; 
-  margin: 20px;
-  width: 30%;
-}
-
 .img-cover-hor-l {
   display: block;
   margin-left: auto;
@@ -466,11 +460,4 @@ input[type=checkbox] {
   .img-cover-ver {
     display: block;
   }
-
-  .img-author {
-    float: none; 
-    margin: 0px;
-    width: 100%;
-  }
-
 }

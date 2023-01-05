@@ -16,7 +16,7 @@ hr.line {
 
 h1 {
   text-align: center;
-  font-size: 3rem;
+  font-size: 2.5rem;
   color: #271a09;
 }
 
@@ -85,7 +85,10 @@ li {
 /* NAVBAR STYLING STARTS */
 
 .navbar {
-  display: flex;
+  display: block;
+  position: fixed;
+  top: 0;
+  width: 100%;
   align-items: center;
   justify-content: space-between;
   padding: 0px 20px 0px 20px;
@@ -124,12 +127,12 @@ li {
 
 .dropdown {
   background-color: white;
+  color: #271a09;
   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
   font-size: 1.2rem;
-  padding: 1em 0;
-  right: 0.5%;
+  right: 0;
+  padding: 3% 0% 3% 20;
   position: absolute;
-  /*WITH RESPECT TO PARENT*/
   display: none;
   border-radius: 8px;
 }
@@ -140,7 +143,7 @@ li {
 
 .dropdown li {
   padding: 0.5em 1em;
-  width: 20em;
+  width: 25rem;
   text-align: left;
 }
 
@@ -150,6 +153,24 @@ li {
 
 .services:hover .dropdown {
   display: block;
+}
+
+/*RESPONSIVE NAVBAR MENU STARTS*/
+/* CHECKBOX HACK */
+input[type=checkbox] {
+  display: none;
+}
+
+/*HAMBURGER MENU*/
+
+.hamburger {
+  display: none;
+  font-size: 24px;
+  user-select: none;
+}
+
+.indent {
+  margin-left: 2vw;
 }
 
 /* Float four columns side by side */
@@ -172,35 +193,27 @@ li {
   clear: both;
 }
 
-/*RESPONSIVE NAVBAR MENU STARTS*/
-/* CHECKBOX HACK */
-input[type=checkbox] {
-  display: none;
-}
-
-/*HAMBURGER MENU*/
-
-.hamburger {
-  display: none;
-  font-size: 24px;
-  user-select: none;
-}
-
-.indent {
-  margin-left: 2vw;
-}
-
 .imgnav {
   max-width: 80%;
 }
 
+.imgnav-mobile {
+  display: none;
+}
+
 .img-cover-nar {
   display: block;
+  margin-top: 70px;
   margin-left: auto;
   margin-right: auto;
   max-width: 100%;
 }
 
+.img-author {
+  float: left; 
+  margin: 20px;
+  width: 30%;
+}
 
 /* Style the counter cards */
 .card {
@@ -282,6 +295,10 @@ input[type=checkbox] {
     padding: 16px 0;
   }
 
+  .navbar {
+    display: flex;
+  }
+
   .menu li:hover {
     display: inline-block;
     background-color: rgb(225, 224, 224);
@@ -301,9 +318,9 @@ input[type=checkbox] {
   }
 
   .dropdown {
-    right: 0.5%;
-    top: 30px;
     line-height: 0.5rem;
+    padding-left: 25%;
+    right: 0;
     transform: translateX(35%);
   }
 
@@ -318,6 +335,11 @@ input[type=checkbox] {
   }
 
   .imgnav {
+    display: none;
+  }
+  
+  .imgnav-mobile {
+    display: block;
     max-width: 60%;
   }
 
@@ -352,6 +374,10 @@ input[type=checkbox] {
     padding: 16px 0;
   }
 
+  .navbar {
+    display: flex;
+  }
+
   .menu li:hover {
     display: inline-block;
     background-color: rgb(225, 224, 224);
@@ -371,9 +397,10 @@ input[type=checkbox] {
   }
 
   .dropdown {
-    right: 0.5%;
-    top: 30px;
     line-height: 0.5rem;
+    font-size: 0.9rem;
+    right: 0;
+    padding-left: 8%;
     transform: translateX(35%);
   }
 
@@ -388,11 +415,16 @@ input[type=checkbox] {
   }
 
   .imgnav {
+    display: none;
+  }
+  
+  .imgnav-mobile {
+    display: block;
     max-width: 50%;
   }
 
   .indent {
-    margin-left: 10vw;
+    margin-left: 5%;
   }
 
 
@@ -419,6 +451,12 @@ input[type=checkbox] {
 
   .card {
     margin: 0% 5% 0% 5%;
+  }
+
+  .img-author {
+    float: none; 
+    margin: 0px;
+    width: 100%;
   }
 
 }
