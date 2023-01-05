@@ -205,6 +205,14 @@ input[type=checkbox] {
   max-width: 100%;
 }
 
+.img-cover-nar-small {
+  display: none;
+  margin-top: 70px;
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 100%;
+}
+
 .img-author {
   float: left; 
   margin: 20px;
@@ -398,6 +406,22 @@ input[type=checkbox] {
     margin: 2% 5% 0% 5%;
   }
 
+  .img-cover-nar {
+    display: none;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+  
+  .img-cover-nar-small {
+    display: block;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+
 }
 
 @media (max-width: 576px) {
@@ -503,6 +527,22 @@ input[type=checkbox] {
     float: none; 
     margin: 0px;
     width: 100%;
+  }
+
+  .img-cover-nar {
+    display: none;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+  
+  .img-cover-nar-small {
+    display: block;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
   }
 
 }
