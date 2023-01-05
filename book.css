@@ -185,6 +185,10 @@ input[type=checkbox] {
   clear: both;
 }
 
+.imgtitle {
+  max-width: 100%;
+}
+
 .imgnav {
   max-width: 80%;
 }
@@ -235,20 +239,24 @@ input[type=checkbox] {
 @media screen and (min-width: 958px) and (max-width:1200px) {
 
   .card {
-    margin: 0% 10% 0% 10%;
+    margin: 2% 10% 0% 10%;
   }
 
 
   h1 {
-    font-size: 3rem;
+    font-size: 2rem;
   }
 
   h2 {
-    font-size: 1.2rem;
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
   }
 
   p {
-    font-size: 1.1rem;
+    font-size: 1.4rem;
   }
 
 }
@@ -256,7 +264,29 @@ input[type=checkbox] {
 @media screen and (min-width: 760px) and (max-width:957px) {
 
   .card {
-    margin: 0% 5% 0% 5%;
+    margin: 2% 5% 0% 5%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
+  .menu {
+    display: flex;
+    gap: 1em;
+    font-size: 0.9rem;
   }
 
   .button {
@@ -326,6 +356,22 @@ input[type=checkbox] {
     background-color: rgb(225, 224, 224);
   }
 
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.7rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
+  }
+
+  p {
+    font-size: 1.4rem;
+  }
+
   .imgnav {
     display: none;
   }
@@ -349,7 +395,7 @@ input[type=checkbox] {
   }
 
   .card {
-    margin: 0% 5% 0% 5%;
+    margin: 2% 5% 0% 5%;
   }
 
 }
@@ -425,11 +471,19 @@ input[type=checkbox] {
   }
 
   h2 {
-    font-size: 1.1rem;
+    font-size: 1.5rem;
+  }
+
+  h3 {
+    font-size: 1.4rem;
   }
 
   p {
-    font-size: 1rem;
+    font-size: 1.4rem;
+  }
+
+  .imgnav {
+    display: none;
   }
 
   .column {
@@ -442,7 +496,7 @@ input[type=checkbox] {
   }
 
   .card {
-    margin: 0% 5% 0% 5%;
+    margin: 2% 5% 0% 5%;
   }
 
   .img-author {
