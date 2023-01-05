@@ -45,15 +45,9 @@ p {
 }
 
 footer {
+  text-align: center;
   margin-top: 2rem;
   padding: 10px;
-}
-
-.column-footer {
-  float: left;
-  width: 50%;
-  padding: 0 10px;
-
 }
 
 .button {
