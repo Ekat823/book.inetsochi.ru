@@ -28,31 +28,18 @@ body {
 /* The actual popup */
 .popup .popuptext {
   visibility: hidden;
-  max-width: 12rem;
-  min-width: 8;
+  width: 15rem;
   background-color: #03584b;
   color: white;
   text-align: left;
   font-size: 1rem;
   border-radius: 6px;
-  padding: 10%;
+  padding: 5%;
   position: absolute;
   z-index: 1;
   bottom: 125%;
   left: 50%;
   margin-left: -80px;
-}
-
-/* Popup arrow */
-.popup .popuptext::after {
-  content: "";
-  position: absolute;
-  top: 100%;
-  left: 50%;
-  margin-left: -5px;
-  border-width: 5px;
-  border-style: solid;
-  border-color: #555 transparent transparent transparent;
 }
 
 /* Toggle this class - hide and show the popup */
@@ -64,13 +51,23 @@ body {
 
 /* Add animation (fade in the popup) */
 @-webkit-keyframes fadeIn {
-  from {opacity: 0;} 
-  to {opacity: 1;}
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 @keyframes fadeIn {
-  from {opacity: 0;}
-  to {opacity:1 ;}
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
 }
 
 hr.line {
@@ -195,7 +192,7 @@ li {
 .dropdown {
   background-color: white;
   color: #271a09;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   font-size: 1.2rem;
   right: 0;
   padding: 3% 0% 3% 20;
@@ -289,7 +286,7 @@ input[type=checkbox] {
 }
 
 .img-author {
-  float: left; 
+  float: left;
   margin: 20px;
   width: 30%;
 }
@@ -404,7 +401,7 @@ input[type=checkbox] {
 
 /* APPLYING MEDIA QUERIES */
 
-@media screen and (min-width: 577px) and (max-width:759px){
+@media screen and (min-width: 577px) and (max-width:759px) {
 
   .menu {
     display: none;
@@ -474,7 +471,7 @@ input[type=checkbox] {
   .imgnav {
     display: none;
   }
-  
+
   .imgnav-mobile {
     display: block;
     max-width: 60%;
@@ -504,7 +501,7 @@ input[type=checkbox] {
     margin-right: auto;
     max-width: 100%;
   }
-  
+
   .img-cover-nar-small {
     display: block;
     margin-top: 70px;
@@ -570,7 +567,7 @@ input[type=checkbox] {
   .imgnav {
     display: none;
   }
-  
+
   .imgnav-mobile {
     display: block;
     max-width: 50%;
@@ -615,7 +612,7 @@ input[type=checkbox] {
   }
 
   .img-author {
-    float: none; 
+    float: none;
     margin: 0px;
     width: 100%;
   }
@@ -627,7 +624,7 @@ input[type=checkbox] {
     margin-right: auto;
     max-width: 100%;
   }
-  
+
   .img-cover-nar-small {
     display: block;
     margin-top: 70px;
