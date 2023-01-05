@@ -45,10 +45,8 @@ p {
 }
 
 footer {
-  background: linear-gradient(0.25turn, #020001, #9d752d);
   margin-top: 2rem;
   padding: 10px;
-  color: white;
 }
 
 .column-footer {
