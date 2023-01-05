@@ -12,7 +12,7 @@
 </head>
 
 <body>
-  
+
   <div class="container">
 
     <!--navbar-->
@@ -108,14 +108,17 @@
       <h3 style="align-items: center;"><small>Глава 1</small> <br><strong>Сон вне зоны доступа</strong></h3>
 
       <p>- Мама! Снег!!!</P>
-      <p>Наташа аж подпрыгнула в постели спросонья. Взглянула на часы: «Кошмар! Уже девять…». Кровь застучала в висках. И вдруг — мягкая, до боли приятная волна облегчения: «Фух… выходной…».</p>
+      <p>Наташа аж подпрыгнула в постели спросонья. Взглянула на часы: «Кошмар! Уже девять…». Кровь застучала в висках.
+        И вдруг — мягкая, до боли приятная волна облегчения: «Фух… выходной…».</p>
       <p>Дашунька, радостно визжа, носилась по комнате.</p>
       <p>- Дашка! Чего орешь? Выспаться дай! Истязатель…</p>
       <p>- Мама! Мамочка!! Мамулечка!!! Там снег!!!!!</p>
-      <p>Только теперь до Наташиного сознания дошла информационная часть эмоциональных воплей дочери. Она одним прыжком оказалась у окна. А за окном…</p>
+      <p>Только теперь до Наташиного сознания дошла информационная часть эмоциональных воплей дочери. Она одним прыжком
+        оказалась у окна. А за окном…</p>
 
       <div class="card-art">
-        <img src="./1_1_img/1_1_01_01_winter.jpg" class="img" alt="Аз Фита Ижица. Снегопад в Сочи. Фотограф: Элеонора Терновская">
+        <img src="./1_1_img/1_1_01_01_winter.jpg" class="img"
+          alt="Аз Фита Ижица. Снегопад в Сочи. Фотограф: Элеонора Терновская">
         <p><small><em><strong>Снегопад в Сочи</strong><br><small>фотограф: Элеонора Терновская</small></em></small></p>
       </div>
 
@@ -333,8 +336,20 @@
         Потом прекрасные порывы любви в душе Николаева напрочь иссякали. Конечно, не обходилось без слез и истерик, но
         Игорю Александровичу удавалось выпутываться с честью.</p>
       <p>С Ирой он познакомился давно, где-то в начале девяностых. Тогда она трудилась в швейной мастерской, а по
-        выходным подрабатывала, рисуя портреты всех желающих в парке <span class="popup" onclick="popUp()" style="color: #03584b;">Ривьера<span class="popuptext" id="exp">Ривьера — парк культуры и отдыха в Центральном районе г. Сочи. Один из самых популярных сочинских парков.</span></span>. В те времена ей было чуть больше двадцати, но она и тогда, да и в более ранние годы, не претендовала на
+        выходным подрабатывала, рисуя портреты всех желающих в парке <span onclick="openModal()"
+          style="color: #03584b;">Ривьера</span>. В те времена ей было чуть больше двадцати, но она и тогда, да и в
+        более ранние годы, не претендовала на
         ангелоподобность, представляя собой полную противоположность идеалам Игоря Александровича.</p>
+
+      <!-- The Modal -->
+      <div id="myModal" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal()">&times;</span>
+          <p>Ривьера — парк культуры и отдыха в Центральном районе г.Сочи. Один из самых популярных сочинских парков.
+          </p>
+        </div>
+      </div>
 
       <div class="card-art">
         <img src="./1_1_img/1_1_01_06_artriviera.jpg" class="img"
@@ -484,7 +499,8 @@
       <div class="card-art">
         <img src="./1_1_img_art/1_1_01_04_kushlani_jayasinha_surprise.jpg" class="img"
           alt="Аз Фита Ижица. Художник: Кушлани Джаясинха (США). Абстрактное искусство"></p>
-        <p><small><em><strong>Непонятное по оттенку удивление</strong><br><small>художник: Кушлани Джаясинха (США)</small></em></small></p>
+        <p><small><em><strong>Непонятное по оттенку удивление</strong><br><small>художник: Кушлани Джаясинха
+                (США)</small></em></small></p>
       </div>
 
       <p>- Ой… простите… они никогда такого не вытворяли… — отдавая дань протоколу, попытался он извиниться за своих
@@ -677,28 +693,28 @@
 
   <!-- Yandex.Metrika counter -->
   <script type="text/javascript">
-    (function (d, w, c) {
-      (w[c] = w[c] || []).push(function () {
-        try {
-          w.yaCounter12928414 = new Ya.Metrika({
-            id: 12928414,
-            clickmap: true,
-            trackLinks: true
-          });
-        } catch (e) { }
-      });
+      (function (d, w, c) {
+        (w[c] = w[c] || []).push(function () {
+          try {
+            w.yaCounter12928414 = new Ya.Metrika({
+              id: 12928414,
+              clickmap: true,
+              trackLinks: true
+            });
+          } catch (e) { }
+        });
 
-      var n = d.getElementsByTagName("script")[0],
-        s = d.createElement("script"),
-        f = function () { n.parentNode.insertBefore(s, n); };
-      s.type = "text/javascript";
-      s.async = true;
-      s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
+        var n = d.getElementsByTagName("script")[0],
+          s = d.createElement("script"),
+          f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = (d.location.protocol == "https:" ? "https:" : "http:") + "//mc.yandex.ru/metrika/watch.js";
 
-      if (w.opera == "[object Opera]") {
-        d.addEventListener("DOMContentLoaded", f, false);
-      } else { f(); }
-    })(document, window, "yandex_metrika_callbacks");
+        if (w.opera == "[object Opera]") {
+          d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+      })(document, window, "yandex_metrika_callbacks");
   </script>
   <noscript>
     <div><img src="//mc.yandex.ru/watch/12928414" style="position:absolute; left:-9999px;" alt="" /></div>

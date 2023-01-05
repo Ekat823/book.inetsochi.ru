@@ -25,5 +25,25 @@ const popUpFour = () => {
 
 const popUpFive = () => {
   const popup5 = document.getElementById("exp5");
+
   popup5.classList.toggle("show");
+}
+
+
+
+const openModal = () => {
+  const modal = document.getElementById("myModal");
+  modal.style.display = "block";
+}
+
+const closeModal = () => {
+  const modal = document.getElementById("myModal");
+  modal.style.display = "none";
+}
+
+window.onclick = function (event) {
+  const modal = document.getElementById("myModal");
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
 }
