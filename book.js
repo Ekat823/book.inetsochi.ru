@@ -1,3 +1,4 @@
+//---Modal
 const openModal = (num) => {
   const modal = document.getElementById("exp" + num);
   modal.style.display = "block";
@@ -16,3 +17,4 @@ window.onclick = function (event) {
     }
   }
 }
+//---End Modal
