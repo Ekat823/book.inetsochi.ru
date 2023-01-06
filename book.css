@@ -185,8 +185,9 @@ li {
   color: #271a09;
   box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   font-size: 1.2rem;
+  line-height: 0.5rem;
   right: 0;
-  padding: 3% 0% 3% 20;
+  padding: 3% 0% 3% 5%;
   position: absolute;
   display: none;
   border-radius: 8px;
@@ -206,9 +207,9 @@ li {
   background-color: rgb(225, 224, 224);
 }
 
-.services:hover .dropdown {
+/*.services:hover .dropdown {
   display: block;
-}
+}*/
 
 /*RESPONSIVE NAVBAR MENU STARTS*/
 /* CHECKBOX HACK */
@@ -225,9 +226,17 @@ input[type=checkbox] {
 }
 
 .indent {
-  margin-left: 2vw;
+  margin-left: 0.5rem;
 }
 
+.indent-opened {
+  margin-left: 0.5rem;
+  color: rgb(140, 2, 2);
+}
+
+.opened {
+  color: rgb(140, 2, 2);
+}
 
 
 
@@ -453,9 +462,6 @@ input[type=checkbox] {
     max-width: 60%;
   }
 
-  .indent {
-    margin-left: 10vw;
-  }
 
   /* Responsive columns */
   .column {
@@ -549,9 +555,6 @@ input[type=checkbox] {
     max-width: 50%;
   }
 
-  .indent {
-    margin-left: 5%;
-  }
 
 
   h1 {

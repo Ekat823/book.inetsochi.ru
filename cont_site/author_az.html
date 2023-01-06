@@ -6,6 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../book.css">
+  <script src="../book.js"></script>
   <link rel="shortcut icon" href="../images/favicon.gif" type="image/gif">
   <title>Екатерина Трубицина</title>
 </head>
@@ -24,9 +25,10 @@
           <div><img src="../images/azNavbar.png" alt="Аз Фита Ижица" class="imgnav"></div>
           <li><a a href="../index.html">Аз Фита Ижица</a></li>
 
-          <li class="services">
-            <a href="/">Книги <small>&#x25BC;</small></a>
-            <ul class="dropdown" style="line-height: 0.5rem;">
+          <li class="services" onclick="showBooksMenu()">
+            <a href="/">Книги</a>
+           
+            <ul class="dropdown" id="books">
 
               <li><a href="../1_1_cont/1_1_ch01.html"> I. Прогулка по висячему Мостику</a></li>
               <li class="indent"><a href="../1_1_cont/1_1_ch01.html"><small>1. Золотистый свет <small><em>(гл.

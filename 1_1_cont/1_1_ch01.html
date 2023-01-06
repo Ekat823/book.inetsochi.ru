@@ -28,10 +28,10 @@
 
           <li><a href="../index.html">Аз Фита Ижица</a></li>
 
-          <li class="services">
-            Главы <small>&#x25BC;</small>
-            <ul class="dropdown" style="line-height: 0.5rem;">
-              <li><small><strong>1. Сон вне зоны доступа</strong></small></li>
+          <li class="services" onclick="showChapters()">
+            <a href="/">Главы</a>
+            <ul class="dropdown" id="chapters">
+              <li class="opened"><small><strong>1. Сон вне зоны доступа</strong></small></li>
               <li><small><a href="./1_1_ch02.html">2. Повторный просмотр</a></small></li>
               <li><small><a href="./1_1_ch03.html">3. Искусство смирения</a></small></li>
               <li><small><a href="./1_1_ch04.html">4. Просто принять</a></small></li>
@@ -53,11 +53,11 @@
             </ul>
           </li>
 
-          <li class="services">
-            Книги <small>&#x25BC;</small>
-            <ul class="dropdown" style="line-height: 0.5rem;">
-              <li><strong>I. Прогулка по висячему Мостику</strong></li>
-              <li class="indent"><small><strong>1. Золотистый свет</strong>
+          <li class="services" onclick="showBooks()">
+            <a href="/">Книги</a>
+            <ul class="dropdown" id="books">
+              <li class="opened"><strong>I. Прогулка по висячему Мостику</strong></li>
+              <li class="indent-opened"><small><strong>1. Золотистый свет</strong>
                   <small><em>(гл.
                       1-19)</em></small></small></small></li>
               <li class="indent"><a href="/"><small>2. Сила расталкивания <small><em>(гл.
