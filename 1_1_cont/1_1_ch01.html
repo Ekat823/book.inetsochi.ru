@@ -28,57 +28,9 @@
 
           <li><a href="../index.html">Аз Фита Ижица</a></li>
 
-          <li class="services">
-            <a href="/">Главы <small>&#x25BC;</small></a>
-            <ul class="dropdown">
-              <li><small><strong>1. Сон вне зоны доступа</strong></small></li>
-              <li><small><a href="./1_1_ch02.html">2. Повторный просмотр</a></small></li>
-              <li><small><a href="./1_1_ch03.html">3. Искусство смирения</a></small></li>
-              <li><small><a href="./1_1_ch04.html">4. Просто принять</a></small></li>
-              <li><small><a href="./1_1_ch05.html">5. Другая сфера</a></small></li>
-              <li><small><a href="./1_1_ch06.html">6. Правила выбора. Выбор правил</a></small></li>
-              <li><small><a href="./1_1_ch07.html">7. Золотой Принцип</a></small></li>
-              <li><small><a href="./1_1_ch08.html">8. Поворот на 180 градусов</a></small></li>
-              <li><small><a href="./1_1_ch09.html">9. Гиала</a></small></li>
-              <li><small><a href="./1_1_ch10.html">10. Если не знаешь, что делать</a></small></li>
-              <li><small><a href="./1_1_ch11.html">11. Проделки мелких обстоятельств</a></small></li>
-              <li><small><a href="./1_1_ch12.html">12. Власть над собой</a></small></li>
-              <li><small><a href="./1_1_ch13.html">13. Тонкости</a></small></li>
-              <li><small><a href="./1_1_ch14.html">14. Мебель племени Чумба-Юмба</a></small></li>
-              <li><small><a href="./1_1_ch15.html">15. Великая Тайна</a></small></li>
-              <li><small><a href="./1_1_ch16.html">16. Грандиозная радостность</a></small></li>
-              <li><small><a href="./1_1_ch17.html">17. Реализм</a></small><br>
-              <li><small><a href="./1_1_ch18.html">18. Системы безопасности</a></small></li>
-              <li><small><a href="./1_1_ch19.html">19. Золотистый Свет</a></small></li>
-            </ul>
-          </li>
+          <li onclick="ShowChapters()" style="cursor: pointer;">Главы</li>
 
-          <li class="services">
-            <a href="/">Книги <small>&#x25BC;</small></a>
-            <ul class="dropdown">
-              <li><strong>I. Прогулка по висячему Мостику</strong></li>
-              <li class="indent"><small><strong>1. Золотистый свет</strong>
-                  <small><em>(гл.
-                      1-19)</em></small></small></small></li>
-              <li class="indent"><a href="/"><small>2. Сила расталкивания <small><em>(гл.
-                        20-32)</em></small></small></a></li>
-              <li class="indent"><a href="/"><small>3. Точка выбора <small><em>(гл. 33-52)</em></small></small></a></li>
-              <li><a href="/"> II. Хаос в калейдоскопе</a></li>
-              <li class="indent"><a href="/"><small>4. Чудовищный розыгрыш <small><em>(гл.
-                        53-68)</em></small></small></a></li>
-              <li class="indent"><a href="/"><small>5. Крышень без компании <small><em>(гл.
-                        69-83)</em></small></small></a></li>
-              <li class="indent"><a href="/"><small>6. Иллюзия и Реальность <small><em>(гл.
-                        84-101)</em></small></small></a></li>
-              <li><a href="/"> III. Остров бродячих собак</a></li>
-              <li class="indent"><a href="/"><small>7. Хранитель чистого искусства <small><em>(гл.
-                        102-119)</em></small></small></a></li>
-              <li class="indent"><a href="/"><small>8. Третий элемент <small><em>(гл. 120-136)</em></small></small></a>
-              </li>
-              <li class="indent"><a href="/"><small>9. Удивительный и ошеломительный <small><em>(гл.
-                        137-149)</em></small></small></a></li>
-            </ul>
-          </li>
+          <li onclick="showBooks()" style="cursor: pointer;">Книги</li>
 
           <li><a href="../cont_site/books_az.html">о Книгах</a></li>
 
@@ -86,6 +38,62 @@
         </div>
       </ul>
     </nav>
+
+<!-- The Modal Books-->
+<div id="books" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" onclick="closeBooks()">&times;</span>
+    <ul>
+      <li><strong> I. Прогулка по висячему Мостику</strong></li>
+      <li class="indent"><strong><small>1. Золотистый свет</small></strong></li>
+      <li class="indent"><a href="/" class="books-font"><small>2. Сила расталкивания</small></a></li>
+      <li class="indent"><a href="/" class="books-font"><small>3. Точка выбора</small></a></li>
+
+      <li><a href="/" class="books-font"> II. Хаос в калейдоскопе</a></li>
+      <li class="indent"><a href="/" class="books-font"><small>4. Чудовищный розыгрыш</small></a></li>
+      <li class="indent"><a href="/" class="books-font"><small>5. Крышень без компании</small></a></li>
+      <li class="indent"><a href="/" class="books-font"><small>6. Иллюзия и Реальность</small></a></li>
+
+      <li><a href="/" class="books-font"> III. Остров бродячих собак</a></li>
+      <li class="indent"><a href="/" class="books-font"><small>7. Хранитель чистого искусства</small></a></li>
+      <li class="indent"><a href="/" class="books-font"><small>8. Третий элемент</small></a></li>
+      <li class="indent"><a href="/" class="books-font"><small>9. Удивительный и ошеломительный</small></a></li>
+    </ul>
+  </div>
+</div>
+<!-- End The Modal Books-->
+
+<!-- The Modal -->
+<div id="chapters" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close" onclick="closeChapters()">&times;</span>
+    <ul>
+      <li><small><strong>1. Сон вне зоны доступа</strong></small></li>
+      <li><small><a href="./1_1_ch02.html" class="books-font">2. Повторный просмотр</a></small></li>
+      <li><small><a href="./1_1_ch03.html" class="books-font">3. Искусство смирения</a></small></li>
+      <li><small><a href="./1_1_ch04.html" class="books-font">4. Просто принять</a></small></li>
+      <li><small><a href="./1_1_ch05.html" class="books-font">5. Другая сфера</a></small></li>
+      <li><small><a href="./1_1_ch06.html" class="books-font">6. Правила выбора. Выбор правил</a></small></li>
+      <li><small><a href="./1_1_ch07.html" class="books-font">7. Золотой Принцип</a></small></li>
+      <li><small><a href="./1_1_ch08.html" class="books-font">8. Поворот на 180 градусов</a></small></li>
+      <li><small><a href="./1_1_ch09.html" class="books-font">9. Гиала</a></small></li>
+      <li><small><a href="./1_1_ch10.html" class="books-font">10. Если не знаешь, что делать</a></small></li>
+      <li><small><a href="./1_1_ch11.html" class="books-font">11. Проделки мелких обстоятельств</a></small></li>
+      <li><small><a href="./1_1_ch12.html" class="books-font">12. Власть над собой</a></small></li>
+      <li><small><a href="./1_1_ch13.html" class="books-font">13. Тонкости</a></small></li>
+      <li><small><a href="./1_1_ch14.html" class="books-font">14. Мебель племени Чумба-Юмба</a></small></li>
+      <li><small><a href="./1_1_ch15.html" class="books-font">15. Великая Тайна</a></small></li>
+      <li><small><a href="./1_1_ch16.html" class="books-font">16. Грандиозная радостность</a></small></li>
+      <li><small><a href="./1_1_ch17.html" class="books-font">17. Реализм</a></small><br>
+      <li><small><a href="./1_1_ch18.html" class="books-font">18. Системы безопасности</a></small></li>
+      <li><small><a href="./1_1_ch19.html" class="books-font">19. Золотистый Свет</a></small></li>
+    </ul>
+  </div>
+</div>
+<!-- End The Modal -->
+
 
     <!--HEADER IMAGE-->
 
@@ -683,7 +691,7 @@
 
     <!--Footer-->
     <footer>
-      <a href="#"><button class="button" style="width: 30%;">&#8593; ВВЕРХ &#8593;</button></a>
+      <a href="#"><button class="button">&#8593; ВВЕРХ &#8593;</button></a>
       <p style="font-size: 0.9rem;">&#169; 2014 Екатерина Трубицина</p>
     </footer>
 
