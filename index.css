@@ -130,6 +130,7 @@ li {
 .dropdown {
   background-color: white;
   font-size: 1.2rem;
+  line-height: 0.5rem;
   padding: 1em 0;
   right: 0.5%;
   position: absolute;
@@ -191,7 +192,7 @@ input[type=checkbox] {
 }
 
 .indent {
-  margin-left: 2vw;
+  margin-left: 0.5rem;
 }
 
 .imgnav {
@@ -323,10 +324,6 @@ input[type=checkbox] {
     max-width: 60%;
   }
 
-  .indent {
-    margin-left: 10vw;
-  }
-
   /* Responsive columns */
   .column {
     width: 100%;
@@ -394,10 +391,6 @@ input[type=checkbox] {
 
   .imgnav {
     max-width: 50%;
-  }
-
-  .indent {
-    margin-left: 10vw;
   }
 
 

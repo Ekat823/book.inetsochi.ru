@@ -25,40 +25,45 @@
           <div><img src="../images/azNavbar.png" alt="Аз Фита Ижица" class="imgnav"></div>
           <li><a a href="../index.html">Аз Фита Ижица</a></li>
 
-          <li class="services" onclick="showBooksMenu()">
-            <a href="/">Книги</a>
-           
-            <ul class="dropdown" id="books">
+          <li onclick="showBooks()">Книги</li>
 
-              <li><a href="../1_1_cont/1_1_ch01.html"> I. Прогулка по висячему Мостику</a></li>
-              <li class="indent"><a href="../1_1_cont/1_1_ch01.html"><small>1. Золотистый свет <small><em>(гл.
-                        1-19)</em></small></small></small></a></li>
-              <li class="indent"><a href="/"><small>2. Сила расталкивания <small><em>(гл.
-                        20-32)</em></small></small></a></li>
-              <li class="indent"><a href="/"><small>3. Точка выбора <small><em>(гл. 33-52)</em></small></small></a></li>
-
-              <li><a href="/"> II. Хаос в калейдоскопе</a></li>
-              <li class="indent"><a href="/"><small>4. Чудовищный розыгрыш <small><em>(гл.
-                        53-68)</em></small></small></a></li>
-              <li class="indent"><a href="/"><small>5. Крышень без компании <small><em>(гл.
-                        69-83)</em></small></small></a></li>
-              <li class="indent"><a href="/"><small>6. Иллюзия и Реальность <small><em>(гл.
-                        84-101)</em></small></small></a></li>
-
-              <li><a href="/"> III. Остров бродячих собак</a></li>
-              <li class="indent"><a href="/"><small>7. Хранитель чистого искусства <small><em>(гл.
-                        102-119)</em></small></small></a></li>
-              <li class="indent"><a href="/"><small>8. Третий элемент <small><em>(гл. 120-136)</em></small></small></a>
-              </li>
-              <li class="indent"><a href="/"><small>9. Удивительный и ошеломительный <small><em>(гл.
-                        137-149)</em></small></small></a></li>
-            </ul>
-          </li>
           <li><a href="./books_az.html">о Книгах</a></li>
-          <li style="background: linear-gradient(0.25turn, #020001, #9d752d); color: white; border-radius: 10px;"><strong>об Авторе</strong></li>
+
+          <li style="background: linear-gradient(0.25turn, #020001, #9d752d); color: white; border-radius: 10px;">
+            <strong>об Авторе</strong>
+          </li>
         </div>
       </ul>
     </nav>
+
+    <!-- The Modal -->
+    <div id="books" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="closeBooks()">&times;</span>
+        <ul>
+          <li><a href="../1_1_cont/1_1_ch01.html" class="books-font"> I. Прогулка по висячему Мостику</a></li>
+          <li class="indent"><a href="../1_1_cont/1_1_ch01.html" class="books-font"><small>1. Золотистый
+                свет</small></a></li>
+          <li class="indent"><a href="/" class="books-font"><small>2. Сила расталкивания</small></a></li>
+          <li class="indent"><a href="/" class="books-font"><small>3. Точка выбора</small></a></li>
+
+          <li><a href="/" class="books-font"> II. Хаос в калейдоскопе</a></li>
+          <li class="indent"><a href="/" class="books-font"><small>4. Чудовищный розыгрыш</small></a></li>
+          <li class="indent"><a href="/" class="books-font"><small>5. Крышень без компании</small></a></li>
+          <li class="indent"><a href="/" class="books-font"><small>6. Иллюзия и Реальность</small></a></li>
+
+          <li><a href="/" class="books-font"> III. Остров бродячих собак</a></li>
+          <li class="indent"><a href="/" class="books-font"><small>7. Хранитель чистого искусства</small></a></li>
+          <li class="indent"><a href="/" class="books-font"><small>8. Третий элемент</small></a></li>
+          <li class="indent"><a href="/" class="books-font"><small>9. Удивительный и ошеломительный</small></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End The Modal -->
+
+
+
 
     <!--Title-->
     <div>
@@ -129,7 +134,7 @@
     <!--Footer-->
 
     <footer>
-      <a href="#"><button class="button" style="width: 30%;">&#8593; ВВЕРХ &#8593;</button></a>
+      <a href="#"><button class="button">&#8593; ВВЕРХ &#8593;</button></a>
       <p style="font-size: 0.9rem;">&#169; 2014 Екатерина Трубицина</p>
     </footer>
 
