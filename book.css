@@ -29,6 +29,7 @@ body {
   margin: auto;
   padding: 1%;
   border: 1px solid #888;
+  border-radius: 10px;
   width: 30%;
 }
 
@@ -51,73 +52,6 @@ body {
 
 
 
-
-
-
-
-
-
-/* Popup container - can be anything you want */
-.popup {
-  position: relative;
-  display: inline-block;
-  cursor: pointer;
-  -webkit-user-select: none;
-  -moz-user-select: none;
-  -ms-user-select: none;
-  user-select: none;
-}
-
-.popup:hover {
-  color: #022d26;
-  font-weight: 700;
-  font-size: 1.3rem;
-}
-
-/* The actual popup */
-.popup .popuptext {
-  visibility: hidden;
-  width: 15rem;
-  background-color: #03584b;
-  color: white;
-  text-align: left;
-  font-size: 1rem;
-  border-radius: 6px;
-  padding: 5%;
-  position: absolute;
-  z-index: 1;
-  bottom: 125%;
-  left: 50%;
-  margin-left: -80px;
-}
-
-/* Toggle this class - hide and show the popup */
-.popup .show {
-  visibility: visible;
-  -webkit-animation: fadeIn 0.5s;
-  animation: fadeIn 0.5s;
-}
-
-/* Add animation (fade in the popup) */
-@-webkit-keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
-
-@keyframes fadeIn {
-  from {
-    opacity: 0;
-  }
-
-  to {
-    opacity: 1;
-  }
-}
 
 hr.line {
   margin-top: 3rem;
@@ -177,6 +111,10 @@ footer {
   font-size: 0.9rem;
 }
 
+.exp {
+  color: #03584b;
+}
+
 a {
   text-decoration: none;
 }
@@ -194,6 +132,10 @@ a.next-chapter:hover {
 li {
   list-style: none;
 }
+
+
+
+
 
 /* NAVBAR STYLING STARTS */
 
@@ -286,25 +228,10 @@ input[type=checkbox] {
   margin-left: 2vw;
 }
 
-/* Float four columns side by side */
-.column {
-  float: left;
-  width: 33.33%;
-  padding: 0 10px;
 
-}
 
-/* Remove extra left and right margins, due to padding */
-.row {
-  margin: 0.5vw;
-}
 
-/* Clear floats after the columns */
-.row:after {
-  content: "";
-  display: table;
-  clear: both;
-}
+
 
 .imgtitle {
   max-width: 100%;
