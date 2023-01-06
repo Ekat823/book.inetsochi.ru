@@ -161,7 +161,7 @@ li {
   align-items: center;
   justify-content: space-between;
   padding: 0px 20px 0px 20px;
-  background-color: white;
+  background: rgba(250, 248, 248, 0.95);
   color: #271a09;
 }
 
