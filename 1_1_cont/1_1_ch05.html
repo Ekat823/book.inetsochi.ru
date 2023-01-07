@@ -28,9 +28,9 @@
 
           <li><a href="../index.html">Аз Фита Ижица</a></li>
 
-          <li onclick="ShowChapters()" style="cursor: pointer;">Главы</li>
+          <li onclick="openModal('chapters')" style="cursor: pointer;">Главы</li>
 
-          <li onclick="showBooks()" style="cursor: pointer;">Книги</li>
+          <li onclick="openModal('books')" style="cursor: pointer;">Книги</li>
 
           <li><a href="../cont_site/books_az.html">о Книгах</a></li>
 
@@ -43,7 +43,7 @@
 <div id="books" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close" onclick="closeBooks()">&times;</span>
+    <span class="close" onclick="closeModal('books')">&times;</span>
     <ul>
       <li class="opened"><strong> I. Прогулка по висячему Мостику</strong></li>
       <li class="indent-opened"><strong><small>1. Золотистый свет</small></strong></li>
@@ -68,7 +68,7 @@
 <div id="chapters" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close" onclick="closeChapters()">&times;</span>
+    <span class="close" onclick="closeModal('chapters')">&times;</span>
     <ul>
       <li><a href="./1_1_ch01.html" class="exp">1. Сон вне зоны доступа</a></li>
       <li><a href="./1_1_ch02.html" class="exp">2. Повторный просмотр</a></li>
@@ -219,14 +219,14 @@
                 Терновская</small></em></small></p>
       </div>
 
-      <p>Ира спустилась к <span onclick="openModal(1)" class="exp">Сочинке</span> и пошла по набережной. Вдоль
+      <p>Ира спустилась к <span onclick="openModal('exp1')" class="exp">Сочинке</span> и пошла по набережной. Вдоль
         Ривьерского моста вышла на проспект.</p>
 
       <!-- The Modal -->
       <div id="exp1" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(1)">&times;</span>
+          <span class="close" onclick="closeModal('exp1')">&times;</span>
           <p><strong>Сочинка</strong> — просторечное название реки Сочи, протекающей в Центральном районе города.</strong>
         </div>
       </div>
@@ -239,14 +239,14 @@
                 Терновская</small></em></small></p>
       </div>
 
-      <p>Охваченный ливнем город словно вымер, только на <span onclick="openModal(2)" class="exp">Платановой
+      <p>Охваченный ливнем город словно вымер, только на <span onclick="openModal('exp2')" class="exp">Платановой
           аллее</span> пара молодых людей пыталась изловить такси.</p>
 
       <!-- The Modal -->
       <div id="exp2" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(2)">&times;</span>
+          <span class="close" onclick="closeModal('exp2')">&times;</span>
           <p><strong>Платановая аллея</strong> — участок Курортного проспекта — главной улицы г. Сочи. Платаны высажены в 1913г. в честь
             300-летия династии Романовых и 75-летия города.</p>
         </div>
@@ -260,8 +260,8 @@
       </div>
 
       <p>Зонт выполнял чисто бутафорскую функцию — Ира промокла до нитки. Ветви платанов перед <span
-          onclick="openModal(3)" class="exp">Поцелуевским</span> то и дело проводили по несчастному зонту молодыми
-        мокрыми листьями — жутковато. Ира закрыла бесполезный зонт. Лестница <span onclick="openModal(4)"
+          onclick="openModal('exp3')" class="exp">Поцелуевским</span> то и дело проводили по несчастному зонту молодыми
+        мокрыми листьями — жутковато. Ира закрыла бесполезный зонт. Лестница <span onclick="openModal('exp4')"
           class="exp">Мамонтова спуска (Пролетарского подъема)</span> напоминала самый настоящий водопад, а выше —
         несущуюся к нему бурную горную реку.</p>
 
@@ -269,7 +269,7 @@
       <div id="exp3" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(3)">&times;</span>
+          <span class="close" onclick="closeModal('exp3')">&times;</span>
           <p><strong>Поцелуевский</strong> — знаменитый в г. Сочи гастроном. Больше не существует. Здание снесено в ходе реконструкции города.</p>
         </div>
       </div>
@@ -279,7 +279,7 @@
       <div id="exp4" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(4)">&times;</span>
+          <span class="close" onclick="closeModal('exp4')">&times;</span>
           <p><strong>Мамонтов спуск (Пролетарский подъем)</strong> — участок Курортного проспекта — главной улицы г. Сочи. До революции
             назывался «Мамонтов спуск», так как по соседству находилось имение московского промышленника Н.Н. Мамонтова.
             После революции был переименован в Пролетарский подъем.</p>
@@ -294,7 +294,7 @@
                 Терновская</small></em></small></p>
       </div>
 
-      <p>Напротив <span onclick="openModal(5)" class="exp">Калинки</span> под навесом автобусной остановки кто-то
+      <p>Напротив <span onclick="openModal('exp5')" class="exp">Калинки</span> под навесом автобусной остановки кто-то
         стоял, только зачем, Ира не поняла: общественный транспорт в это время не функционирует, а такси здесь не
         поймать в принципе, тем более, стоя в стороне от трассы. Ире стало смешно. Она весело прибавила шагу, но стоило
         ей миновать остановку, как знакомый голос окликнул ее:</p>
@@ -303,7 +303,7 @@
       <div id="exp5" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(5)">&times;</span>
+          <span class="close" onclick="closeModal('exp5')">&times;</span>
           <p><strong>Калинка</strong> — небольшое открытое кафе со стоячими столиками. Пользовалось большой популярностью у музыкантов
             и художников г. Сочи. В настоящее время его здание реконструировано и перепрофилировано.</p>
         </div>
@@ -454,7 +454,7 @@
       <p>- Ира, это трудно объяснить, но я попытаюсь. Ты живешь как бы в двух сферах одновременно. При этом своим
         биологическим мозгом адекватно осознавать можешь только одну. Информация другой сферы, по большей части, не
         достигает сознания, а та, что все же достигает, находится в символах, которые мозг без определенной тренировки
-        не в состоянии адекватно перевести в слова, то есть, произвест качественную <span onclick="openModal(6)"
+        не в состоянии адекватно перевести в слова, то есть, произвест качественную <span onclick="openModal('exp6')"
           class="exp">вербализацию</span>. Впрочем, информацию той сферы перевести на понятный человеческий язык в
         полном соответствии вообще невозможно — лишь через метафоры, ассоциации и аналогии.</p>
 
@@ -462,7 +462,7 @@
       <div id="exp6" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(6)">&times;</span>
+          <span class="close" onclick="closeModal('exp6')">&times;</span>
           <p><strong>вербализация</strong> — словесное описание переживаний, мыслей, поведения, чувств, ощущений (в том числе зрительных,
             слуховых (музыка, пение птиц, шум и т.п.), осязательных, обонятельных, вкусовых)</p>
         </div>

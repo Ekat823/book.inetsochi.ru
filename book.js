@@ -1,38 +1,11 @@
-//---Navbar Books
-const showBooks = () => {
-  const books = document.getElementById("books");
-  books.style.display = "block";
-}
-
-const closeBooks = () => {
-  const books = document.getElementById("books");
-  books.style.display = "none";
-}
-//---End Navbar Books
-
-
-//---Navbar Chapters
-const ShowChapters = () => {
-  const chapters = document.getElementById("chapters");
-  chapters.style.display = "block";
-}
-
-const closeChapters = () => {
-  const chapters = document.getElementById("chapters");
-  chapters.style.display = "none";
-}
-//---End Navbar Chapters
-
-
-
 //---Modal
-const openModal = (num) => {
-  const modal = document.getElementById("exp" + num);
+const openModal = (id) => {
+  const modal = document.getElementById(id);
   modal.style.display = "block";
 }
 
-const closeModal = (num) => {
-  const modal = document.getElementById("exp" + num);
+const closeModal = (id) => {
+  const modal = document.getElementById(id);
   modal.style.display = "none";
 }
 

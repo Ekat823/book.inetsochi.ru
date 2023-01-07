@@ -28,9 +28,9 @@
 
           <li><a a href="../index.html">Аз Фита Ижица</a></li>
 
-          <li onclick="ShowChapters()" style="cursor: pointer;">Главы</li>
+          <li onclick="openModal('chapters')" style="cursor: pointer;">Главы</li>
 
-          <li onclick="showBooks()" style="cursor: pointer;">Книги</li>
+          <li onclick="openModal('books')" style="cursor: pointer;">Книги</li>
 
           <li><a href="../cont_site/books_az.html">о Книгах</a></li>
 
@@ -43,7 +43,7 @@
 <div id="books" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close" onclick="closeBooks()">&times;</span>
+    <span class="close" onclick="closeModal('books')">&times;</span>
     <ul>
       <li class="opened"><strong> I. Прогулка по висячему Мостику</strong></li>
       <li class="indent-opened"><strong><small>1. Золотистый свет</small></strong></li>
@@ -68,7 +68,7 @@
 <div id="chapters" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close" onclick="closeChapters()">&times;</span>
+    <span class="close" onclick="closeModal('chapters')">&times;</span>
     <ul>
       <li><a href="./1_1_ch01.html" class="exp">1. Сон вне зоны доступа</a></li>
       <li class="opened"><strong>2. Повторный просмотр</strong></li>
@@ -724,14 +724,14 @@
       <p>- Ага… А тебе, как назло, заглянуть в этот раз что-то непреодолимо помешало!</p>
       <p>Наташа стала пунцовой.</p>
       <p>- Ир! Ну, прости! Я ей даже рассказать ничего не успела. Она меня не слушала.</p>
-      <p>- Какое счастье! Да, девки! <span onclick="openModal(1)" class="exp">«Санта-Барбара»</span> отдыхает!
+      <p>- Какое счастье! Да, девки! <span onclick="openModal('exp1')" class="exp">«Санта-Барбара»</span> отдыхает!
         Чего стоишь!? Иди, Люсе звони. Пусть поднимается.</p>
 
       <!-- The Modal -->
       <div id="exp1" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(1)">&times;</span>
+          <span class="close" onclick="closeModal('exp1')">&times;</span>
           <p>«<strong>Санта-Барбара</strong>» – популярный в 90-е годы XX века телесериал (США).</p>
         </div>
       </div>

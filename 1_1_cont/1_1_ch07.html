@@ -28,9 +28,9 @@
 
           <li><a href="../index.html">Аз Фита Ижица</a></li>
 
-          <li onclick="ShowChapters()" style="cursor: pointer;">Главы</li>
+          <li onclick="openModal('chapters')" style="cursor: pointer;">Главы</li>
 
-          <li onclick="showBooks()" style="cursor: pointer;">Книги</li>
+          <li onclick="openModal('books')" style="cursor: pointer;">Книги</li>
 
           <li><a href="../cont_site/books_az.html">о Книгах</a></li>
 
@@ -43,7 +43,7 @@
     <div id="books" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close" onclick="closeBooks()">&times;</span>
+        <span class="close" onclick="closeModal('books')">&times;</span>
         <ul>
           <li class="opened"><strong> I. Прогулка по висячему Мостику</strong></li>
           <li class="indent-opened"><strong><small>1. Золотистый свет</small></strong></li>
@@ -68,7 +68,7 @@
     <div id="chapters" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close" onclick="closeChapters()">&times;</span>
+        <span class="close" onclick="closeModal('chapters')">&times;</span>
         <ul>
           <li><a href="./1_1_ch01.html" class="exp">1. Сон вне зоны доступа</a></li>
           <li><a href="./1_1_ch02.html" class="exp">2. Повторный просмотр</a></li>
@@ -161,7 +161,7 @@
                 Терновская</small></em></small></p>
       </div>
 
-      <p>В те далекие времена он тщетно пытался поступить в театральный, учился в <span onclick="openModal(1)"
+      <p>В те далекие времена он тщетно пытался поступить в театральный, учился в <span onclick="openModal('exp1')"
           class="exp">кульке</span>, снимался во всевозможных массовках
         и работал со своими программами и номерами по Домам Культуры и кабакам. Генка всегда был мастером импровизации и
         вот теперь лихо разыграл целую сценку с висящим у Иры на шее мобильником. На глазах у целого зала ничего не
@@ -173,7 +173,7 @@
       <div id="exp1" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(1)">&times;</span>
+          <span class="close" onclick="closeModal('exp1')">&times;</span>
           <p><strong>кулёк</strong> — сленговое название института культуры</p>
         </div>
       </div>
@@ -243,8 +243,8 @@
       <p>Радный сначала молча наблюдал за разворачивающейся сценой, но потом пришел Ире на помощь:</p>
       <p>- Умойся и пей, — тихим каменным голосом скомандовал он главному дизайнеру и тем же тихим каменным голосом
         добавил, обернувшись к главному инженеру. — И ты пей, только умойся сначала.</p>
-      <p>«Главные» повиновались, правда, вид у них был как у <span onclick="openModal(2)" class="exp">Сенеки</span>,
-        пьющего из чаши поданной <span onclick="openModal(3)" class="exp">Нероном</span>. Согласились, что вода
+      <p>«Главные» повиновались, правда, вид у них был как у <span onclick="openModal('exp2')" class="exp">Сенеки</span>,
+        пьющего из чаши поданной <span onclick="openModal('exp3')" class="exp">Нероном</span>. Согласились, что вода
         действительно удивительно вкусная, но потом, улучив момент, между собой сожалели, что ни у того, ни у другого не
         оказалось с собой левометицина на всякий случай (а вдруг!).</p>
 
@@ -252,7 +252,7 @@
       <div id="exp2" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(2)">&times;</span>
+          <span class="close" onclick="closeModal('exp2')">&times;</span>
           <p><strong>Сенека</strong> — римский философ, воспитатель Нерона. По его приказу покончил жизнь самоубийством,
             выпив чашу с ядом.</p>
         </div>
@@ -263,7 +263,7 @@
       <div id="exp3" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(3)">&times;</span>
+          <span class="close" onclick="closeModal('exp3')">&times;</span>
           <p><strong>Нерон</strong> — римский император.</p>
         </div>
       </div>
@@ -271,7 +271,7 @@
 
       <p>Родники встречались на пути часто, и постепенно «главные» привыкли к требуемому Ирой ритуалу. К тому же темп
         она задала приличный, и пить им все время хотелось.</p>
-      <p>Миновали поселок. Благополучно перешли мостик через <span onclick="openModal(4)" class="exp">Агву</span>. А
+      <p>Миновали поселок. Благополучно перешли мостик через <span onclick="openModal('exp4')" class="exp">Агву</span>. А
         дальше… В общем-то обычный подъёмчик, но «главные»
         завопили, что они не альпинисты, что страховки нет. Радный вновь уладил возникшую проблему, и, преодолев
         препятствие, надо сказать, достаточно легко, в чем Ира и не сомневалась, «главные» почувствовали себя
@@ -281,7 +281,7 @@
       <div id="exp4" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(4)">&times;</span>
+          <span class="close" onclick="closeModal('exp4')">&times;</span>
           <p><strong>Агва</strong> — правый приток реки Сочи.</p>
         </div>
       </div>
@@ -305,7 +305,7 @@
                 Терновская</small></em></small></p>
       </div>
 
-      <p>Тропинка до <span onclick="openModal(5)" class="exp">Ажека</span>, вообще-то, очень даже хорошая. Подъемы и
+      <p>Тропинка до <span onclick="openModal('exp5')" class="exp">Ажека</span>, вообще-то, очень даже хорошая. Подъемы и
         спуски на ней, конечно, есть, но не крутые и не затяжные. Так думала Ира, пока не потащила сюда эту компанию.
         «Главные» ныли и стонали на каждом подъемчике. Ира, совершенно не подумав о последствиях, о чем потом ужасно
         сожалела, решив малость подбодрить их, сказала:</p>
@@ -315,7 +315,7 @@
       <div id="exp5" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(5)">&times;</span>
+          <span class="close" onclick="closeModal('exp5')">&times;</span>
           <p>Ажек — название горного хребта и правого притока реки Сочи.</p>
         </div>
       </div>
@@ -474,15 +474,15 @@
       <p>Ира вволю нахохоталась, вспоминая выходки и курьезы, героем которых блистал Генка, и набрала его номер.</p>
       <p>- Батюшки!!! Ирчик!!! — завопил он вне себя от радости.</p>
       <p>- Привет, — сдержанно, но очень тепло ответила она.</p>
-      <p>- Ирчик, я сегодня в ночь в <span onclick="openModal(6)" class="exp">Бэтмэне</span>, в <span
-          onclick="openModal(7)" class="exp">Лазурке</span>, так что если еще
+      <p>- Ирчик, я сегодня в ночь в <span onclick="openModal('exp6')" class="exp">Бэтмэне</span>, в <span
+          onclick="openModal('exp7')" class="exp">Лазурке</span>, так что если еще
         остались силы — ползи сюда.</p>
 
       <!-- The Modal -->
       <div id="exp6" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(6)">&times;</span>
+          <span class="close" onclick="closeModal('exp6')">&times;</span>
           <p><strong>Бэтмэн</strong> — ночной клуб в отеле Рэдиссон САС «Лазурная».</p>
         </div>
       </div>
@@ -492,7 +492,7 @@
       <div id="exp7" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(7)">&times;</span>
+          <span class="close" onclick="closeModal('exp7')">&times;</span>
           <p><strong>Лазурка</strong> — просторечное название отеля Рэдиссон САС «Лазурная».</p>
         </div>
       </div>
@@ -554,14 +554,14 @@
         было.</p>
       <p>- Ирчик, скажи честно, если устала. Я отвезу тебя домой. А если нет — пошли бродить!</p>
       <p>- Генка! Пошли бродить!</p>
-      <p>Они вышли из здания и спустились на <span onclick="openModal(8)" class="exp">Пешеходку</span>.
+      <p>Они вышли из здания и спустились на <span onclick="openModal('exp8')" class="exp">Пешеходку</span>.
         Рассвет едва намечался. В звенящей предутренней тишине еле слышно шуршал галькой морской прибой.</p>
 
       <!-- The Modal -->
       <div id="exp8" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(8)">&times;</span>
+          <span class="close" onclick="closeModal('exp8')">&times;</span>
           <p><strong>Пешеходка</strong> — Пешеходная тропа от реки Мацеста до реки Бзугу (5 км). Самый известный
             сочинский терренкур.</p>
         </div>
@@ -658,14 +658,14 @@
       <p>- Что это было? — Генка состроил такую уморительную рожу, что с прослушиванием ответа пришлось повременить по
         причине приступа неукротимого смеха, приключившегося с «ответчицей».</p>
       <p>- Это, Геночка, ФСБ и ЦРУ, а по совместительству СМИ местного значения.</p>
-      <p>- Понятно. А я, было, подумал, наивный, что это — всего лишь <span onclick="openModal(9)" class="exp">face control</span>.</p>
+      <p>- Понятно. А я, было, подумал, наивный, что это — всего лишь <span onclick="openModal('exp9')" class="exp">face control</span>.</p>
 
       <!-- The Modal -->
       <div id="exp9" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(9)">&times;</span>
-          <p><strong>face control</strong> (англ.) — фейсконтроль (дословно: «контроль лица»), ограничение входа,
+          <span class="close" onclick="closeModal('exp9')">&times;</span>
+          <p><strong>face control</strong> <em>(англ.)</em> — фейсконтроль (дословно: «контроль лица»), ограничение входа,
             выборочный отказ в обслуживании посетителей, не удовлетворяющих определённым критериям.</p>
         </div>
       </div>

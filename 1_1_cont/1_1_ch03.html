@@ -28,9 +28,9 @@
 
           <li><a href="../index.html">Аз Фита Ижица</a></li>
 
-          <li onclick="ShowChapters()" style="cursor: pointer;">Главы</li>
+          <li onclick="openModal('chapters')" style="cursor: pointer;">Главы</li>
 
-          <li onclick="showBooks()" style="cursor: pointer;">Книги</li>
+          <li onclick="openModal('books')" style="cursor: pointer;">Книги</li>
 
           <li><a href="../cont_site/books_az.html">о Книгах</a></li>
 
@@ -43,7 +43,7 @@
     <div id="books" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close" onclick="closeBooks()">&times;</span>
+        <span class="close" onclick="closeModal('books')">&times;</span>
         <ul>
           <li class="opened"><strong> I. Прогулка по висячему Мостику</strong></li>
           <li class="indent-opened"><strong><small>1. Золотистый свет</small></strong></li>
@@ -68,7 +68,7 @@
     <div id="chapters" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close" onclick="closeChapters()">&times;</span>
+        <span class="close" onclick="closeModal('chapters')">&times;</span>
         <ul>
           <li><a href="./1_1_ch01.html" class="exp">1. Сон вне зоны доступа</a></li>
           <li><a href="./1_1_ch02.html" class="exp">2. Повторный просмотр</a></li>
@@ -525,7 +525,7 @@
       <p>Результат общения превзошел все, даже самые смелые Иришкины ожидания как по масштабу предстоящей работы, так и
         по размеру денежного вознаграждения. Ира, привыкшая работать только честно, откровенно высказала Радному
         опасения Игоря Александровича, не забыв на него сослаться. Радный обозвал последнего <span
-          onclick="openModal(1)" class="exp">премудрым пескарем</span> и заверил Ирину, что даже если подобного рода
+          onclick="openModal('exp1')" class="exp">премудрым пескарем</span> и заверил Ирину, что даже если подобного рода
         проблемы и возникнут, то он обязательно вызовет ее на место, а своих инженеров обяжет исхитриться, но найти
         совместно с ней оптимальное решение. Иру поразила и немного напугала его безграничная в нее вера, и она заявила,
         что если честно, то даже мелкие мастерские послали ее с ее фантазиями куда подальше. Их Радный обозвал
@@ -535,7 +535,7 @@
       <div id="exp1" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(1)">&times;</span>
+          <span class="close" onclick="closeModal('exp1')">&times;</span>
           <p>«<strong>Премудрый пескарь</strong>» — сатирическая сказка из цикла «Сказки для детей изрядного возраста»
             М.Е. Салтыкова-Щедрина.</p>
         </div>

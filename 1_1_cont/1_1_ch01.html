@@ -28,9 +28,9 @@
 
           <li><a href="../index.html">Аз Фита Ижица</a></li>
 
-          <li onclick="ShowChapters()" style="cursor: pointer;">Главы</li>
+          <li onclick="openModal('chapters')" style="cursor: pointer;">Главы</li>
 
-          <li onclick="showBooks()" style="cursor: pointer;">Книги</li>
+          <li onclick="openModal('books')" style="cursor: pointer;">Книги</li>
 
           <li><a href="../cont_site/books_az.html">о Книгах</a></li>
 
@@ -43,7 +43,7 @@
 <div id="books" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close" onclick="closeBooks()">&times;</span>
+    <span class="close" onclick="closeModal('books')">&times;</span>
     <ul>
       <li class="opened"><strong> I. Прогулка по висячему Мостику</strong></li>
       <li class="indent-opened"><strong><small>1. Золотистый свет</small></strong></li>
@@ -68,7 +68,7 @@
 <div id="chapters" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close" onclick="closeChapters()">&times;</span>
+    <span class="close" onclick="closeModal('chapters')">&times;</span>
     <ul>
       <li class="opened"><strong>1. Сон вне зоны доступа</strong></li>
       <li><a href="./1_1_ch02.html" class="exp">2. Повторный просмотр</a></li>
@@ -344,7 +344,7 @@
         Потом прекрасные порывы любви в душе Николаева напрочь иссякали. Конечно, не обходилось без слез и истерик, но
         Игорю Александровичу удавалось выпутываться с честью.</p>
       <p>С Ирой он познакомился давно, где-то в начале девяностых. Тогда она трудилась в швейной мастерской, а по
-        выходным подрабатывала, рисуя портреты всех желающих в парке <span onclick="openModal(1)" class="exp">Ривьера</span>. В те времена ей было чуть больше двадцати, но она и тогда, да и в
+        выходным подрабатывала, рисуя портреты всех желающих в парке <span onclick="openModal('exp1')" class="exp">Ривьера</span>. В те времена ей было чуть больше двадцати, но она и тогда, да и в
         более ранние годы, не претендовала на
         ангелоподобность, представляя собой полную противоположность идеалам Игоря Александровича.</p>
 
@@ -352,7 +352,7 @@
       <div id="exp1" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(1)">&times;</span>
+          <span class="close" onclick="closeModal('exp1')">&times;</span>
           <p><strong>Ривьера</strong> — парк культуры и отдыха в Центральном районе г. Сочи. Один из самых популярных сочинских парков.</p>
         </div>
       </div>

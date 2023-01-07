@@ -122,6 +122,7 @@ footer {
 
 .exp {
   color: #03584b;
+  cursor: pointer;
 }
 
 .exp:hover {

@@ -28,9 +28,9 @@
 
           <li><a href="../index.html">Аз Фита Ижица</a></li>
 
-          <li onclick="ShowChapters()" style="cursor: pointer;">Главы</li>
+          <li onclick="openModal('chapters')" style="cursor: pointer;">Главы</li>
 
-          <li onclick="showBooks()" style="cursor: pointer;">Книги</li>
+          <li onclick="openModal('books')" style="cursor: pointer;">Книги</li>
 
           <li><a href="../cont_site/books_az.html">о Книгах</a></li>
 
@@ -43,7 +43,7 @@
     <div id="books" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close" onclick="closeBooks()">&times;</span>
+        <span class="close" onclick="closeModal('books')">&times;</span>
         <ul>
           <li class="opened"><strong> I. Прогулка по висячему Мостику</strong></li>
           <li class="indent-opened"><strong><small>1. Золотистый свет</small></strong></li>
@@ -68,7 +68,7 @@
     <div id="chapters" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close" onclick="closeChapters()">&times;</span>
+        <<span class="close" onclick="closeModal('chapters')">&times;</span>
         <ul>
           <li><a href="./1_1_ch01.html" class="exp">1. Сон вне зоны доступа</a></li>
           <li><a href="./1_1_ch02.html" class="exp">2. Повторный просмотр</a></li>
@@ -175,7 +175,7 @@
         догадывался, а Ира предпочла не уточнять, будучи уверенной, что никаких объяснений сверх того, что уже сказано,
         от него не добьется в любом случае.</p>
       <p>Часы показывали всего девять утра. Руки сжимали предложенную Женечкой к ознакомлению книгу, название которой
-        привело Иру в легкое замешательство: <span onclick="openModal(1)" class="exp">«Драконы. Миф и
+        привело Иру в легкое замешательство: <span onclick="openModal('exp1')" class="exp">«Драконы. Миф и
           реальность»</span>. Женечка ничего никогда не делал просто так, но, видимо, в этот раз взял с полки
         первый попавшийся том. Ира открыла книгу, так как делать все равно было нечего. Текст представлял собой
         достаточно серьезный анализ принадлежащих различным культурам мифов, легенд и сказок, посвященных драконам.
@@ -185,7 +185,7 @@
       <div id="exp1" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(1)">&times;</span>
+          <span class="close" onclick="closeModal('exp1')">&times;</span>
           <p>«<strong>Драконы. Миф и реальность</strong>» — автор Валерий Демин</p>
         </div>
       </div>
@@ -246,7 +246,7 @@
       </div>
 
       <p>Прогулявшись по парку, Ира вышла на проспект, перешла через Ривьерский мост, миновала Платановую аллею и на
-        Пролетарском подъеме (Мамонтовом спуске) засела в <span onclick="openModal(2)" class="exp">Аленке</span> с
+        Пролетарском подъеме (Мамонтовом спуске) засела в <span onclick="openModal('exp2')" class="exp">Аленке</span> с
         любимыми пирожными и чаем.
         Потом ее занесло в художественный салон, откуда она выползла груженая под завязку всякой всячиной.</p>
 
@@ -254,7 +254,7 @@
       <div id="exp2" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(2)">&times;</span>
+          <span class="close" onclick="closeModal('exp2')">&times;</span>
           <p><strong>Аленка</strong> — знаменитое кафе-кондитерская на Пролетарском подъеме. Больше не существует.
             Здание снесено в ходе
             реконструкции города.</p>
@@ -302,14 +302,14 @@
       <p>Постепенно в ее сознание стали вплывать странные звуки со стороны входной двери. Она прислушалась… Исполнялась
         грандиозная оратория для смешанного хора и оркестра ударных инструментов. Ира со вздохом отложила палитру и
         пошла открывать.</p>
-      <p>- Слава богу! — прогремел последний аккорд, торжественно исполненный хоровым <span onclick="openModal(3)"
+      <p>- Слава богу! — прогремел последний аккорд, торжественно исполненный хоровым <span onclick="openModal('exp3')"
           class="exp">tutti</span>.</p>
 
       <!-- The Modal -->
       <div id="exp3" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(3)">&times;</span>
+          <span class="close" onclick="closeModal('exp3')">&times;</span>
           <p><strong>tutti</strong> <em>(ит.; муз. термин)</em> — исполнение всем составом оркестра или хора</p>
         </div>
       </div>
@@ -500,7 +500,7 @@
       <p>- Моим детям не довелось стать взрослыми.</p>
       <p>- Извини…</p>
       <p>- Знаешь, меня часто уличают в сверхмерной жёсткости и даже жестокости, а я просто отношусь к ближним, как к
-        себе. <span onclick="openModal(4)" class="exp">Золотое правило морали</span> — единственное не
+        себе. <span onclick="openModal('exp4')" class="exp">Золотое правило морали</span> — единственное не
         мной придуманное правило, которому я неукоснительно следую в отношении близких. Это — единственный стоящий
         якорь. Все остальное — блеф. Но так я отношусь только к действительно своим. В остальном — милая улыбка,
         сладенькое ублажение, лесть и ненужный тебе индивид, до которого тебе нет никакого дела, безвозвратно тонет в
@@ -511,7 +511,7 @@
       <div id="exp4" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(4)">&times;</span>
+          <span class="close" onclick="closeModal('exp4')">&times;</span>
           <p><strong>Золотое правило морали</strong>:<br>
             Поступай с другими так, как хочешь, чтобы поступали с тобой.<br>
             Не поступай с другими так, как не хочешь, чтобы поступали с тобой.</p>

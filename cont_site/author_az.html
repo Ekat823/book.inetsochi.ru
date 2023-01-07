@@ -25,7 +25,7 @@
           <div><img src="../images/azNavbar.png" alt="Аз Фита Ижица" class="imgnav"></div>
           <li><a a href="../index.html">Аз Фита Ижица</a></li>
 
-          <li onclick="showBooks()" style="cursor: pointer;">Книги</li>
+          <li onclick="openModal('books')" style="cursor: pointer;">Книги</li>
 
           <li><a href="./books_az.html">о Книгах</a></li>
 
@@ -40,7 +40,7 @@
     <div id="books" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close" onclick="closeBooks()">&times;</span>
+        <span class="close" onclick="closeModal('books')">&times;</span>
         <ul>
           <li><a href="../1_1_cont/1_1_ch01.html" class="exp"> I. Прогулка по висячему Мостику</a></li>
           <li class="indent"><a href="../1_1_cont/1_1_ch01.html" class="exp"><small>1. Золотистый

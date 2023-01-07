@@ -28,9 +28,9 @@
 
           <li><a href="../index.html">Аз Фита Ижица</a></li>
 
-          <li onclick="ShowChapters()" style="cursor: pointer;">Главы</li>
+          <li onclick="openModal('chapters')" style="cursor: pointer;">Главы</li>
 
-          <li onclick="showBooks()" style="cursor: pointer;">Книги</li>
+          <li onclick="openModal('books')" style="cursor: pointer;">Книги</li>
 
           <li><a href="../cont_site/books_az.html">о Книгах</a></li>
 
@@ -43,7 +43,7 @@
 <div id="books" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close" onclick="closeBooks()">&times;</span>
+    <span class="close" onclick="closeModal('books')">&times;</span>
     <ul>
       <li class="opened"><strong> I. Прогулка по висячему Мостику</strong></li>
       <li class="indent-opened"><strong><small>1. Золотистый свет</small></strong></li>
@@ -68,7 +68,7 @@
 <div id="chapters" class="modal">
   <!-- Modal content -->
   <div class="modal-content">
-    <span class="close" onclick="closeChapters()">&times;</span>
+    <span class="close" onclick="closeModal('chapters')">&times;</span>
     <ul>
       <li><a href="./1_1_ch01.html" class="exp">1. Сон вне зоны доступа</a></li>
       <li><a href="./1_1_ch02.html" class="exp">2. Повторный просмотр</a></li>
@@ -132,7 +132,7 @@
         Правдами-неправдами выбили!</p>
       <p>- Вау! Молодцы́ — мои мо́лодцы! А насчет «свалить» — запросто. У меня сейчас такая загрузка будет, что все
         равно тебе внимания уделить не смогу.</p>
-      <p>- <span onclick="openModal(1)" class="exp">Yes</span>!!! — и Лешка кинулся набирать Влада.</p>
+      <p>- <span onclick="openModal('exp1')" class="exp">Yes</span>!!! — и Лешка кинулся набирать Влада.</p>
       <p>А Ира поняла, что ужасно боится видеть последнего, но что-то глубоко внутри подсказывало ей — встреча не
         состоится, по крайней мере, в ближайшее время.</p>
 
@@ -140,7 +140,7 @@
       <div id="exp1" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(1)">&times;</span>
+          <span class="close" onclick="closeModal('exp1')">&times;</span>
           <p><strong>yes</strong> <em>(англ.)</em> — да</p>
         </div>
       </div>
@@ -188,7 +188,7 @@
                 (Египет)</small></em></small></p>
       </div>
 
-      <p>Ира внимательно смотрела в монитор: «Всё. Оно». Она кликнула <span onclick="openModal(2)"
+      <p>Ира внимательно смотрела в монитор: «Всё. Оно». Она кликнула <span onclick="openModal('exp2')"
           class="exp">Save</span> и в тот же миг раздался звонок в дверь. Всем своим существом не выходя из программы,
         Ира направилась в прихожую и, не задавая лишних вопросов, стала отпирать. Скрежет ключа приветствовало
         громогласное «Ура!», исполненное стройным мужским дуэтом. На пороге стояли Лешка и Влад.</p>
@@ -197,7 +197,7 @@
       <div id="exp2" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(2)">&times;</span>
+          <span class="close" onclick="closeModal('exp2')">&times;</span>
           <p><strong>save</strong> <em>(англ.)</em> — сохранить</p>
         </div>
       </div>
@@ -218,13 +218,13 @@
       <p>- Та-ак… и что это вы задумали, хлопцы, а? — Ира с ехидным подозрением переводила взгляд с одного на другого.
       </p>
       <p>«Хлопцы» заговорщически переглянулись.</p>
-      <p>- Завтра собираем веселую толпу, ты бросаешь все, и чешем в <span onclick="openModal(3)" class="exp">Лоо</span>, в аквапарк.</p>
+      <p>- Завтра собираем веселую толпу, ты бросаешь все, и чешем в <span onclick="openModal('exp3')" class="exp">Лоо</span>, в аквапарк.</p>
 
       <!-- The Modal -->
       <div id="exp3" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(3)">&times;</span>
+          <span class="close" onclick="closeModal('exp3')">&times;</span>
           <p><strong>Лоо</strong> — приморский поселок в Лазаревском районе г. Сочи.</p>
         </div>
       </div>

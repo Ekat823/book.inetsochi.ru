@@ -28,9 +28,9 @@
 
           <li><a href="../index.html">Аз Фита Ижица</a></li>
 
-          <li onclick="ShowChapters()" style="cursor: pointer;">Главы</li>
+          <li onclick="openModal('chapters')" style="cursor: pointer;">Главы</li>
 
-          <li onclick="showBooks()" style="cursor: pointer;">Книги</li>
+          <li onclick="openModal('books')" style="cursor: pointer;">Книги</li>
 
           <li><a href="../cont_site/books_az.html">о Книгах</a></li>
 
@@ -43,7 +43,7 @@
     <div id="books" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close" onclick="closeBooks()">&times;</span>
+        <span class="close" onclick="closeModal('books')">&times;</span>
         <ul>
           <li class="opened"><strong> I. Прогулка по висячему Мостику</strong></li>
           <li class="indent-opened"><strong><small>1. Золотистый свет</small></strong></li>
@@ -68,7 +68,7 @@
     <div id="chapters" class="modal">
       <!-- Modal content -->
       <div class="modal-content">
-        <span class="close" onclick="closeChapters()">&times;</span>
+        <span class="close" onclick="closeModal('chapters')">&times;</span>
         <ul>
           <li><a href="./1_1_ch01.html" class="exp">1. Сон вне зоны доступа</a></li>
           <li><a href="./1_1_ch02.html" class="exp">2. Повторный просмотр</a></li>
@@ -211,13 +211,13 @@
         Ира безумно хотела его и панически боялась того, что это, в конце концов, может действительно произойти. Но
         наедине они не оставались — даже когда Лешка куда-нибудь исчезал, тут же обязательно кто-нибудь заскакивал. Иру
         это злило, но стоило слегка повиснуть легкому намеку на то, что они все же останутся <span
-          onclick="openModal(1)" class="exp">tête-à-tête</span>, как тут же возвращался панический ужас.</p>
+          onclick="openModal('exp1')" class="exp">tête-à-tête</span>, как тут же возвращался панический ужас.</p>
 
       <!-- The Modal -->
       <div id="exp1" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(1)">&times;</span>
+          <span class="close" onclick="closeModal('exp1')">&times;</span>
           <p><strong>tête-à-tête</strong> <em>(фр.)</em> — тет-а-тет, один на один</p>
         </div>
       </div>
@@ -320,7 +320,7 @@
       </div>
 
       <p>Эта энергия вообще не тратится, а лишь накапливается в неимоверных количествах, создавая новые идеи и
-        галактики. Кстати, говоря об идеях, я не имею в виду человеческие <span onclick="openModal(2)"
+        галактики. Кстати, говоря об идеях, я не имею в виду человеческие <span onclick="openModal('exp2')"
           class="exp">know-how</span>. В таких взаимоотношениях нет места верности и ревности, нет места порабощающей
         привязанности. В этом случае, существа принадлежат друг другу, не используя, и не требуя ничего. Подобное соитие
         никогда не приводит к зачатию. Чисто внешне, высшая форма очень похожа на самую низшую, когда постель не
@@ -330,8 +330,8 @@
       <div id="exp2" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(2)">&times;</span>
-          <p><strong>know-how</strong> (англ.) — ноу-хау, владение технологией, умение, знание дела</p>
+          <span class="close" onclick="closeModal('exp2')">&times;</span>
+          <p><strong>know-how</strong> <em>(англ.)</em> — ноу-хау, владение технологией, умение, знание дела</p>
         </div>
       </div>
       <!-- End The Modal -->
@@ -444,15 +444,15 @@
         Пойдемте, я провожу.</p>
       <p>Вместе с Радным в конференц-зале находились его главный инженер и главный дизайнер. Ире стало легче на душе,
         что без спасительного Игоря Александровича, который уехал на праздники к родственникам, все же не придется
-        общаться с Радным <span onclick="openModal(3)" class="exp">tête-à-tête</span>. Идея с
+        общаться с Радным <span onclick="openModal('exp3')" class="exp">tête-à-tête</span>. Идея с
         конференц-залом, в котором они вчетвером уподобились щепкам в океане, Ире тоже понравилась.</p>
 
       <!-- The Modal -->
       <div id="exp3" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(3)">&times;</span>
-          <p><strong>tête-à-tête</strong> (фр.) — тет-а-тет, один на один</p>
+          <span class="close" onclick="closeModal('exp3')">&times;</span>
+          <p><strong>tête-à-tête</strong> <em>(фр.)</em> — тет-а-тет, один на один</p>
         </div>
       </div>
       <!-- End The Modal -->
@@ -494,13 +494,13 @@
         художник, еще и красиво. Собственно, все мои находки представлены в известных вам проектах. С некоторыми
         изменениями, конечно.</p>
       <p>- Интересно было бы взглянуть на интерьер Вашей квартиры.</p>
-      <p>- <span onclick="openModal(4)" class="exp">No problem</span>! Можем поехать ко мне прямо сейчас.</p>
+      <p>- <span onclick="openModal('exp4')" class="exp">No problem</span>! Можем поехать ко мне прямо сейчас.</p>
 
       <!-- The Modal -->
       <div id="exp4" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(4)">&times;</span>
+          <span class="close" onclick="closeModal('exp4')">&times;</span>
           <p><strong>no problem</strong> <em>(англ.)</em> — нет проблем, без проблем, не проблема</p>
         </div>
       </div>
@@ -511,7 +511,7 @@
       <p>После осмотра действующих экспонатов интерьера, сопровождавшегося восторженными возгласами «главных», Ира
         пригласила своих гостей выпить по чашке чая. Радный во время встречи в конференц-зале ограничился лишь
         приветствием, а после так и вовсе молчал, притом совершенно бесстрастно. И вдруг заговорил:</p>
-      <p>- Ира, я купил себе дачку здесь в Сочи на <span onclick="openModal(1)" class="exp">73 километре</span>. Там
+      <p>- Ира, я купил себе дачку здесь в Сочи на <span onclick="openModal('exp5')" class="exp">73 километре</span>. Там
         небольшой участочек и дом. Собственно не дом, а только коробка. Возьмитесь довести его
         до ума. Будет неплохо, если и участочек тоже. Ограничения материальных средств, надеюсь, не стеснят. Думаю, что
         Вы их даже не почувствуете.</p>
@@ -520,7 +520,7 @@
       <div id="exp5" class="modal">
         <!-- Modal content -->
         <div class="modal-content">
-          <span class="close" onclick="closeModal(5)">&times;</span>
+          <span class="close" onclick="closeModal('exp5')">&times;</span>
           <p><strong>73 километр</strong> — приморский дачный поселок на границе Центрального и Лазаревского районов г.
             Сочи, на рубеже ХХ-XXI вв. превратившийся в престижный малоэтажный жилой микрорайон.</p>
         </div>
