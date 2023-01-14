@@ -1324,9 +1324,9 @@ var dictionary = `
   </div>
 </div>
 
-<div id="уerFull" class="modal">
+<div id="yerFull" class="modal">
   <div class="modal-content">
-    <span class="close" onclick="closeModal('уerFull')">&times;</span>
+    <span class="close" onclick="closeModal('yerFull')">&times;</span>
     <p><strong>Ъ — ЕР, Ы — ЕРЫ, Ь — ЕРЬ</strong> — Несложно догадаться, что все три символа являются
       однокоренными. Пустота, вместилище, пространство; а также — вакуум; а так же — опустошать, избавляться, очищать.
       ЕРЫ — ЕРЬ + И — Пустое пространство, вместилище, объединяющееся с чем-либо, готовое к единению, к приятию в себя,
