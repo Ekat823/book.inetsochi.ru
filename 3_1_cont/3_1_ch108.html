@@ -1,0 +1,175 @@
+<!DOCTYpE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta hsmallp-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../book.css">
+  <script src="../book.js"></script>
+  <link rel="shortcut icon" href="../images/favicon.gif" type="image/gif">
+  <title>Два мира</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="dictionary"></div>
+
+    <!--navbar-->
+
+    <nav class="navbar">
+      <div><img src="../images/azNavbar.png" alt="Аз Фита Ижица" class="imgnav-mobile"></div>
+      <ul class="nav-links">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+
+          <div><img src="../images/azNavbar.png" alt="Аз Фита Ижица" class="imgnav"></div>
+
+          <li><a href="../index.html">Аз Фита Ижица</a></li>
+
+          <li onclick="openModal('chapters')" style="cursor: pointer;">Главы</li>
+
+          <li onclick="openModal('books')" style="cursor: pointer;">Книги</li>
+
+          <li><a href="../cont_site/books_az.html">о Книгах</a></li>
+
+          <li><a href="../cont_site/author_az.html">об Авторе</a></li>
+        </div>
+      </ul>
+    </nav>
+
+    <!-- The Modal Books-->
+    <div id="books" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('books')">&times;</span>
+        <ul>
+          <li>I. Прогулка по висячему Мостику</li>
+          <li class="indent"><a href="../1_1_cont/1_1_ch01.html" class="exp"><small>1. Золотистый свет</small></a></li>
+          <li class="indent"><a href="../1_2_cont/1_2_ch20.html" class="exp"><small>2. Сила расталкивания</small></a></li>
+          <li class="indent"><a href="../1_3_cont/1_3_ch33.html" class="exp"><small>3. Точка выбора</small></a></li>
+
+          <li>II. Хаос в калейдоскопе</li>
+          <li class="indent"><a href="../2_1_cont/2_1_ch53.html" class="exp"><small>4. Чудовищный розыгрыш</small></a></li>
+          <li class="indent"><a href="../2_2_cont/2_2_ch69.html" class="exp"><small>5. Крышень без компании</small></a></li>
+          <li class="indent"><a href="../2_3_cont/2_3_ch084.html" class="exp"><small>6. Иллюзия и Реальность</small></a></li>
+
+
+          <li class="opened"><strong>III. Остров бродячих собак</strong></li>
+          <li class="indent-opened"><strong><small>7. Хранитель чистого искусства</small></strong></li>
+          <li class="indent"><a href="../3_2_cont/3_2_ch120.html" class="exp"><small>8. Третий элемент</small></a></li>
+          <li class="indent"><a href="../3_3_cont/3_3_ch137.html" class="exp"><small>9. Удивительный и ошеломительный</small></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End The Modal Books-->
+
+    <!-- The Modal Chapters-->
+    <div id="chapters" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('chapters')">&times;</span>
+        <ul>
+          <li><a href="./3_1_ch102.html" class="exp">102. Без жертв и компромиссов</a></li>
+          <li><a href="./3_1_ch103.html" class="exp">103. Сокровенные желания</a></li>
+          <li><a href="./3_1_ch104.html" class="exp">104. СУГУБО ЛИЧНОЕ</a></li>
+          <li><a href="./3_1_ch105.html" class="exp">105. Соответствие ХОЧУ</a></li>
+          <li><a href="./3_1_ch106.html" class="exp">106. Человеческие слабости</a></li>
+          <li><a href="./3_1_ch107.html" class="exp">107. НЕ ТАК, как сказали</a></li>
+          <li class="opened"><strong>108. Два мира</strong></li>
+          <li><a href="./3_1_ch109.html" class="exp">109. Двоичность и двойственность</a></li>
+          <li><a href="./3_1_ch110.html" class="exp">110. Филиал рая</a></li>
+          <li><a href="./3_1_ch111.html" class="exp">111. Загадочное нечто</a></li>
+          <li><a href="./3_1_ch112.html" class="exp">112. Язык программирования настроений</a></li>
+          <li><a href="./3_1_ch113.html" class="exp">113. Чистое искусство</a></li>
+          <li><a href="./3_1_ch114.html" class="exp">114. Смена средств</a></li>
+          <li><a href="./3_1_ch115.html" class="exp">115. Сопереживание</a></li>
+          <li><a href="./3_1_ch116.html" class="exp">116. Разновидности понимания</a></li>
+          <li><a href="./3_1_ch117.html" class="exp">117. Сила «ИКС»</a></li>
+          <li><a href="./3_1_ch118.html" class="exp">118. Состояние тотального влияния</a></li>
+          <li><a href="./3_1_ch119.html" class="exp">119. Один ответ на все вопросы</a></li>
+          <li><a href="../cont/encl_1.html" class="exp"><small>Приложение 1. Славянская Азбука</small></a></li>
+          <li><a href="../cont/encl_2.html" class="exp"><small>Приложение 2. 43 энергии Бытия</small></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End The Modal  Chapters-->
+
+    <!--HEADER IMAGE-->
+
+    <div>
+      <img src="../images/asCoverNar.jpg" alt="Аз Фита Ижица" class="img-cover-nar">
+      <img src="../images/asCoverNarSmall.jpg" alt="Аз Фита Ижица" class="img-cover-nar-small">
+    </div>
+
+    <!--CHApTER-->
+
+    <div class="card">
+
+      <!--Title-->
+      <p style="text-align: center;">Екатерина Трубицина</p>
+      <p style="text-align: center;"><img src="../images/azNavbar.png" alt="Аз Фита Ижица" class="imgtitle"></p>
+      <p style="text-align: center; line-height: 0.7rem;">Часть III</p>
+      <h1 style="margin-top: 0.5rem;">Остров бродячих собак</h1>
+      <p style="text-align: center; line-height: 0.7rem;">Книга 7</p>
+      <h2 class="book">Хранитель чистого искусства</h2>
+      <p style="text-align: center; line-height: 0.7rem;"><small><em>(главы 102-119)</em></small></p>
+      <!--End Of Title-->
+
+      <hr class="line">
+
+      <h3 style="align-items: center;"><small>Глава 108</small> <br><strong>Два мира</strong></h3>
+
+      
+
+      <p style="text-align: center;"><a class="next-chapter" href="./3_1_ch109.html">Глава 109. Двоичность и двойственность</a></p>
+
+    </div>
+
+    <!--Footer-->
+    <footer>
+      <a href="#"><button class="button">&#8593; ВВЕРХ &#8593;</button></a>
+      <p style="font-size: 0.9rem;">&#169; 2014 Екатерина Трубицина</p>
+    </footer>
+
+  </div>
+
+  </div>
+
+
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (d, w, c) {
+      (w[c] = w[c] || []).push(function () {
+        try {
+          w.yaCounter12928414 = new Ya.Metrika({
+            id: 12928414,
+            clickmap: true,
+            trackLinks: true
+          });
+        } catch (e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = (d.location.protocol == "hsmallps:" ? "hsmallps:" : "hsmallp:") + "//mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript>
+    <div><img src="//mc.yandex.ru/watch/12928414" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+
+</body>
+
+</html>
