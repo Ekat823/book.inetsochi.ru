@@ -427,68 +427,176 @@
       </div>
 
       <p>В какой-то момент под аккомпанемент контрабаса и ударных к ней подошел Блэйз.</p>
-      <p>- <span onMouseOver="toolTip('- Можно, я гляну? — спросил он, показывая на листки.')"
-          onMouseOut="toolTip()">*May I take a look? — спросил он, показывая на листки.*</span></p>
 
-      <p>- <span onMouseOver="toolTip('- Можно. — ответила Ира.')" onMouseOut="toolTip()">*You may, — ответила
-          Ира.*</span></p>
+      <p>- <span onclick="openModal('exp13')" class="exp">May I take a look? — спросил он, показывая на листки.</span>
+      </p>
 
-      <p>- <span onMouseOver="toolTip('- Вау! Ты говоришь по-английски!')" onMouseOut="toolTip()">*Wow! You speak
-          English!*</span></p>
+      <!-- The Modal -->
+      <div id="exp13" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp13')">&times;</span>
+          <p>- Можно глянуть? — спросил он, показывая на листки.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
 
-      <p>- <span onMouseOver="toolTip('- Очень плохо.')" onMouseOut="toolTip()">*Very bad.*</span></p>
-      <p>- <span onMouseOver="toolTip('- Неважно! Пожалуйста, дай мне это.')" onMouseOut="toolTip()">*Doesn't matter!
-          Please, give it to me.*</span></p>
+      <p>- <span onclick="openModal('exp14')" class="exp">Yes, — ответила Ира.</span></p>
 
-      <p>Ира протянула ему листок, на котором только что рисовала. Он долго рассматривал его с непонятным для Иры
-        выражением лица.</p>
+      <!-- The Modal -->
+      <div id="exp14" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp14')">&times;</span>
+          <p>- Да. — ответила Ира.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
 
-      <p>- <span
-          onMouseOver="toolTip('- А те, которые там? — Блэйз указал на листки внизу стопки. — Покажи мне их тоже.')"
-          onMouseOut="toolTip()">*And those underneath? — Блэйз указал на листки внизу стопки. — Show them to me,
-          too.*</span></p>
+      <p>- <span onclick="openModal('exp15')" class="exp">Wow! You speak English!</span></p>
 
-      <p>- <span
-          onMouseOver="toolTip('- Как ты… — Ира пыталась подобрать английские слова, чтобы спросить, как он мог видеть, что она складывает изрисованные листки вниз стопки, если он все это время сидел за роялем спиною к ней.')"
-          onMouseOut="toolTip()">*How do you… — Ира пыталась подобрать английские слова, чтобы спросить, как он мог
-          видеть, что она складывает изрисованные листки вниз стопки, если он все это время сидел за роялем спиною к
-          ней.*</span></p>
+      <!-- The Modal -->
+      <div id="exp15" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp15')">&times;</span>
+          <p>- Вау! Ты говоришь по-английски!</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp16')" class="exp">Very bad.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp16" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp16')">&times;</span>
+          <p>- Очень плохо.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp17')" class="exp">Doesn’t matter! Please, give it to me, — Блэйз указал на
+          листок в ее руках.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp17" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp17')">&times;</span>
+          <p>- Неважно! Пожалуйста, дай-ка его сюда, — Блэйз указал на листок в ее руках.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>Ира протянула. Он долго рассматривал рисунок с непонятным для Иры выражением лица.</p>
+
+      <p>- <span onclick="openModal('exp18')" class="exp">And those underneath? — Блэйз указал на листки внизу стопки. —
+          Show them to me,
+          too.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp18" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp18')">&times;</span>
+          <p>- А те, которые снизу? — Блэйз указал на листки внизу стопки. — Их тоже покажи.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp19')" class="exp">How do you…</span> — Ира пыталась подобрать английские
+        слова, чтобы спросить, как он мог видеть, что она складывает изрисованные листки вниз стопки, если он все это
+        время сидел за роялем спиною к ней.</p>
+
+      <!-- The Modal -->
+      <div id="exp19" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp19')">&times;</span>
+          <p>- Как ты…</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
 
       <p>Когда Блэйз, в конце концов, понял, что ей нужно, он расхохотался и ответил, подкрепляя слова жестами:</p>
-      <p>- <span onMouseOver="toolTip('- У меня есть дополнительная пара глаз на затылке.')" onMouseOut="toolTip()">*I
-          have an extra pair of eyes on the back of my head.*</span></p>
+      <p>- <span onclick="openModal('exp20')" class="exp">I have an extra pair of eyes on my hindhead.</span></p>
 
-      <p>Ира улыбнулась и протянула ему листки.</p>
+      <!-- The Modal -->
+      <div id="exp20" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp20')">&times;</span>
+          <p>- У меня есть дополнительная пара глаз на затылке.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
 
-      <p>- <span onMouseOver="toolTip('- Этот первый? — уточнил Блэйз.')" onMouseOut="toolTip()">*Is this the first
-          one?
-          — уточнил Блэйз.*</span></p>
+      <p>Ира улыбнулась и дала ему листки.</p>
 
-      <p>- <span onMouseOver="toolTip('- Да. — подтвердила Ира.')" onMouseOut="toolTip()">*Yes, — подтвердила
-          Ира.*</span></p>
+      <p>- <span onclick="openModal('exp21')" class="exp">Is this the first one? — уточнил Блэйз.</span></p>
 
-      <p>Блэйз медленно просмотрел их все по порядку, вернул Ире и вновь уставился на вышедший из-под Ириного
-        карандаша
+      <!-- The Modal -->
+      <div id="exp21" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp21')">&times;</span>
+          <p>- Этот первый? — уточнил Блэйз.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp22')" class="exp">Yes, — подтвердила Ира.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp22" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp22')">&times;</span>
+          <p>- Да. — подтвердила Ира.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>Блэйз медленно просмотрел их все по порядку, вернул Ире и вновь уставился на вышедший из-под Ириного карандаша
         последним.</p>
 
-      <p>- <span
-          onMouseOver="toolTip('- Я знаю, что тебе нужно сейчас! — заявил он в итоге, отдал Ире листок и, пританцовывая в ритм, помчался обратно. — Стоп! Прекратите это! — завопил он, запрыгнув на сцену. — Слушайте! — потребовал он, взял саксофон и очень медленно заиграл практически случайный набор звуков разной длительности даже без намека на метр.')"
-          onMouseOut="toolTip()">*I know what you need now! — заявил он в итоге, отдал Ире листок и, пританцовывая в
-          ритм, помчался обратно. — Stop! Stop this! — завопил он, запрыгнув на сцену. — Listen! — потребовал он, взял
-          саксофон и очень медленно заиграл практически случайный набор звуков разной длительности даже без намека на
-          метр.*</span></p>
-          
+      <p>- <span onclick="openModal('exp23')" class="exp">I know what you need! — заявил он в итоге, отдал Ире рисунки
+          и, пританцовывая в ритм, помчался обратно. — Stop! — завопил он, запрыгнув на сцену. — Listen! — потребовал
+          он, взял саксофон и очень медленно заиграл практически случайный набор звуков разной длительности даже без
+          намека на ритм.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp23" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp23')">&times;</span>
+          <p>- Я знаю, что тебе нужно! — заявил он в итоге, отдал Ире рисунки и, пританцовывая в ритм, помчался обратно.
+            — Стоп! — завопил он, запрыгнув на сцену. — Слушайте! — потребовал он, взял саксофон и очень медленно
+            заиграл практически случайный набор звуков разной длительности даже без намека на ритм.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Первым к околдовывающему отсутствию мелодии присоединился Брэд, а затем — Терри. Причем Терри даже не пытался
-        загнать атональную аритмичность в рамки <span
-          title="метр (муз. термин) — способ организации музыкального ритма, равномерное чередования сильных и слабых долей в такте">*метра*</span>.
+        загнать атональную аритмичность в рамки <span onclick="openModal('exp24')" class="exp">метра</span>.
         Чуть погодя после включения Терри на сцене появился еще один музыкант. Поскольку вчера его не было, Ира
         догадалась, что это — Римус. Он немного послушал, скрылся за кулисами, вернулся со скрипкой и влился в
-        звуковую
-        ткань, в которой не было ни мелодии, ни гармонии, ни ритма, ни метра, ни даже определенного темпа. И все же
-        это
-        была музыка. Музыка невероятная, немыслимая, ни на что не похожая, но зачаровывающая, ошеломляющая,
-        переводящая
-        в совершенно иную плоскость мироощущение в целом.</p>
+        звуковую ткань, в которой не было ни мелодии, ни гармонии, ни ритма, ни метра, ни даже определенного темпа. И
+        все же это была музыка. Музыка невероятная, немыслимая, ни на что не похожая, но зачаровывающая, ошеломляющая,
+        переводящая в совершенно иную плоскость мироощущение в целом.</p>
+
+      <!-- The Modal -->
+      <div id="exp24" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp24')">&times;</span>
+          <p><strong>метр</strong> <em>(муз. термин)</em> — способ организации музыкального ритма, равномерное
+            чередования сильных и слабых долей в такте</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
 
       <div class="card-art">
         <img src="./3_1_img_art/3_1_115_04_aydan_ugur_unal_charming.jpg" class="img"
@@ -504,24 +612,87 @@
         обратной стороне. Периодически подходил Блэйз полюбопытствовать, что она рисует. Он ей что-то рассказывал,
         совершенно не заботясь о том, что она не понимает его.</p>
       <p>Появление Стаса Ира констатировала благодаря воплю Блэйза:</p>
-      <p>- <span onMouseOver="toolTip('- Стас! Иди сюда!')" onMouseOut="toolTip()">*Stas! Come here!*</span></p>
-      <p>- <span onMouseOver="toolTip('- Извини, но у нас не так много времени. Нам надо бы идти.')"
-          onMouseOut="toolTip()">*Sorry, but we don't have much time. We should go.*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- Ерунда! Стас! Она невероятная! Так что, ты должен! Тебе придется! У тебя нет выбора! Так что, иди сюда!')"
-          onMouseOut="toolTip()">*Nonsense! Stas! She's incredible! So, you must! You have to! You have no choice! So,
-          come here!*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- Ладно! Но только одну композицию, хорошо? — усмехнулся Стас и поднялся на сцену.')"
-          onMouseOut="toolTip()">*Well! But one composition only, okay? — усмехнулся Стас и поднялся на сцену.*</span>
+
+      <p>- <span onclick="openModal('exp25')" class="exp">Stas! Come here!</span></p>
+
+      <!-- The Modal -->
+      <div id="exp25" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp25')">&times;</span>
+          <p>- Стас! Иди сюда!</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp26')" class="exp">Sorry, there is no time. We have to go.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp26" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp26')">&times;</span>
+          <p>- Извини, нет времени. Нам надо идти.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp27')" class="exp">Nonsense! Stas! She’s incredible! So, you have to! Come
+          here!</span></p>
+
+      <!-- The Modal -->
+      <div id="exp27" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp27')">&times;</span>
+          <p>- Чушь! Стас! Она невероятная! Так что тебе придется! Иди сюда!</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp28')" class="exp">Very well! But one composition only, okay? — Стас усмехнулся и
+          поднялся на сцену.</span>
       </p>
-      <p>- <span onMouseOver="toolTip('- Хорошо! — согласился Блэйз.')" onMouseOut="toolTip()">*Okay! — согласился
-          Блэйз.*</span></p>
+
+      <!-- The Modal -->
+      <div id="exp28" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp28')">&times;</span>
+          <p>- Ладно! Но только одну композицию, хорошо? — Стас усмехнулся и поднялся на сцену.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp29')" class="exp">Okay! — согласился Блэйз.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp29" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp29')">&times;</span>
+          <p>- Хорошо! — согласился Блэйз.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Ира окинула взглядом зал. Он был абсолютно пуст. Блэйз освободил Стасу место за роялем, а сам взял кларнет и
         заиграл практически случайный набор звуков разной длительности даже без намека на метр. Стас глянул на него
         слегка озадаченно.</p>
-      <p>- <span onMouseOver="toolTip('- Попробуй! — крикнул ему Блэйз, на секунду оторвавшись от кларнета.')"
-          onMouseOut="toolTip()">*Try this! — крикнул ему Блэйз, на секунду оторвавшись от кларнета.*</span></p>
+
+      <p>- <span onclick="openModal('exp30')" class="exp">Try this! — крикнул ему Блэйз, на секунду оторвавшись от
+          кларнета.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp30" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp30')">&times;</span>
+          <p>- Попробуй! — крикнул ему Блэйз, на секунду оторвавшись от кларнета.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Стас усмехнулся и взял пару аккордов. Явно продуманно, но затем полностью отдался на волю непредсказуемости
         отсутствия мелодии, гармонии, ритма, метра и темпа. «Странно, но ведь это — не какофония!», — поймала Ира себя
         на мысли и стала с удвоенной силой ловить то, что придает стройность, полному отсутствию таковой по всем
@@ -534,54 +705,177 @@
                 (США)</small></em></small></p>
       </div>
 
-      <p>- <span onMouseOver="toolTip('- Ты — отпадный парень, Стас! Очень немногие могут играть со мной такие вещи!')"
-          onMouseOut="toolTip()">*You're bloody lad, Stas! Very few can play such things with me!*</span></p>
-      <p>- <span onMouseOver="toolTip('- Но они-то могут!')" onMouseOut="toolTip()">*But they can!*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- Конечно, они могут! Именно поэтому они и играют со мной, и на самом деле, они и есть те немногие, кто действительно может. Никогда не представлял, что ты тоже способен.')"
-          onMouseOut="toolTip()">*Of course, they can! That's why they play with me. They're those few who can. Never
-          thought you could do this.*</span></p>
-      <p>- <span onMouseOver="toolTip('- В таком случае, почему ты втянул меня в это?')" onMouseOut="toolTip()">*Then
-          why make me do this?*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- Это была просто случайная идея. Почти инстинктивная. Если бы я увидел, что ты не можешь, конечно же, я бы сменил стиль. Но оказалось, что ты можешь, отпадный парень!')"
-          onMouseOut="toolTip()">*It was just an accidental idea. Almost instinctive one. Had I seen that you
-          couldn't,
-          of course, I would've changed the style. But you can! Bloody lad!*</span></p>
-      <p>- <span onMouseOver="toolTip('- Ладно! Спасибо! Однако нам надо бы идти теперь.')"
-          onMouseOut="toolTip()">*Well! Thank you! However, we should go now.*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- Хорошо! Завтра мы с Брэдом будем заняты, но здесь будут Римус, Терри и Джастин. Позволь ей прийти. Она — действительно невероятная!')"
-          onMouseOut="toolTip()">*Well! Tomorrow, Brad and I will be busy, but Remus, Terry and Justin will be here.
-          Let
-          her come. She's really incredible!*</span></p>
-      <p>- <span onMouseOver="toolTip('- Да, она такая, — улыбнулся Стас.')" onMouseOut="toolTip()">*She is, —
-          улыбнулся
-          Стас.*</span></p>
+      <p>- <span onclick="openModal('exp31')" class="exp">Son of a bitch! Very few can play such things with me!</span>
+      </p>
+
+      <!-- The Modal -->
+      <div id="exp31" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp31')">&times;</span>
+          <p>- Сукин сын! Очень немногие могут играть со мной такие вещи!</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp32')" class="exp">But they can! — Стас кивнул на Терри и Брэда.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp32" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp32')">&times;</span>
+          <p>- Но они-то могут! — Стас кивнул на Терри и Брэда.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp33')" class="exp">Of course they can! That’s why they play with me. They’re
+          those few. Never thought you could do that.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp33" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp33')">&times;</span>
+          <p>- Конечно, они могут! Именно поэтому они и играют со мной. Они и есть те немногие. Никогда не
+            думал, что ты можешь.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp34')" class="exp">Then why make me?</span></p>
+
+      <!-- The Modal -->
+      <div id="exp34" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp34')">&times;</span>
+          <p>- В таком случае, зачем меня заставлять?</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp35')" class="exp">It was a spontaneous idea. Almost an instinctive one. Had I
+          seen you couldn’t, I would’ve changed the style. But you can! Son of a bitch!</span></p>
+
+      <!-- The Modal -->
+      <div id="exp35" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp35')">&times;</span>
+          <p>- Это была спонтанная идея. Почти инстинктивная. Если бы я увидел, что ты не можешь, я бы сменил стиль. Но
+            оказалось, что ты можешь! Сукин сын!</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp36')" class="exp">Well! I’m glad I didn’t disappoint you! However, it’s time for
+          us to go.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp36" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp36')">&times;</span>
+          <p>- Ладно! Рад, что не разочаровал тебя! Однако нам пора уходить.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp37')" class="exp">Well! Tomorrow, Brad and I will be busy, but Remus, Terry, and
+          Justin will be here. Let her come. She’s really incredible!</span></p>
+
+      <!-- The Modal -->
+      <div id="exp37" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp37')">&times;</span>
+          <p>- Хорошо! Завтра мы с Брэдом будем заняты, но здесь будут Римус, Терри и Джастин. Позволь ей прийти. Она —
+            действительно невероятная!</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp38')" class="exp">She is, — улыбнулся Стас.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp38" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp38')">&times;</span>
+          <p>- Да, она такая, — улыбнулся Стас.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Блэйз усмехнулся и подошел к Ире:</p>
-      <p>- <span
-          onMouseOver="toolTip('- Позволь дать тебе один совет. Оставь их здесь, — он указал на стопку листков в Ириных руках. — Я покажу тебе, где. Ты прекрасно знаешь, почему я тебе это предлагаю, не так ли? — Блэйз пару секунд с улыбкой вопросительно смотрел на Иру, а затем повернулся к Стасу. — Пожалуйста, переведи ей то, что я сказал. Дословно!')"
-          onMouseOut="toolTip()">*Let me give you a piece of advice. Leave them here, — он указал на стопку листков в
-          Ириных руках. — I’ll show you where. You know why, don’t you? — Блэйз пару секунд с улыбкой вопросительно
-          смотрел на Иру, а затем повернулся к Стасу. — Please, translate to her what I said. Literally!*</span></p>
+
+      <p>- <span onclick="openModal('exp39')" class="exp">Let me give you a piece of advice. Leave it here, — он указал
+          на стопку листков в Ириных руках. — I’ll show you where. You know why, don’t you? — Блэйз пару секунд с
+          улыбкой вопросительно смотрел на Иру, а затем повернулся к Стасу. — Please translate to her what I said.
+          Literally!</span></p>
+
+      <!-- The Modal -->
+      <div id="exp39" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp39')">&times;</span>
+          <p>- Позволь дать тебе один совет. Оставь всё здесь, — он указал на стопку листков в Ириных руках. — Я покажу
+            тебе, где. Ты прекрасно знаешь, почему я тебе это предлагаю, не так ли? — Блэйз пару секунд с улыбкой
+            вопросительно смотрел на Иру, а затем повернулся к Стасу. — Пожалуйста, переведи ей то, что я сказал.
+            Дословно!</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>- Блэйз попросил перевести тебе дословно, то, что он сказал. Так что, перевожу дословно: «Позволь дать тебе
         один совет. Оставь их здесь. Я покажу тебе, где. Ты прекрасно знаешь, почему я тебе это предлагаю, не так ли?»
       </p>
       <p>Ира усмехнулась:</p>
       <p>- Мне приходила такая мысль в голову.</p>
       <p>Блэйз вопросительно посмотрел на Стаса.</p>
-      <p>- <span onMouseOver="toolTip('- Она сказала, что уже думала об этом.')" onMouseOut="toolTip()">*She said
-          she'd
-          already thought about that.*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- Замечательно! — воскликнул Блэйз и, махнув Ире и Стасу, направился к сцене. — Следуйте за мной!')"
-          onMouseOut="toolTip()">*Good! — воскликнул Блэйз и, махнув Ире и Стасу, направился к сцене. — Follow
-          me!*</span></p>
-      <p>Блэйз провел их через сцену в одно из подсобных помещений, вдоль стен которого стояли шкафы. Вытащив из
-        кармана
+
+      <p>- <span onclick="openModal('exp40')" class="exp">She said she’d already thought about it.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp40" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp40')">&times;</span>
+          <p>- Она сказала, что уже думала об этом.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp41')" class="exp">Good! — воскликнул Блэйз и, махнув Ире и Стасу, направился к
+          сцене. — Follow me!</span></p>
+
+      <!-- The Modal -->
+      <div id="exp41" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp41')">&times;</span>
+          <p>- Замечательно! — воскликнул Блэйз и, махнув Ире и Стасу, направился к сцене. — Идите за мной!</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>Блэйз провел их через сцену в одно из подсобных помещений, вдоль стен которого стояли шкафы. Вытащив из кармана
         маленький ключик, он открыл один из них и без разбору выкинул все его содержимое на пол.</p>
-      <p>- <span onMouseOver="toolTip('- Вот, — указал он внутрь.')" onMouseOut="toolTip()">*Here, — указал он
-          внутрь.*</span></p>
+
+      <p>- <span onclick="openModal('exp42')" class="exp">Here, — указал он внутрь.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp42" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp42')">&times;</span>
+          <p>- Вот, — указал он внутрь.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Ира положила на одну из полок стопку листков.</p>
       <p>- Дощечку тоже оставляй, — с улыбкой посоветовал Стас.</p>
       <p>- Да, кстати, — согласилась Ира и сунула ее туда же.</p>
@@ -925,18 +1219,18 @@
         для искоренения, скажем, преступности, а для внедрения и закрепления пяти установок — страдание, сострадание,
         чувство вины, чувство долга и чувство привязанности — которые обеспечивают встройку индивида в социум.</p>
       <p>Однако в момент самого наказания происходит массовый обрыв нитей. В подавляющем большинстве случаев, такой
-        массовый обрыв затрагивает все уровни, которыми пользуется социум. Обрыв на уровнях <a
-          href="../cont/encl_1.html#026" target="_blank" title="см. Приложение 1. Славянская Азбука">ОТ, ЦЫ, ЧЕРВЬ, ША
-          и
-          ЩА</a> обеспечивает сама суть ситуации наказания и элементы сексуального возбуждения, которые, как правило,
-        сопровождают наказание — что, собственно, и породило такое явление как садомазохизм. Так вот, в момент
-        наказания
-        как приговоренный, так и палач, как правило, оказываются полностью отключенными от внешнего мира на уровнях,
-        которыми пользуется социум. И если в этот момент избавиться от влияния созданной Времени иллюзии связи
-        Прошлого
-        с Будущим и воспользоваться СЕЙЧАС, у тебя автоматически появляется возможность как-либо использовать
-        отключение
-        от социума и свободу от его установок.</p>
+        массовый обрыв затрагивает все уровни, которыми пользуется социум. Обрыв на уровнях
+        <span onclick="openModal('otFull')" class="colortext3">ОТ</span>,
+        <span onclick="openModal('tsyFull')" class="colortext3">ЦЫ</span>,
+        <span onclick="openModal('chervFull')" class="colortext3">ЧЕРВЬ</span>,
+        <span onclick="openModal('shaFull')" class="colortext3">ША</span> и
+        <span onclick="openModal('shchaFull')" class="colortext3">ЩА</span></a> обеспечивает сама суть ситуации наказания и
+        элементы сексуального возбуждения, которые, как правило, сопровождают наказание — что, собственно, и породило
+        такое явление как садомазохизм. Так вот, в момент наказания как приговоренный, так и палач, как правило,
+        оказываются полностью отключенными от внешнего мира на уровнях, которыми пользуется социум. И если в этот момент
+        избавиться от влияния созданной Времени иллюзии связи Прошлого с Будущим и воспользоваться СЕЙЧАС, у тебя
+        автоматически появляется возможность как-либо использовать отключение от социума и свободу от его установок.
+      </p>
 
       <div class="card-art">
         <img src="./3_1_img_art/3_1_115_13_muriel_massin_use_now.jpg" class="img"
@@ -1065,10 +1359,14 @@
       <p>- Подожди, это получается что палачу, чтобы избежать воздействия этого занятия, нужно заглядывать в СУГУБО
         ЛИЧНОЕ приговоренного?</p>
       <p>- Нет. СУГУБО ЛИЧНОЕ, образно говоря, спрятано гораздо глубже. На уровне энергий, которые только внутри, то
-        есть *АЗ, *ФИТА, *ИЖИЦА, *Ю, *Я. Это же
-        — уровень зеркальных энергий. Понятно примерно? Просто, точнее не объяснишь. По крайней мере, в данный момент,
-        я
-        не знаю, как.</p>
+        есть
+        <span onclick="openModal('azFull')" class="colortext1">АЗ</span>,
+        <span onclick="openModal('thitaFull')" class="colortext1">ФИТА</span>,
+        <span onclick="openModal('izhitsaFull')" class="colortext1">ИЖИЦА</span>,
+        <span onclick="openModal('yuFull')" class="colortext1">Ю</span>,
+        <span onclick="openModal('yaFull')" class="colortext1">Я</span>. Это же — уровень зеркальных энергий. Понятно
+        примерно? Просто, точнее не объяснишь. По крайней мере, в данный момент, я не знаю, как.
+      </p>
       <p>- Понятно. И даже, думаю, не примерно. Единственное, я не сказала бы, что решение проблемы палача как-либо
         отражается в реалиях внешнего мира, доступного человеческому восприятию.</p>
       <p>- Согласен, что не отражается. Видишь ли, во-первых, я тебе уже говорил, что успехи здесь — это не показатели
