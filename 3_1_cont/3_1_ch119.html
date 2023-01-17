@@ -132,69 +132,278 @@
         подкреплялись еще более непристойными ужимками, во всей красе иллюстрирующими то, что здесь может случиться с
         Ирой в отсутствии Стаса. Едва Стас скрылся за дверью, манера поведения Блэйза, как всегда, резко поменялась. Он
         подошел к Ире и спросил:</p>
-      <p>- <span onMouseOver="toolTip('- У тебя уже есть графическая концепция?')" onMouseOut="toolTip()">*Have you
-          already done your graphic concept?*</span></p>
-      <p>- <span onMouseOver="toolTip('- Нет еще.')" onMouseOut="toolTip()">*Not yet.*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- Неужели! — изображая удивление, улыбнулся Блэйз. — Я думаю, есть. Ты просто боишься, что если ты признаешь это, тебе придется изменить свой образ жизни, который тебе так нравится. Разве я не прав?')"
-          onMouseOut="toolTip()">*Come on! — изображая удивление, улыбнулся Блэйз. — I think you have. You're afraid
-          that if you admit it, you'll have to change your lifestyle, which you like so much. Am I not right?*</span>
+      <p>- <span onclick="openModal('exp1')" class="exp">So? Is the graphic concept ready?</span></p>
+
+      <!-- The Modal -->
+      <div id="exp1" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp1')">&times;</span>
+          <p>- Ну что? Графическая концепция готова?</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp2')" class="exp">Not yet.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp2" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp2')">&times;</span>
+          <p>- Еще нет.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp3')" class="exp">Come on! — изображая удивление, улыбнулся Блэйз. — I’m sure
+          it’s ready. You’re afraid if you admit it, you’ll have to change the lifestyle you like so much. Am I not
+          right?</span>
       </p>
-      <p>- <span onMouseOver="toolTip('- Возможно, ты прав, но не полностью.')" onMouseOut="toolTip()">*Perhaps, you are
-          right but not entirely.*</span></p>
-      <p>- <span onMouseOver="toolTip('- Почему?')" onMouseOut="toolTip()">*Why?*</span></p>
-      <p>- <span onMouseOver="toolTip('- Я все еще не в состоянии… понять некоторые вещи.')" onMouseOut="toolTip()">*I'm
-          still unable to… to understand some things.*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- Только некоторые? — Блэйз буквально покатился со смеху. — Ты действительно хочешь сказать, что ты понимаешь всё остальное?')"
-          onMouseOut="toolTip()">*Only some? — Блэйз буквально покатился со смеху. — Do you really want to say that you
-          understand all the rest?*</span></p>
+
+      <!-- The Modal -->
+      <div id="exp3" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp3')">&times;</span>
+          <p>- Да ладно! — изображая удивление, улыбнулся Блэйз. — Я уверен, что готова. Ты боишься, что если ты
+            признаешь это, тебе придется изменить свой образ жизни, который тебе так нравится. Разве я не прав?</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp4')" class="exp">Perhaps you’re right, but not entirely.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp4" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp4')">&times;</span>
+          <p>- Возможно, ты прав, но не полностью.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp5')" class="exp">Why?</span></p>
+
+      <!-- The Modal -->
+      <div id="exp5" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp5')">&times;</span>
+          <p>- Почему?</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp6')" class="exp">I’m still unable to… to understand some things.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp6" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp6')">&times;</span>
+          <p>- Я все еще не в состоянии… понять некоторые вещи.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp7')" class="exp">Only some? — Блэйз буквально покатился со смеху. — Do you mean
+          you understand all the rest?</span></p>
+
+      <!-- The Modal -->
+      <div id="exp7" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp7')">&times;</span>
+          <p>- Только некоторые? — Блэйз буквально покатился со смеху. — Хочешь сказать, ты понимаешь всё остальное?</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
 
       <div class="card-art">
         <img src="./3_1_img_art/3_1_119_01_hananta_nur_irony.jpg" class="img"
           alt="Аз Фита Ижица. Художник: Хананта Нур (Индонезия). Абстрактное искусство">
-        <p><small><em><strong>покатился со смеху</strong><br><small>художник: Хананта Нур (Индонезия)</small></em></small></p>
+        <p><small><em><strong>покатился со смеху</strong><br><small>художник: Хананта Нур
+                (Индонезия)</small></em></small></p>
       </div>
 
       <p>Ира молча смотрела на него.</p>
-      <p>- <span onMouseOver="toolTip('- Ты понимаешь мой вопрос? — спросил Блэйз, немного послушав ее молчание.')"
-          onMouseOut="toolTip()">*Do you understand my question? — спросил Блэйз, немного послушав ее молчание.*</span>
-      </p>
-      <p>- <span onMouseOver="toolTip('- Да.')" onMouseOut="toolTip()">*Yes.*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- На самом деле, мне не нужен твой ответ. Что мне действительно нужно… Неважно! — Блэйз усмехнулся. — Ира, это не последняя игра, которую мы можем сделать вместе. Но если мы не закончим ее в ближайшее время, мы завязнем в ней навсегда. Верь мне, момент, когда ты будешь в состоянии понять всё, что тебе нужно — точнее, ты думаешь, что тебе нужно — никогда не наступит. Будь уверена, что ты понимаешь все, что нужно для этой игры, и давай закончим ее, и давай начнем делать другую. Знаешь, почему я предлагаю тебе это? В течение всего этого времени, с тех пор как ты начала приходить сюда, ты обнаружила и поняла очень много разных вещей. Ты чувствуешь, что тебе нужно перейти на другой уровень, но это невозможно. Это невозможно, пока…')"
-          onMouseOut="toolTip()">*Actually, I don't need your answer. What I need is… Doesn't matter! — Блэйз
-          усмехнулся. — Ira, it isn't the last game we can make together. But if we don’t finish it soon, we'll get
-          stuck in it forever. Trust me, the time, when you're able to understand everything you need — or rather you
-          think you need — will never come. Tell yourself you understand everything you need for this game. Let’s finish
-          it and let’s start another one. Do you know why I suggest that? Ever since you began to come here, you've
-          figured out and comprehended a lot of various things. You feel that you need to get to the next level, but
-          that’s impossible. That’s impossible until…*</span></p>
-      <p><span
-          onMouseOver="toolTip('Ты уже сделала много работы и теперь тебе нужно обобщить результаты. Единственный способ обобщить результаты — закончить игру. И когда ты закончишь игру и, тем самым, обобщишь результаты, ты будешь в состоянии перейти на следующий уровень. Поверь мне, нет других путей перейти на следующий уровень.')"
-          onMouseOut="toolTip()">*You've already done a lot of work, and now, you need to sum up the result. The only
-          way to sum up the result is to finish the game. When you finish the game and sum up the result, you'll get
-          ready for the next level. Trust me; there are no other ways to get to the next level.*</span></p>
-      <p>- <span onMouseOver="toolTip('- Поняла, — улыбнулась Ира. — Спасибо!')" onMouseOut="toolTip()">*Got it, —
-          улыбнулась Ира. — Thank you!*</span></p>
-      <p>- <span onMouseOver="toolTip('- Дай мне ключ, — Блэйз протянул руку.')" onMouseOut="toolTip()">*Give me the
-          key, — Блэйз протянул руку.*</span></p>
+
+      <p>- <span onclick="openModal('exp8')" class="exp">Do you understand my question? — спросил Блэйз, немного
+          послушав ее молчание.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp8" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp8')">&times;</span>
+          <p>- Ты понимаешь мой вопрос? — спросил Блэйз, немного послушав ее молчание.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp9')" class="exp">Yes.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp9" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp9')">&times;</span>
+          <p>- Да.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp10')" class="exp">Actually, I don’t need your answer. What I need is… Doesn’t
+          matter! — Блэйз усмехнулся. — Ira, it’s not the last game we can make together. But if we don’t finish it
+          soon, we’ll get stuck in it forever.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp10" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp10')">&times;</span>
+          <p>- На самом деле, мне не нужен твой ответ. Что мне действительно нужно… Неважно! — Блэйз усмехнулся. — Ира,
+            это не последняя игра, которую мы можем сделать вместе. Но если мы не закончим ее в ближайшее время, мы
+            завязнем в ней навсегда.
+          </p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p><span onclick="openModal('exp11')" class="exp">Trust me, the time when you’re able to understand everything you
+          need — or rather you think you need — will never come. Tell yourself you understand everything you need for
+          this game. Let’s finish it and let’s start a new one.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp11" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp11')">&times;</span>
+          <p>Поверь мне, время, когда ты будешь в состоянии понять всё, что тебе нужно — точнее,
+            ты думаешь, что тебе нужно — никогда не наступит. Скажи себе, что ты понимаешь все, что нужно для этой
+            игры, и давай закончим ее и начнем делать новую.
+          </p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p><span onclick="openModal('exp12')" class="exp">Do you know why I suggest that? Ever since you started coming
+          here, you’ve found out and comprehended a lot of various things. You feel you need to get to the next level,
+          but that’s impossible. That’s impossible until…</span></p>
+
+      <!-- The Modal -->
+      <div id="exp12" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp12')">&times;</span>
+          <p>Знаешь, почему я предлагаю тебе это? С тех пор как ты начала приходить сюда, ты обнаружила и поняла очень
+            много разных
+            вещей. Ты чувствуешь, что тебе нужно перейти на другой уровень, но это невозможно. Это невозможно, пока…
+          </p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p><span onclick="openModal('exp13')" class="exp">You’ve already done a lot of work, and now you need to sum up
+          the result. The only way to sum up the result is to finish the game. When you finish the game and sum up the
+          result, you’ll get ready for the next level. Trust me; there is no other way.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp13" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp13')">&times;</span>
+          <p>Ты проделала огромную работу, и теперь тебе нужно обобщить результаты. Единственный способ обобщить
+            результаты — закончить игру. Когда ты закончишь игру и обобщишь результаты, ты будешь готова
+            перейти на следующий уровень. Поверь мне, другого пути нет.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp14')" class="exp">Got it, — Ира улыбнулась. — Thank you!</span></p>
+
+      <!-- The Modal -->
+      <div id="exp14" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp14')">&times;</span>
+          <p>- Поняла, — Ира улыбнулась. — Спасибо!</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp15')" class="exp">Give me the key, — Блэйз протянул руку.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp15" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp15')">&times;</span>
+          <p>- Дай мне ключ, — Блэйз протянул руку.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Ира дала ему ключик от шкафа, и через несколько мгновений он принес ей всю стопку изрисованных ею листков и
         вернулся на сцену.</p>
       <p>Ира принялась раскладывать листки на стопки, как они в прошлом году вместе с Лу и Михой раскладывали эскизы
         логотипа: «Просто блеск!», «В этом что-то есть…!», «Ну… в принципе может быть» и «Ни в какие ворота».
         Единственное, теперь была еще и пятая стопка, куда попадали все рисунки не по теме. Углядев со сцены, что она
         делает, Блэйз прискакал выяснить, что именно. Ира объяснила, и он заявил:</p>
-      <p>- <span onMouseOver="toolTip('- Я бы хотел принять участие в этом.')" onMouseOut="toolTip()">*I'd like to
-          participate in this.*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- Честно говоря, я хочу, чтобы все вы приняли участие в этом, но немного позже. Хорошо?')"
-          onMouseOut="toolTip()">*To tell the truth, I want all of you to participate in this, but a bit later.
-          Okay?*</span></p>
-      <p>- <span onMouseOver="toolTip('- Хорошо, — согласился Блэйз.')" onMouseOut="toolTip()">*Okay, — согласился
-          Блэйз.*</span></p>
-      <p><span title="«Немного позже»">*«A bit later»*</span> наступило только на следующий день и вместе со Стасом,
-        который, выяснив, чего Ира хочет, освободил себе всю первую половину дня.</p>
+
+      <p>- <span onclick="openModal('exp16')" class="exp">I’d like to take part.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp16" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp16')">&times;</span>
+          <p>- Я бы хотел принять участие.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp17')" class="exp">To tell the truth, I want all of you to take part, but a bit
+          later.</span></p>
+
+
+      <!-- The Modal -->
+      <div id="exp17" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp17')">&times;</span>
+          <p>- Честно говоря, я хочу, чтобы все вы приняли участие, но немного позже.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp18')" class="exp">Okay, — согласился Блэйз.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp18" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp18')">&times;</span>
+          <p>- Хорошо, — согласился Блэйз.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>«<span onclick="openModal('exp19')" class="exp">A bit later</span>» наступило только на следующий день и вместе
+        со Стасом, который, выяснив, чего Ира хочет, освободил себе всю первую половину дня.</p>
+
+      <!-- The Modal -->
+      <div id="exp19" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp19')">&times;</span>
+          <p>Немного позже</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>«Крутые разборки» с накопившимся в живописи и двух видах графики материалом заняли всю неделю. А всю следующую,
         начиная с джем-сейшна в субботу, Ира просидела с ноутбуком на сцене. Вообще-то, сидеть вместе с ними на сцене и
         на репетициях тоже, Блэйз предложил ей сразу после джем-сейшна, когда усадил ее на сцену впервые, но на
@@ -204,10 +413,21 @@
         Ира. Блэйз с чего-то решил, что она предприняла этот шаг крайне продуманно.</p>
       <p>В воскресенье после недели с ноутбуком на сцене, как только окончился джем-сейшн, Ира торжественно объявила,
         что у нее готова графическая концепция и приступила к ее демонстрации.</p>
-      <p>- <span
-          onMouseOver="toolTip('- Какая гениальная идея позволить нам видеть, что ты делала всё это время! — заявил Блэйз. — Мы практически готовы к записи!')"
-          onMouseOut="toolTip()">*What a brilliant idea to let us see what you were doing all this time! — заявил Блэйз.
-          — We're virtually ready to recording!*</span></p>
+
+      <p>- <span onclick="openModal('exp20')" class="exp">What a brilliant idea to let us watch you working! —
+          заявил Блэйз. — We’re virtually ready to record!</span></p>
+
+      <!-- The Modal -->
+      <div id="exp20" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp20')">&times;</span>
+          <p>- Какая гениальная идея позволить нам наблюдать за твоей работой! — заявил Блэйз. — Мы практически готовы к
+            записи!</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Как только они вернулись с джем-сейшна, Стас тут же позвонил Александру.</p>
       <p>- Саша, сможешь освободить меня от всех дел на всю следующую неделю?</p>
       <p>- Передавайте, — коротко ответил Александр, завел к Ире Оксану и вместе со Стасом отправился в офис.</p>
@@ -253,7 +473,8 @@
       <div class="card-art">
         <img src="./3_1_img_art/3_1_119_03_wolfgang_kahle_how.jpg" class="img"
           alt="Аз Фита Ижица. Художник: Вольфганг Кале (Германия). Абстрактное искусство">
-        <p><small><em><strong>К-как…? К-когда…?</strong><br><small>художник: Вольфганг Кале (Германия)</small></em></small></p>
+        <p><small><em><strong>К-как…? К-когда…?</strong><br><small>художник: Вольфганг Кале
+                (Германия)</small></em></small></p>
       </div>
 
       <p>- Ну, о том, как я к тебе отношусь, он знает с того самого момента, когда его в Москву на самолет провожал.
@@ -292,7 +513,8 @@
       <div class="card-art">
         <img src="./3_1_img_art/3_1_119_04_kushlani_jayasinha_know.jpg" class="img"
           alt="Аз Фита Ижица. Художник: Кушлани Джаясинха (США). Абстрактное искусство">
-        <p><small><em><strong>Она действительно ЗНАЛА…</strong><br><small>художник: Кушлани Джаясинха (США)</small></em></small></p>
+        <p><small><em><strong>Она действительно ЗНАЛА…</strong><br><small>художник: Кушлани Джаясинха
+                (США)</small></em></small></p>
       </div>
 
       <p>Остаток вечера Ира и Стас, оставшись наедине, дружно молчали об одном и том же. Практически в молчании прошло и
@@ -303,24 +525,58 @@
         своей собственной музыкальной партии, которую она ощущала всем своим существом, но которую никто не слышал. Ира
         растворилась в эйфории экстаза, однако во время оваций зала после третьей композиции к ней, держа за руку Стаса
         и пятясь задом, изображая поклоны, подошел Блэйз и спросил:</p>
-      <p>- <span onMouseOver="toolTip('- Что происходит с вами? С вами обоими!')" onMouseOut="toolTip()">*What's going
-          on with you? With both of you.*</span></p>
+
+      <p>- <span onclick="openModal('exp21')" class="exp">What’s going on with you? I mean both of you.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp21" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp21')">&times;</span>
+          <p>- Что с вами происходит? Я имею в виду вас обоих.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Растерявшись, Ира ничего не ответила. Стас тоже молчал. Он был абсолютно спокоен, явно следуя наиболее
         оптимальному и эффективному способу взаимодействия с Блэйзом, то есть, «не мешать ему делать со всем, что его
         окружает, и с тобой в том числе, то, что он считает нужным». </p>
-      <p>- <span
-          onMouseOver="toolTip('- Продолжайте без нас, — сказал Блэйз Римусу, который находился к нему ближе всех, и увел Иру и Стаса со сцены. — Идем! — скомандовал он, увлекая их за собой.')"
-          onMouseOut="toolTip()">*Continue without us, — сказал Блэйз Римусу, который находился к нему ближе всех, и
-          увел Иру и Стаса со сцены. — Let’s go! — скомандовал он, увлекая их за собой.*</span></p>
+
+      <p>- <span onclick="openModal('exp22')" class="exp">Continue without us, — сказал Блэйз Римусу, который находился
+          к нему ближе всех, и увел Иру и Стаса со сцены. — Let’s go! — скомандовал он, увлекая их за собой.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp22" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp22')">&times;</span>
+          <p>- Продолжайте без нас, — сказал Блэйз Римусу, который находился к нему ближе всех, и увел Иру и Стаса со
+            сцены. — Идем! — скомандовал он, увлекая их за собой.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Дворами они вышли на соседнюю улицу и зашли в другой ресторанчик. Там было довольно людно, но довольно тихо.
         Они уселись за столик в уголочке. Ира положила на его край карандаш и дощечку с листами бумаги, которые, как она
         обнаружила только сейчас, так и держала в руках. «Бегство» со сцены оказалось таким внезапным и стремительным,
         что она не успела даже подумать, чтобы оставить их где-нибудь.</p>
-      <p>- <span
-          onMouseOver="toolTip('- Что происходит с вами обоими? — снова спросил Блэйз. — Что происходит с тобой? — он посмотрел на Стаса и усмехнулся. — Впрочем, то, что происходит с тобой, я знаю очень хорошо с давних пор. Итак, — он повернулся к Ире, — что происходит с тобой?')"
-          onMouseOut="toolTip()">*What's going on with you two? — снова спросил Блэйз. — What's going on with you? — он
-          посмотрел на Стаса и усмехнулся. — Damn, what's going on with you, I know very well long-long ago. So, — он
-          повернулся к Ире, — what is going on with you?*</span></p>
+
+      <p>- <span onclick="openModal('exp23')" class="exp">What’s going on with you two? — снова спросил Блэйз. — What’s
+          going on with you? — он посмотрел на Стаса и усмехнулся. — Damn! I know what’s going on with you long ago. So,
+          — он повернулся к Ире, — what is going on with you?</span></p>
+
+      <!-- The Modal -->
+      <div id="exp23" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp23')">&times;</span>
+          <p>- Что происходит с вами двумя? — снова спросил Блэйз. — Что происходит с тобой? — он посмотрел на Стаса и
+            усмехнулся. — Черт! Что происходит с тобой, я знаю давным давно. Итак, — он повернулся к
+            Ире, — что происходит с тобой?</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>По его пристальному взгляду Ира поняла, что отвечать придется, притом не одной из дежурных фраз и притом не
         одной. Она принялась сбивчиво подбирать английские слова, но давалось ей это с гораздо бо́льшим трудом, чем
         обычно в последнее время. Стас, немного послушав ее потуги, сказал:</p>
@@ -332,116 +588,176 @@
       <p>Ира стала говорить так, как она может, так, как она это понимает, не заботясь о том диагнозе, который ей
         поставил бы любой «нормальный» человек, не задумываясь. Стас лихо переводил ее речь не только на английский, но
         и на «адекватный» язык. Однако Блэйз очень скоро прервал его:</p>
-      <p>- <span onMouseOver="toolTip('- Стас, пожалуйста, переводи дословно.')" onMouseOut="toolTip()">*Stas, please,
-          translate literally.*</span></p>
+
+      <p>- <span onclick="openModal('exp24')" class="exp">Stas, please, translate literally.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp24" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp24')">&times;</span>
+          <p>- Стас, пожалуйста, переводи дословно.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Стас тут же принялся выполнять его просьбу. Ира рассказывала о настроениях и об убеждениях, о зеркальных
         энергиях и о подключениях. Когда весь объем информации оказался исчерпанным, Блэйз заключил:</p>
-      <p>- <span onMouseOver="toolTip('- Очень интересно! Но, пожалуйста, скажи мне, чего ты хочешь на самом деле?')"
-          onMouseOut="toolTip()">*Very interesting! But please, tell me what you truly want.*</span></p>
+
+      <p>- <span onclick="openModal('exp25')" class="exp">Very interesting! But please, tell me what you truly
+          want.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp25" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp25')">&times;</span>
+          <p>- Очень интересно! Но, пожалуйста, скажи мне, чего ты хочешь на самом деле?</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Ира принялась рассказывать о внутреннем и внешнем мирах, об Иллюзии и Реальности. Когда и здесь не осталось
         ничего, что Ира могла бы добавить, Блэйз вздохнул, улыбнулся и сказал:</p>
-      <p>- <span
-          onMouseOver="toolTip('- Ира все эти настроения, убеждения, энергии, подключения, миры, иллюзии, реальности — невероятно интересные и любопытные вещи. Но мне придется повторить свой вопрос. Чего ты хочешь на самом деле?')"
-          onMouseOut="toolTip()">*Ira, all those moods, convictions, energies, connections, worlds, illusions, realities
-          are incredibly interesting and curious things. But I have to repeat my question. What do you truly
-          want?*</span></p>
+
+      <p>- <span onclick="openModal('exp26')" class="exp">Ira, all those moods, convictions, energies, connections,
+          worlds, illusions, realities are incredibly interesting and curious things. But I have to repeat my question.
+          What do you truly want?</span></p>
+
+      <!-- The Modal -->
+      <div id="exp26" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp26')">&times;</span>
+          <p>- Ира все эти настроения, убеждения, энергии, подключения, миры, иллюзии, реальности — невероятно
+            интересные и любопытные вещи. Но мне придется повторить свой вопрос. Чего ты хочешь на самом деле?</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Ира смотрела на него озадаченно, не понимая, чего он от нее хочет. Она зацепила краем глаза Стаса. Тот, по всей
         видимости, занимался тем же самым, то есть, не понимал. Блэйз снова вздохнул и улыбнулся:</p>
-      <p>- <span
-          onMouseOver="toolTip('- Смотри, например, я спрашиваю кого-то: «Чего ты хочешь?», — и он мне отвечает: «О! Я хочу много денег». Тогда я говорю ему: «Представь, у тебя есть так много денег, как ты хочешь. Чего ты хочешь в этом случае?» Он отвечает: «О! Я хочу большой дом, дорогую машину, самолет, много красивых женщин вокруг меня…», — и так далее. Тогда я говорю ему: «Представь, что у тебя уже есть все это. Чего ты хочешь в этом случае?» И он отвечает: «О! Если у меня будет всё это, я буду счастлив!» Таким образом, на самом деле, он не хочет денег, домов, машин, самолетов и так далее. То, что он действительно хочет, это быть счастливым. Так вот, я спрашиваю тебя: Чего ты хочешь на самом деле?')"
-          onMouseOut="toolTip()">*Look, for instance, I ask someone, "What do you want?" He answers me, "I want a lot of
-          money." I tell him, "Imagine you have as much money as you wish. What do you want in this case?" He answers,
-          "I want a big house, an expensive car, an airplane, a lot of beautiful women around me…" etc., etc., etc.
-          Then, I tell him, "Imagine, you already have all of this. What do you want in this case?" And he answers, "If
-          I have all of this, I'll be happy!" That is, in fact, he doesn't want money, houses, cars, airplanes, etc.,
-          etc., etc. What he truly wants is to be happy. So, I ask you: What do you truly want?</span></p>
+
+      <p>- <span onclick="openModal('exp27')" class="exp">Look, for instance, I ask someone, “What do you want?” He
+          answers me, “I want a lot of money.” I tell him, “Imagine you have as much money as you desire. What do you
+          want in this case?” He answers, “I want a big house, an expensive car, an airplane, a lot of beautiful women
+          around me…” etc., etc., etc. Then, I tell him, “Imagine, you already have all of that. What do you want in
+          this
+          case?” He answers, “If I had all of this, I’d be happy!” So, he doesn’t want money, houses, cars, airplanes,
+          etc., etc., etc. What he truly wants is to be happy. So, I ask you: What do you truly want?</span></p>
+
+      <!-- The Modal -->
+      <div id="exp27" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp27')">&times;</span>
+          <p>- Смотри, например, я спрашиваю кого-то: «Чего ты хочешь?», — и он мне отвечает: «Я хочу много денег».
+            Я говорю ему: «Представь, у тебя есть так много денег, как ты хочешь. Чего ты хочешь в этом случае?»
+            Он отвечает: «Я хочу большой дом, дорогую машину, самолет, много красивых женщин вокруг меня…», — и так
+            далее. Тогда я говорю ему: «Представь, что у тебя уже есть все это. Чего ты хочешь в этом случае?» Он
+            отвечает: «Если бы у меня было всё это, я был бы счастлив!» Таким образом, на самом деле, он не хочет денег,
+            домов, машин, самолетов и так далее. То, что он действительно хочет, это быть счастливым. Так вот, я
+            спрашиваю тебя: Чего ты хочешь на самом деле?</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
 
       <div class="card-art">
         <img src="./3_1_img_art/3_1_119_05_al_johnson_actually.jpg" class="img"
           alt="Аз Фита Ижица. Художник: Ал Джонсон (США). Абстрактное искусство">
-        <p><small><em><strong>Чего ты хочешь на самом деле?</strong><br><small>художник: Ал Джонсон (США)</small></em></small></p>
+        <p><small><em><strong>Чего ты хочешь на самом деле?</strong><br><small>художник: Ал Джонсон
+                (США)</small></em></small></p>
       </div>
 
       <p>Ира ненадолго впала в глубокую задумчивость, а потом ответила на русском:</p>
       <p>- Я хочу понять, как работает этот мир.</p>
       <p>Стас перевел.</p>
-      <p>- <span
-          onMouseOver="toolTip('- Именно! — воскликнул Блэйз, довольный тем, чего, наконец, добился от Иры. — Ты хочешь понять, как работает этот мир. Но это невозможно, и я могу сказать тебе почему. Стас, я знаю, что она теперь в состоянии понимать то, что я говорю, довольно хорошо, тем не менее, я прошу тебя, пожалуйста, переведи это дословно и дальше переводи всё, что я буду говорить, досовно предложение за предложением. Хорошо?')"
-          onMouseOut="toolTip()">*Exactly! — воскликнул Блэйз, довольный тем, чего, наконец, добился от Иры. — You want
-          to understand how this world works. But that’s impossible! And I can explain to you why. Stas, I know she’s
-          quite able to catch what I’m going to tell her. Nevertheless, please translate literally this and everything
-          I’ll speak further. Sentence by sentence! Okay?*</span></p>
-      <p>- <span title="Хорошо.">*Okay*</span>. Ира, как ты слышала, Блэйз не сомневается в твоей способности понимать,
-        то, что он говорит, тем не менее, он попросил меня перевести то, что он сейчас сказал, дословно и далее
-        переводить дословно по предложениям все, что он будет говорить. Так вот: «Именно! Ты хочешь понять, как работает
-        этот мир. Но это невозможно, и я могу сказать тебе почему», — Стас глянул на Блэйза, предлагая говорить дальше.
+
+      <p>- <span onclick="openModal('exp28')" class="exp">Exactly! — воскликнул Блэйз, довольный тем, чего, наконец,
+          добился от Иры. — You want
+          to understand how this world works. But that’s impossible, and I can explain to you why. Stas, I know she’s
+          quite capable of catching what I’m going to tell her. Nevertheless, please translate literally this and
+          everything
+          I’ll speak further. Sentence by sentence! Okay?</span></p>
+
+      <!-- The Modal -->
+      <div id="exp28" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp28')">&times;</span>
+          <p>- Именно! — воскликнул Блэйз, довольный тем, чего, наконец, добился от Иры. — Ты хочешь понять, как
+            работает этот мир. Но это невозможно, и я могу сказать тебе почему. Стас, я знаю, что она в состоянии
+            понять, что я говорю, довольно хорошо. Тем не менее, пожалуйста, переведи это дословно и
+            дальше переводи всё, что я буду говорить, досовно предложение за предложением. Хорошо?</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp29')" class="exp">Okay</span>. Ира, как ты слышала, Блэйз не сомневается в твоей
+        способности понимать, то, что он говорит, тем не менее, он попросил меня перевести то, что он сейчас сказал,
+        дословно и далее переводить дословно по предложениям все, что он будет говорить. Так вот: «Именно! Ты хочешь
+        понять, как работает этот мир. Но это невозможно, и я могу сказать тебе почему», — Стас глянул на Блэйза,
+        предлагая говорить дальше.
       </p>
-      <p>- <span
-          onMouseOver="toolTip('- Посмотри, это — мой мобильный телефон, — Блэйз выставил на всеобщее обозрение свой мобильник. — Он является техническим приспособлением.')"
-          onMouseOut="toolTip()">*Look! This is my phone, — Блэйз выставил на всеобщее обозрение свой мобильник. — It is
-          a technical device.*</span></p>
+
+      <!-- The Modal -->
+      <div id="exp29" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp29')">&times;</span>
+          <p>Хорошо.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- Look! This is my phone, — Блэйз выставил на всеобщее обозрение свой мобильник. — It is
+        a technical device.</p>
       <p>- «Посмотри, это — мой мобильный телефон. Он является техническим приспособлением».</p>
-      <p>- <span
-          onMouseOver="toolTip('- Как и любое техническое приспособление, он имеет определенное предназначение, и я знаю, как он работает, и ты знаешь, как он работает, и все знают, как он работает.')"
-          onMouseOut="toolTip()">*As with any technical device, it has a specific purpose, and I know how it works. You
-          also know how it works. And everybody knows how it works.*</span></p>
+      <p>- As with any technical device, it has a specific purpose, and I know how it works. You
+        also know how it works. And everyone knows how it works.</p>
       <p>- «Как и любое техническое приспособление, он имеет определенное предназначение, и я знаю, как он работает, и
         ты знаешь, как он работает, и все знают, как он работает».</p>
-      <p>- <span
-          onMouseOver="toolTip('- А теперь посмотри на это, — Блэйз положил телефон на стол и взял изрисованный листок бумаги из Ириной стопки. — Это — произведение искусства.')"
-          onMouseOut="toolTip()">*Now look at this, — Блэйз положил телефон на стол и взял изрисованный листок бумаги из
-          Ириной стопки. — This is a work of art.*</span></p>
+      <p>- Now look at this, — Блэйз положил телефон на стол и взял изрисованный листок бумаги из
+        Ириной стопки. — This is a work of art.</p>
       <p>- «А теперь посмотри на это. Это — произведение искусства».</p>
-      <p>- <span
-          onMouseOver="toolTip('- Я знаю, что оно работает на меня. Я полностью уверен, что оно работает на меня, потому что я чувствую это. Но я не знаю, как оно работает.')"
-          onMouseOut="toolTip()">*I know that it works upon me. I'm completely sure that it works upon me because I feel
-          this. But I don’t know how it works.*</span></p>
+      <p>- I know that it works upon me. I’m completely sure that it works upon me because I feel it. But I don’t know
+        how it works.</p>
       <p>- «Я знаю, что оно работает на меня. Я полностью уверен, что оно работает на меня, потому что я чувствую это.
         Но я не знаю, как оно работает».</p>
-      <p>- <span
-          onMouseOver="toolTip('- Оно будет работать на нее, на него, на всех, но по-разному на каждого из них, то есть, не так, как это делает техническое устройство, которое работает одинаково, независимо от того, кто его использует.')"
-          onMouseOut="toolTip()">*It'll work upon her, upon him, upon everyone but in different ways upon each of them.
-          That is, not so as a technical device does, which works equally regardless of who uses it.*</span></p>
+      <p>- It’ll work upon her, upon him, upon everyone, but in different ways upon each of them. That is, not so as a
+        technical device does, which works equally regardless of who uses it.</p>
       <p>- «Оно будет работать на нее, на него, на всех, но по-разному на каждого из них, то есть, не так, как это
         делает техническое устройство, которое работает одинаково, независимо от того, кто его использует».</p>
-      <p>- <span onMouseOver="toolTip('- Все чувствуют его работу, но никто не знает, как оно работает.')"
-          onMouseOut="toolTip()">*Everybody feels its work, but nobody knows how it works.*</span></p>
+      <p>- Everyone feels its work, but no one knows how it works.</p>
       <p>- «Все чувствуют его работу, но никто не знает, как оно работает».</p>
-      <p>- <span onMouseOver="toolTip('- Ты — его создатель, но ты тоже не знаешь, как оно работает.')"
-          onMouseOut="toolTip()">*You're a creator of it. But you don't know how it works either.*</span></p>
+      <p>- You’re its creator. But you don’t know how it works either.</p>
       <p>- «Ты — его создатель, но ты тоже не знаешь, как оно работает».</p>
-      <p>- <span onMouseOver="toolTip('- Никто не знает, как работают произведения искусства.')"
-          onMouseOut="toolTip()">*Nobody knows how works of art work.*</span></p>
+      <p>- Nobody knows how works of art work.</p>
       <p>- «Никто не знает, как работают произведения искусства».</p>
 
       <div class="card-art">
         <img src="./3_1_img_art/3_1_119_06_muriel_massin_art.jpg" class="img"
           alt="Аз Фита Ижица. Художник: Мюриэль Массин (Франция). Абстрактное искусство">
-        <p><small><em><strong>Никто не знает…</strong><br><small>художник: Мюриэль Массин (Франция)</small></em></small></p>
+        <p><small><em><strong>Никто не знает…</strong><br><small>художник: Мюриэль Массин (Франция)</small></em></small>
+        </p>
       </div>
 
-      <p>- <span
-          onMouseOver="toolTip('- Невозможно выяснить, как работают произведения искусства, потому что они не имеют определенного предназначения. У них нет намерения иметь определенное предназначение. Их намерение — это абсолютно другая вещь и никто не знает, что это.')"
-          onMouseOut="toolTip()">*It's impossible to figure out how the works of art work because they have no specific
-          purpose. They have no intention to have a specific purpose. Their intention is an entirely different thing.
-          And nobody knows what that thing is.*</span></p>
+      <p>- It’s impossible to figure out how the works of art work because they have no specific purpose. They have no
+        intention of having a specific purpose. Their intention is an entirely different thing. And nobody knows what
+        that thing is.</p>
       <p>- «Невозможно выяснить, как работают произведения искусства, потому что они не имеют определенного
         предназначения. У них нет намерения иметь определенное предназначение. Их намерение — это абсолютно другая вещь
         и никто не знает, что это».</p>
-      <p>- <span
-          onMouseOver="toolTip('- Невозможно знать намерение произведений искусства, потому что в этом их суть. Их суть, их намерение — это нечто загадочное и чудодейственное вместо определенного предназначения, которое есть у технических приспособлений.')"
-          onMouseOut="toolTip()">*It's impossible to know the intention of the works of art because it is the essence of
-          the works of art. Their essence, their intention is something mysterious, something miraculous instead of a
-          specific purpose, which technical devices have.*</span></p>
+      <p>- It’s impossible to know the intention of the works of art because it is the essence of the works of art.
+        Their essence, their intention is something mysterious, something miraculous instead of a specific purpose,
+        which technical devices have.</p>
       <p>- «Невозможно знать намерение произведений искусства, потому что в этом их суть. Их суть, их намерение — это
         нечто загадочное и чудодейственное вместо определенного предназначения, которое есть у технических
         приспособлений».</p>
-      <p>- <span
-          onMouseOver="toolTip('- Тайна, загадка этого мира в том, что этот мир — это произведение искусства, а не техническое приспособление. Поэтому невозможно выяснить, как он работает. Потому что, как произведение искусства, он не имеет определенного предназначения, которое есть у какого-либо технического приспособления. Потому что вместо определенного предназначения, у него есть нечто загадочное и чудодейственное, что даже не напоминает определенное предназначение.')"
-          onMouseOut="toolTip()">*The mystery, the riddle of this world is that this world is a work of art but not a
-          technical device. Therefore, it's impossible to find out how it works. Because, as a work of art, it has no
-          specific purpose like a technical device has. Because instead of a specific purpose, it has something
-          mysterious and miraculous that does not even resemble a specific purpose.*</span></p>
+      <p>- The mystery, the riddle of this world is that this world is a work of art but not a technical device.
+        Therefore, it’s impossible to find out how it works. Because, as a work of art, it has no specific purpose like
+        a technical device has. Because instead of a specific purpose, it has something mysterious and miraculous that
+        does not even resemble a specific purpose.</p>
       <p>- «Тайна, загадка этого мира в том, что этот мир — это произведение искусства, а не техническое приспособление.
         Поэтому невозможно выяснить, как он работает. Потому что, как произведение искусства, он не имеет определенного
         предназначения, которое есть у какого-либо технического приспособления. Потому что вместо определенного
@@ -451,49 +767,38 @@
       <div class="card-art">
         <img src="./3_1_img/3_1_119_01_art.jpg" class="img"
           alt="Аз Фита Ижица. Вечерний Сочи. Фотограф: Элеонора Терновская">
-        <p><small><em><strong>…не техническое приспособление</strong><br><small>фотограф: Элеонора Терновская</small></em></small></p>
+        <p><small><em><strong>…не техническое приспособление</strong><br><small>фотограф: Элеонора
+                Терновская</small></em></small></p>
       </div>
 
-      <p>- <span onMouseOver="toolTip('- Поэтому никто не знает, как этот мир работает. Даже его создатели.')"
-          onMouseOut="toolTip()">*That's why nobody knows how this world works. Even its creators.*</span></p>
+      <p>- That’s why nobody knows how this world works. Even its creators.</p>
       <p>- «Поэтому никто не знает, как этот мир работает. Даже его создатели».</p>
-      <p>- <span
-          onMouseOver="toolTip('- Ты — создатель вот этого, — Блэйз снова указал на листок с Ириным рисунком. — Ты знаешь, что это работает, но ты не знаешь как. Я прав?')"
-          onMouseOut="toolTip()">*You're a creator of this, — Блэйз снова указал на листок с Ириным рисунком. — You know
-          that it works, but you do not know how. Am I right?*</span></p>
+      <p>- You’re a creator of this, — Блэйз снова указал на листок с Ириным рисунком. — You know
+        that it works, but you do not know how. Am I right?</p>
       <p>- «Ты — создатель вот этого. Ты знаешь, что это работает, но ты не знаешь как. Я прав?»</p>
-      <p>- <span
-          onMouseOver="toolTip('- Думаю, ты изучала некоторые так называемые точные науки, когда была ребенком. Ты создала дизайн научно-популярного издания, и ты без сомнений прочла все, что там написано. Попробуй почитать настоящие исследования. Это нелегко, но в этом случае ты обнаружишь, что на самом деле, физики и другие ученые ничего не знают наверняка. Все, что они имеют, это только гипотезы. Почему? Они пытаются постигать этот мир как техническое устройство. А он — не техническое устройство. Он — произведение искусства. А в произведение искусства нет ничего, что ты можешь знать наверняка.')"
-          onMouseOut="toolTip()">*I think you studied some of the so-called natural science when you were a child.
-          You've created a design of the popular scientific periodical, and no doubt, you've read everything of what's
-          written there. Try to read the real research studies. It is not easy, but in this case, you'll realize that
-          physicists and other scientists know nothing for sure. All they have is only hypotheses. Why? They try to
-          comprehend this world as a technical device. But it is not a technical device. It is a work of art. And a work
-          of art has nothing that you can know for sure.*</span></p>
+      <p>- I think you studied some of the so-called natural science when you were a child. You’ve created a design of
+        the popular scientific periodical, and no doubt, you’ve read everything of what’s written there. Try to read the
+        real research studies. It is not easy, but in this case, you’ll realize that physicists and other scientists
+        know nothing for sure. All they have is only hypotheses. Why? They try to comprehend this world as a technical
+        device. But it is not a technical device. It is a work of art. And a work of art has nothing you can know for
+        sure.</p>
       <p>- «Думаю, ты изучала некоторые так называемые точные науки, когда была ребенком. Ты создала дизайн
         научно-популярного издания, и ты без сомнений прочла все, что там написано. Попробуй почитать настоящие
         исследования. Это нелегко, но в этом случае ты обнаружишь, что на самом деле, физики и другие ученые ничего не
         знают наверняка. Все, что они имеют, это только гипотезы. Почему? Они пытаются постигать этот мир как
         техническое устройство. А он — не техническое устройство. Он — произведение искусства. А в произведение
         искусства нет ничего, что ты можешь знать наверняка».</p>
-      <p>- <span
-          onMouseOver="toolTip('- Конечно, каждое произведение искусства имеет определенные законы. Но даже если ты знаешь эти законы, ты все равно понятия не имеешь, как произведение искусства работает, хотя ты чувствуешь, что оно работает.')"
-          onMouseOut="toolTip()">*Of course, every work of art has certain laws. But even if you know those laws, you
-          have no idea, how a work of art works, though you feel the work of it.*</span></p>
+      <p>- Of course, every work of art has certain laws. But even if you know those laws, you have no idea of how a
+        work of art works, though you feel the work of it.</p>
       <p>- «Конечно, каждое произведение искусства имеет определенные законы. Но даже если ты знаешь эти законы, ты все
         равно понятия не имеешь, как произведение искусства работает, хотя ты чувствуешь, что оно работает».</p>
-      <p>- <span
-          onMouseOver="toolTip('- Всё то же самое касается этого мира. То есть, ты можешь знать его законы, и тем не менее, у тебя нет возможности выяснить, как он работает. И это кажется проблемой, пока…')"
-          onMouseOut="toolTip()">*Everything the same concerns this world. That is, you can know its laws, and yet you
-          have no chance to find out how it works. And it seems to be a problem, until…*</span></p>
+      <p>- All the same concerns this world. That is, you can know its laws, and yet you have no chance to find out how
+        it works. And it seems to be a problem until…</p>
       <p>- «Всё то же самое касается этого мира. То есть, ты можешь знать его законы, и тем не менее, у тебя нет
         возможности выяснить, как он работает. И это кажется проблемой, пока…».</p>
-      <p>- <span
-          onMouseOver="toolTip('- Когда ты понимаешь, что этот мир — это произведение искусства, когда ты начинаешь воспринимать, постигать этот мир как произведение искусства, когда ты начинаешь обращаться с этим миром, как с произведением искусства, а не как с техническим приспособлением, всё становится на свои места, и ты начинаешь ощущать гармонию этого мира. Понимаешь?')"
-          onMouseOut="toolTip()">*When you realize that this world is a work of art; when you start to perceive, to
-          comprehend this world as a work of art; when you start to treat this world as a work of art but not as a
-          technical device, everything falls into its place, and you begin to feel the harmony of this world.
-          Understand?*</span></p>
+      <p>- When you realize that this world is a work of art; when you start to perceive, to comprehend this world as a
+        work of art; when you start to treat this world as a work of art but not as a technical device, everything falls
+        into its place, and you begin to feel the harmony of this world. Understand?</p>
       <p>- «Когда ты понимаешь, что этот мир — это произведение искусства, когда ты начинаешь воспринимать, постигать
         этот мир как произведение искусства, когда ты начинаешь обращаться с этим миром, как с произведением искусства,
         а не как с техническим приспособлением, всё становится на свои места, и ты начинаешь ощущать гармонию этого
@@ -502,7 +807,8 @@
       <div class="card-art">
         <img src="./3_1_img/3_1_119_02_harmony.jpg" class="img"
           alt="Аз Фита Ижица. Сочи. Дождь. Фотограф: Элеонора Терновская">
-        <p><small><em><strong>…ощущать гармонию этого мира</strong><br><small>фотограф: Элеонора Терновская</small></em></small></p>
+        <p><small><em><strong>…ощущать гармонию этого мира</strong><br><small>фотограф: Элеонора
+                Терновская</small></em></small></p>
       </div>
 
       <p>Ира сидела, ошеломленно глядя на Блэйза, одновременно и понимая и не понимая, что ей говорят. Эффект понимания
@@ -512,52 +818,152 @@
       <p>Блэйз на несколько мгновений замер, будто прислушиваясь, затем задумчиво усмехнулся и обратился к Стасу,
         заговорив с обычной скоростью, вместо замедленной, которой он пользовался для обеспечения Ириного понимания
         английской речи:</p>
-      <p>- <span
-          onMouseOver="toolTip('- Стас, ты можешь убить меня прямо здесь, но я хотел бы сделать кое-что. Кое-что, что общепринято считать непристойным. Но это необходимо. Пожалуйста, позволь мне переспать с ней.')"
-          onMouseOut="toolTip()">*Stas, you may kill me right here, but I'd like to do something. Something that is
-          commonly accepted to consider indecent. But it's necessary. Please, let me sleep with her.*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- Никаких возражений! Но здесь есть одна проблема. Она не свободна от некоторых предрассудков и, честно говоря, я не представляю себе, как я должен сказать ей о твоем предложении. Так что, тебе придется стать тем, кому придется убедить ее, — Стас тоже говорил довольно быстро.')"
-          onMouseOut="toolTip()">*No objections. But there is a problem. She's not free from some prejudices. If truth
-          be told, I have no idea how I'm supposed to present your offer. So, you'll have to persuade her on your own, —
-          Стас тоже говорил довольно быстро.*</span></p>
+
+      <p>- <span onclick="openModal('exp30')" class="exp">Stas, you may kill me right here, but I’d like to do
+          something. Something that is considered obscene. But it’s necessary. Please, let me sleep with her.</span>
+      </p>
+
+      <!-- The Modal -->
+      <div id="exp30" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp30')">&times;</span>
+          <p>- Стас, ты можешь убить меня прямо здесь, но я хотел бы сделать кое-что. Кое-что, что считается
+            непристойным. Но это необходимо. Пожалуйста, позволь мне переспать с ней.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp31')" class="exp">No objections. But there is a problem. She’s not free from
+          some prejudices. If truth be told, I have no idea how I’m supposed to convey your offer. So, you’ll have to
+          persuade her on your own, — Стас тоже говорил довольно быстро.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp31" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp31')">&times;</span>
+          <p>- Никаких возражений. Но здесь есть одна проблема. Она не свободна от некоторых предрассудков и, честно
+            говоря, я не представляю себе, как я должен сказать ей о твоем предложении. Так что, тебе самому придется
+            убеждать ее, — Стас тоже говорил довольно быстро.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Блэйз расхохотался.</p>
-      <p>- <span
-          onMouseOver="toolTip('- Никаких возражений! Но здесь есть одна проблема. Я не в состоянии сделать это без слов, а многие из тех слов она вряд ли знает. Так что, тебе придется стать тем, кому придется переводить то, что я буду говорить.')"
-          onMouseOut="toolTip()">*No objections! But there is a problem. I can't do that without words, and some of
-          those words she may not know. So, you'll have to translate to her what I speak.*</span></p>
-      <p>- <span onMouseOver="toolTip('- Прав, однако… — усмехнулся Стас.')" onMouseOut="toolTip()">*You're right,
-          though… — усмехнулся Стас.*</span></p>
+
+      <p>- <span onclick="openModal('exp32')" class="exp">No objections! But there is a problem. I can’t do that without
+          words, and some of those words might be unknown to her. So, you’ll have to translate.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp32" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp32')">&times;</span>
+          <p>- Никаких возражений! Но здесь есть одна проблема. Я не в состоянии сделать это без слов, а некоторые из
+            них могут быть ей неизвестны. Так что, тебе придется переводить.
+          </p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp33')" class="exp">You’re right, though… — усмехнулся Стас.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp33" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp33')">&times;</span>
+          <p>- Прав, однако… — усмехнулся Стас.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>- Можешь не напрягаться. Я поняла, о чем вы, — сказала Ира сквозь зубы, затрудняясь определить собственную
         оценку происходящего и не представляя, как ей реагировать на все это. Стас и Блэйз, каждый со своим оттенком
         интереса, молча смотрели на нее. Ира перевела дух. — Никогда не думала, что окажусь в ситуации, которую
         практикуют Гена и Лу.</p>
-      <p>- <span onMouseOver="toolTip('- Что она сказала? — спросил Блэйз.')" onMouseOut="toolTip()">*What did she say?
-          — спросил Блэйз.*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- Она посоветовала мне не напрягаться, потому что она поняла, о чем мы говорили. Затем она сказала, что она никогда не думала, что она окажется в ситуации, которую практикуют наши друзья. У нас есть друзья, они муж и жена, которые дают друг другу полную свободу во всем, включая сексуальные отношения.')"
-          onMouseOut="toolTip()">*She suggested I don't bother because she understood what we'd talked about. Then, she
-          said that she'd never expected to find herself in the situation, practiced by our friends. We have friends;
-          they're husband and wife, who give each other full freedom in everything, including sexual relations.*</span>
+
+      <p>- <span onclick="openModal('exp34')" class="exp">What did she say? — спросил Блэйз.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp34" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp34')">&times;</span>
+          <p>- Что она сказала? — спросил Блэйз.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp35')" class="exp">She told me not to bother because she understood what we’d
+          talked about. Then she said she’d never expected to find herself in the situation practiced by our friends. We
+          have friends; they’re husband and wife, who give each other full freedom in everything, including sexual
+          relations.</span>
       </p>
+
+      <!-- The Modal -->
+      <div id="exp35" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp35')">&times;</span>
+          <p>- Она посоветовала мне не напрягаться, так как поняла, о чем мы говорили. Затем она сказала, что она
+            никогда не думала, что она окажется в ситуации, которую практикуют наши друзья. У нас есть друзья, они муж и
+            жена, которые дают друг другу полную свободу во всем, включая сексуальные отношения.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Блэйз перегнулся через стол, оказавшись почти вплотную к Ире, и посмотрел ей прямо в глаза.</p>
-      <p>- <span
-          onMouseOver="toolTip('- Это — не то же самое, — сказал он очень медленно и серьезно. — Ты знаешь это, и ты знаешь почему. Думаю, у тебя нет сомнений, что у меня нет проблем с женщинами. Я только моргну, и целая армия из них выстроится здесь. Думаю, у тебя также нет сомнений, что я отношусь к тебе с глубоким уважением. Думаю, у тебя также нет сомнений, что я отношусь с глубоким уважением к Стасу. Хотя у меня нет никаких предрассудков по поводу секса и у него их тоже нет, без веской причины я бы никогда не позволил себе нечто подобное, что я сейчас собираюсь сделать. Шутки? Да! Почему нет? Но ничего более того. Потому что это что-то вроде символа моего уважения. Однако сейчас у меня есть эта веская причина, и ты знаешь какая. Я знаю, что ты знаешь, потому что я чувствую это. Я ощущаю это. Я слышу это. Я очень хорошо понимаю, как ты чувствуешь себя сейчас. Ты чувствуешь себя так, потому что у тебя масса предрассудков по поводу секса, и подобная ситуация выглядит для тебя немыслимой. Более того, ты действительно любишь его, и ты знаешь, что он действительно любит тебя. Это ужасно усугубляет смятение твоих чувств. Но с другой стороны, ты великолепно знаешь, что нужно принять мое предложение. Ты понимаешь меня, или тебе нужен перевод?')"
-          onMouseOut="toolTip()">*This is not the same thing, — сказал он очень медленно и серьезно. — You do know this,
-          and you do know why. I think you guess that I have no problems with women. I'll just blink, and the whole army
-          of them will line up here. I think you don't doubt that I have a profound respect for you. I think you also
-          don't doubt that I have a profound respect for Stas. Although I have no prejudices about sex, and he doesn't
-          have them either, without a strong reason, I would never allow myself such things, which I am going to do now.
-          The jokes? Yeah! Why not? But nothing more than that. Because this is something like a symbol of my respect.
-          However, now, I have this strong reason, and you do know which one. I know that you know because I feel this.
-          I sense this. I hear this. I understand what you feel now. You feel so because you have plenty of prejudices
-          about sex, and such a situation is inconceivable for you. Moreover, you truly love him, and you know that he
-          truly loves you. This increases your confusion terribly. But on the other hand, you know that the right thing
-          to do is to accept my offer. Do you understand me, or you need a translation?*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- Я понимаю, — ответила Ира Блэйзу и повернулась к Стасу. — Не дословно, правда, но слушать все это еще и на русском, плюс ко всему еще и от тебя, это выше моих сил.')"
-          onMouseOut="toolTip()">*I understand, — ответила Ира Блэйзу и повернулась к Стасу. — Не дословно, правда, но
-          слушать все это еще и на русском, плюс ко всему еще и от тебя, это выше моих сил.*</span></p>
+
+      <p>- <span onclick="openModal('exp36')" class="exp">This is not the same thing, — сказал он очень медленно и
+          серьезно. — You do know this, and you do know why. I think you guess that I have no problems with women. Just
+          a blink, and an army of them will line up here. I think you don’t doubt that I have a profound respect for
+          you. I think you also don’t doubt that I have a profound respect for Stas. Although I have no prejudices about
+          sex, and he doesn’t have them either, without a sound reason, I would never allow myself such things, which I
+          am going to do now. The jokes? Yeah! Why not? But nothing more than that. Because this is something like a
+          symbol of my respect. However, now, I have that sound reason, and you do know which one. I know that you know
+          because I feel it. I sense it. I hear it. Yet you feel bad about it. Because you have plenty of prejudices
+          about sex, and such a situation is inconceivable to you. Moreover, you truly love him, and you know that he
+          truly loves you. This increases your confusion awfully. But on the other hand, you know that the right thing
+          to do is to accept my offer. Do you understand me or you need a translation?</span></p>
+
+      <!-- The Modal -->
+      <div id="exp36" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp36')">&times;</span>
+          <p>- Это — не то же самое, — сказал он очень медленно и серьезно. — Ты знаешь это, и ты знаешь почему. Думаю,
+            у тебя нет сомнений, что у меня нет проблем с женщинами. Я только моргну, и целая армия из них выстроится
+            здесь. Думаю, у тебя также нет сомнений, что я отношусь к тебе с глубоким уважением. Думаю, у тебя также нет
+            сомнений, что я отношусь с глубоким уважением к Стасу. Хотя у меня нет никаких предрассудков по поводу секса
+            и у него их тоже нет, без веской причины я бы никогда не позволил себе нечто подобное, что я сейчас
+            собираюсь сделать. Шутки? Да! Почему нет? Но ничего более того. Потому что это что-то вроде символа моего
+            уважения. Однако сейчас у меня есть эта веская причина, и ты знаешь какая. Я знаю, что ты знаешь, потому что
+            я чувствую это. Я ощущаю это. Я слышу это. И всё же тебе не по себе. Ты
+            чувствуешь себя так, потому что у тебя масса предрассудков по поводу секса, и подобная ситуация выглядит для
+            тебя немыслимой. Более того, ты действительно любишь его, и ты знаешь, что он действительно любит тебя. Это
+            усугубляет смятение твоих чувств. Но с другой стороны, ты великолепно знаешь, что нужно принять мое
+            предложение. Ты понимаешь меня, или тебе нужен перевод?</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp37')" class="exp">I understand, — ответила Ира Блэйзу и повернулась к
+          Стасу. — Не дословно, правда, но слушать все это еще и на русском, плюс ко всему еще и от тебя, это выше моих
+          сил.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp37" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp37')">&times;</span>
+          <p>- Я понимаю, — ответила Ира Блэйзу и повернулась к Стасу. — Не дословно, правда, но слушать все это еще и
+            на русском, плюс ко всему еще и от тебя, это выше моих сил.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>- Как скажешь. Единственное, позволь мне кое-что от себя добавить. На всем протяжении моего знакомства с
         Блэйзом — я сейчас имею в виду не только эту жизнь — он впервые изъяснялся не просто четко и ясно, а с
         предельной доступностью. Мало того, он никогда даже не намекал на то, о чем рассказал сегодня. Я не знаю, что
@@ -566,56 +972,163 @@
       <div class="card-art">
         <img src="./3_1_img_art/3_1_119_07_turgut_salgar_blais.jpg" class="img"
           alt="Аз Фита Ижица. Художник: Тургут Салгяр (Турция). Абстрактное искусство">
-        <p><small><em><strong>…этого тебе не даст никто</strong><br><small>художник: Тургут Салгяр (Турция)</small></em></small></p>
+        <p><small><em><strong>…этого тебе не даст никто</strong><br><small>художник: Тургут Салгяр
+                (Турция)</small></em></small></p>
       </div>
 
       <p>- Я в этом не сомневаюсь, но почему он не может сделать для меня то же самое с помощью творчества или
         восприятия произведения творчества?</p>
       <p>- Этого я тоже не знаю. Но он никогда бы не сделал такого предложения, тем более, прекрасно зная, как ты к нему
         отнесешься, если бы всё, что он хочет сделать для тебя, он мог бы сделать как-нибудь иначе.</p>
-      <p>- <span onMouseOver="toolTip('- Что ты сказал ей? — спросил Блэйз.')" onMouseOut="toolTip()">*What did you tell
-          her? — спросил Блэйз.*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- Я сказал ей, что никто не может сделать для нее то, что можешь ты. И если бы ты мог сделать это как-то иначе, ты бы никогда не предложил ей то, что предлагаешь сейчас.')"
-          onMouseOut="toolTip()">*I told her that nobody can do for her what you can. And if you could do this any other
-          way, you would've never offered her what you offered her now.*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- Это правда. Я уже объяснил тебе всё, что я могу объяснить прямо сейчас, — Блэйз смотрел на Иру предельно серьезно.')"
-          onMouseOut="toolTip()">*That’s true. I've already explained to you everything what I can explain right now, —
-          Блэйз смотрел на Иру предельно серьезно.*</span></p>
+
+      <p>- <span onclick="openModal('exp38')" class="exp">What did you tell her? — спросил Блэйз.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp38" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp38')">&times;</span>
+          <p>- Что ты сказал ей? — спросил Блэйз.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp39')" class="exp">I told her that nobody can do for her what you can. And if you
+          could do this any other way, you would’ve never offered her what you offered her now.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp39" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp39')">&times;</span>
+          <p>- Я сказал ей, что никто не может сделать для нее то, что можешь ты. И если бы ты мог сделать это как-то
+            иначе, ты бы никогда не предложил ей то, что предлагаешь сейчас.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp40')" class="exp">That’s true. I’ve already explained to you everything what I
+          can explain right now, — Блэйз смотрел на Иру предельно серьезно.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp40" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp40')">&times;</span>
+          <p>- Это правда. Я уже объяснил тебе всё, что я могу объяснить сейчас, — Блэйз смотрел на Иру предельно
+            серьезно.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>- Хорошо, — неожиданно жестко сказал Ира, повернувшись к Стасу. — Но давай сделаем так. Пока я получаю то, что
         мне может дать Блэйз, ты с кем-нибудь займешься тем же самым процессом, который так необходим для получения
         всего этого.</p>
+
       <p>- Как скажешь, — Стас пошарил глазами по залу и остановил взгляд на одной из девушек. — Вон та подойдет?</p>
+
       <p>- Ты у меня спрашиваешь? — усмехнулась Ира. — Важно, чтобы она подошла тебе.</p>
-      <p>- <span onMouseOver="toolTip('- О чем вы говорите? — поинтересовался Блэйз.')" onMouseOut="toolTip()">*What are
-          you talking about? — поинтересовался Блэйз.*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- Ира хочет, чтобы я сделал с кем-нибудь другим то же самое, что ты собираешься делать с ней.')"
-          onMouseOut="toolTip()">*Ira wants me to do with someone else the same thing you're going to do with
-          her.*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- У нас есть прогресс! — радостно воскликнул Блэйз. — И как я могу видеть, ты выбрал вон ту?')"
-          onMouseOut="toolTip()">*We have a progress! — радостно воскликнул Блэйз. — As I can see, you've chosen that
-          one?*</span></p>
-      <p>- <span onMouseOver="toolTip('- Именно!')" onMouseOut="toolTip()">*Yes.*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- Нет-нет-нет! Будет лучше, если ты выберешь эту, — Блэйз указал на другую девушку. — Она — бомба! Она — взрыв! Ты проведешь с ней сказочное время! Я обещаю!')"
-          onMouseOut="toolTip()">*No-no-no! You'd better choose this one, — Блэйз указал на другую девушку. — She's a
-          bomb! She's an explosion! You'll have marvelous time with her! I promise!*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- Да будет так, — сказал Стас, поднялся и направился к столику, за которым сидела девушка, на которую указал Блэйз.')"
-          onMouseOut="toolTip()">*So be it, — сказал Стас, поднялся и направился к столику, за которым сидела девушка,
-          на которую указал Блэйз.*</span></p>
+
+      <p>- <span onclick="openModal('exp41')" class="exp">What are you talking about? — поинтересовался Блэйз.</span>
+      </p>
+
+      <!-- The Modal -->
+      <div id="exp41" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp41')">&times;</span>
+          <p>- О чем вы говорите? — поинтересовался Блэйз.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp42')" class="exp">Ira wants me to do with someone else the same thing you’re
+          going to do with her.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp42" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp42')">&times;</span>
+          <p>- Ира хочет, чтобы я сделал с кем-нибудь другим то же самое, что ты собираешься делать с ней.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp43')" class="exp">We have a progress! — радостно воскликнул Блэйз. — As I see,
+          you’ve chosen that one?</span></p>
+
+      <!-- The Modal -->
+      <div id="exp43" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp43')">&times;</span>
+          <p>- Мы сдвинулись с мертвой точки! — радостно воскликнул Блэйз. — Как я вижу, ты выбрал вон ту?</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp44')" class="exp">Yes.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp44" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp44')">&times;</span>
+          <p>- Да.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp45')" class="exp">No-no-no! You’d better choose this one, — Блэйз указал на
+          другую девушку. — She’s a bomb! She’s an explosion! You’ll have a marvelous time with her! I promise.</span>
+      </p>
+
+      <!-- The Modal -->
+      <div id="exp45" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp45')">&times;</span>
+          <p>- Нет-нет-нет! Лучше выбери эту, — Блэйз указал на другую девушку. — Она — бомба! Она —
+            взрыв! Ты проведешь с ней сказочное время! Я обещаю.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp46')" class="exp">So be it</span>, — сказал Стас, поднялся и направился к
+        столику, за
+        которым сидела девушка, на которую указал Блэйз.</p>
+
+      <!-- The Modal -->
+      <div id="exp46" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp46')">&times;</span>
+          <p>- Да будет так.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>А Блэйз, между тем, внимательно наблюдал за Ирой, которая изо всех сил пыталась вызвать в себе реакцию,
         причитающуюся в свете недвусмысленных действий Стаса, который, тем временем, уже вовсю очаровывал предложенную
         девушку.</p>
       <p>- Ну надо же! В жизни бы не подумала, что он умеет это делать так лихо! — сказала самой себе Ира, несмотря на
         успехи Стаса, безуспешно пытаясь почувствовать то, что положено в подобной ситуации.</p>
-      <p>- <span
-          onMouseOver="toolTip('- У тебя гораздо меньше предрассудков по поводу секса, чем кажется на первый взгляд. Идем! — Блэйз поднялся, взял Иру за руку и, захватив ее листки и карандаш, увлек за собой.')"
-          onMouseOut="toolTip()">*You have far fewer prejudices about sex than it seems at first sight. Let’s go! —
-          Блэйз поднялся, взял Иру за руку и, захватив ее листки и карандаш, увлек за собой.*</span></p>
+
+      <p>- <span onclick="openModal('exp47')" class="exp">You have much fewer prejudices about sex than it seems at
+          first sight. Let’s go! — Блэйз поднялся, взял Иру за руку и, захватив ее листки и карандаш, увлек за
+          собой.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp47" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp47')">&times;</span>
+          <p>- У тебя гораздо меньше предрассудков по поводу секса, чем кажется на первый взгляд. Идем! — Блэйз
+            поднялся, взял Иру за руку и, захватив ее листки и карандаш, увлек за собой.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
 
       <p style="text-align: center;">- - -</p>
 
@@ -629,100 +1142,264 @@
       <div class="card-art">
         <img src="./3_1_img_art/3_1_119_08_kushlani_jayasinha_panic.jpg" class="img"
           alt="Аз Фита Ижица. Художник: Кушлани Джаясинха (США). Абстрактное искусство">
-        <p><small><em><strong>…настоящая паника</strong><br><small>художник: Кушлани Джаясинха (США)</small></em></small></p>
+        <p><small><em><strong>…настоящая паника</strong><br><small>художник: Кушлани Джаясинха
+                (США)</small></em></small></p>
       </div>
 
-      <p>- <span
-          onMouseOver="toolTip('- У тебя есть затруднение в виде цвета моей кожи. Я прав? — спросил он, как только они оказались в первозданном хаосе его жилища.')"
-          onMouseOut="toolTip()">*The color of my skin is an issue for you, isn't it? — спросил он, как только они
-          оказались в первозданном хаосе его жилища.*</span></p>
+      <p>- <span onclick="openModal('exp48')" class="exp">The color of my skin is an issue for you, isn’t it? — спросил
+          он, как только они
+          оказались в первозданном хаосе его жилища.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp48" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp48')">&times;</span>
+          <p>- Цвет моей кожи напрягает тебя. Я прав? — спросил он, как только они оказались в первозданном хаосе его
+            жилища.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Ира принялась судорожно отнекиваться в смятении. Блэйз рассмеялся.</p>
-      <p>- <span
-          onMouseOver="toolTip('- Не волнуйся! Я чувствую, что у тебя есть это затруднение. На самом деле, это хорошо! Вполне возможно, что я родился негром именно для этой ситуации. Чем больше подобных затруднений у тебя сейчас, тем лучше. Они помогают тебе раскрыть твою личность так широко, как только возможно и так глубоко, как только возможно. Это очень важно. Ты знаешь, о чем я говорю.')"
-          onMouseOut="toolTip()">*Come on! I feel you have this difficulty. It's good! I do not exclude that I decided
-          to be born an African precisely for this situation. The more such difficulties you have now, the better. They
-          help you open your personality as wide as possible and as deep as possible. It's very important. You do know
-          what I'm talking about.*</span></p>
+
+      <p>- <span onclick="openModal('exp49')" class="exp">Come on! I feel you have this difficulty. It’s good! I do not
+          exclude I decided to be born an African precisely for this situation. The more such difficulties you have
+          now, the better. They help you open your personality as wide as possible and as deep as possible. It’s very
+          important. You do know what I’m talking about.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp49" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp49')">&times;</span>
+          <p>- Да ладно! Я чувствую, ты испытываешь такое затруднение. Это хорошо! Вполне возможно, что я решил родиться
+            негром именно для этой ситуации. Чем больше подобных затруднений у тебя сейчас, тем лучше. Они помогают тебе
+            раскрыть твою личность так широко, как только возможно и так глубоко, как только возможно. Это очень важно.
+            Ты знаешь, о чем я говорю.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Ира смотрела на него широко открытыми от удивления глазами. Блэйз, тем временем, продолжал:</p>
-      <p>- <span
-          onMouseOver="toolTip('- Думаю, Стас сказал тебе, что я предпочитаю говорить загадками. Почему? Загадки — это тест. Ты прошла его полностью, даже невзирая на то, что я не просто говорил с тобой загадками, я делал это на языке, который ты не в состоянии понимать, как следует. Тем не менее, ты уловила всё. Я знаю, ты не можешь поверить мне сейчас. Но ты действительно всё уловила. Я увидел это в твоих работах. Поэтому я стал говорить с тобой открыто.')"
-          onMouseOut="toolTip()">*I think you know from Stas that I prefer to speak in riddles. Why? Riddles are the
-          test. You've passed it brilliantly even despite that I did not only talk in riddles to you; I did it in the
-          language, which you can't understand properly. Nonetheless, you caught everything. I know you don't believe
-          me. But you really caught everything. I've seen that in your works. That's why I decided to talk to you
-          openly.*</span></p>
-      <p><span
-          onMouseOver="toolTip('Ира, я знаю, кто ты, только со слов Стаса, но я знаю, я чувствую, я ощущаю, я слышу очень хорошо, что ты есть. Я слышу это из неизмеримых глубин твоей личности. Я — ничто рядом с тобой. Но я могу помочь тебе постичь твое сверхъестественное знание человеческим способом.')"
-          onMouseOut="toolTip()">*Ira, I know who you are only because Stas told me. That is, I don't actually know it.
-          However, I know, I feel, I sense, I hear perfectly well, what you are. I hear this from the unfathomable depth
-          of your personality. I'm nothing next to you. But I can help you comprehend your Super Natural knowledge in a
-          human way.*</span></p>
-      <p><span
-          onMouseOver="toolTip('Ира, этот мир — произведение искусства, как и все миры. Гениальное или посредственное — это другой вопрос. Ты прекрасно знаешь, что ничего не случится, если ты просто скажешь себе, что этот мир — произведение искусства, и даже если ты станешь повторять себе это с утра до вечера каждый день.')"
-          onMouseOut="toolTip()">*Ira, this world is a work of art as all other worlds. Brilliant or mediocre — this is
-          another question. You know that nothing will happen if you just tell yourself that this world is a work of art
-          and even if you begin repeating that from morning till night every day.*</span></p>
-      <p><span
-          onMouseOver="toolTip('К сожалению, я не в состоянии помочь тебе воспринимать таким образом, но я могу помочь тебе почувствовать, что это возможно. Я могу помочь тебе вытащить то, что есть в твоей личности относительно этого. Я могу помочь тебе сделать, то, что есть в твоей личности относительно этого более доступным для тебя как для человека. Позволь мне сделать это. Для того чтобы выполнить это, мне нужно, чтобы твоя личность была открыта так широко, как только возможно и так глубоко, как только возможно. Так что, пожалуйста, не пытайся избавиться от своих ужасных чувств, касающихся предрассудков по поводу секса. Пожалуйста, не пытайся избавиться от своих ужасных чувств, касающихся цвета моей кожи. Наоборот. Попытайся разжечь их так сильно, как ты можешь.')"
-          onMouseOut="toolTip()">*Alas, I can't help you perceive the world this way, but I can help you sense that it
-          is possible. I can help you extract what you have in your personality concerning this. I can help you make
-          what you have in your personality concerning this more accessible for you as for a human. Let me do this. To
-          succeed, I need your personality opened as wide as possible and as deep as possible. So, please, do not try to
-          get rid of your terrible feelings concerning your prejudices about sex. Please, do not try to get rid of your
-          terrible feelings concerning the color of my skin. Quite the opposite! Try to kindle them as strongly as you
-          can.*</span></p>
-      <p>- <span onMouseOver="toolTip('- В этом случае, я просто сбегу отсюда.')" onMouseOut="toolTip()">*If I do it,
-          I'll run away from here.*</span></p>
-      <p>- <span onMouseOver="toolTip('- Нет, ты не сделаешь этого.')" onMouseOut="toolTip()">*No, you won’t.*</span>
-      </p>
+
+      <p>- <span onclick="openModal('exp50')" class="exp">I think you know from Stas that I prefer to speak in riddles.
+          Why? Riddles are a test. You passed it brilliantly even despite that I did not just talk to you in riddles; I
+          did it in the language, which you can’t understand properly. Nonetheless, you’ve caught everything. I know you
+          don’t believe me. But you’ve really caught everything. I saw that in your works. That’s why I decided to talk
+          to you openly.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp50" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp50')">&times;</span>
+          <p>- Думаю, ты знаешь от Стаса, что я предпочитаю говорить загадками. Почему? Загадки — это тест. Ты прошла
+            его блестяще, даже невзирая на то, что я не просто говорил с тобой загадками, я делал это на языке, который
+            ты не в состоянии понимать, как следует. Тем не менее, ты уловила всё. Я знаю, ты не веришь мне. Но ты
+            действительно всё уловила. Я увидел это в твоих работах. Поэтому я стал говорить с тобой
+            открыто.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p><span onclick="openModal('exp51')" class="exp">Ira, I know who you are only because Stas told me. That is, I
+          don’t actually know it. However, I know, I feel, I sense, I hear what you are. I hear this from the
+          unfathomable depth of your personality. I’m nothing next to you. But I can help you comprehend your Super
+          Natural Knowledge in a human way.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp51" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp51')">&times;</span>
+          <p>Ира, я знаю, кто ты, только со слов Стаса. То есть, на самом деле я этого не знаю. Однако я знаю, я
+            чувствую, я ощущаю, я слышу, что ты есть. Я слышу это из неизмеримых глубин твоей личности. Я — ничто рядом
+            с
+            тобой. Но я могу помочь тебе постичь твое СверхъЕстественное Знание человеческим способом.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p><span onclick="openModal('exp52')" class="exp">Ira, this world is a work of art same as all other worlds are.
+          Brilliant or mediocre is another question. You know that nothing will happen if you just tell yourself that
+          this world is a work of art and even if you begin repeating it from morning till night every day.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp52" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp52')">&times;</span>
+          <p>Ира, этот мир — произведение искусства, как и все миры. Гениальное или посредственное — это другой вопрос.
+            Ты прекрасно знаешь, что ничего не случится, если ты просто скажешь себе, что этот мир — произведение
+            искусства, и даже если ты станешь повторять себе это с утра до вечера каждый день.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p><span onclick="openModal('exp53')" class="exp">Unfortunately, I can’t help you perceive the world this way, but
+          I can help you sense that it is possible. I can help you extract what you have in your personality concerning
+          this. I can help you make what you have in your personality concerning this more accessible for you as for a
+          human. Let me do this. To succeed, I need your personality opened as wide as possible and as deep as possible.
+          So, please, do not try to get rid of your terrible feelings concerning your prejudices about sex. Please, do
+          not try to get rid of your terrible feelings concerning the color of my skin. Quite the opposite! Try to
+          kindle them as strongly as you can.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp53" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp53')">&times;</span>
+          <p>К сожалению, я не могу помочь тебе воспринимать мир таким образом, но я могу помочь тебе почувствовать,
+            что это возможно. Я могу помочь тебе вытащить то, что есть в твоей личности относительно этого. Я могу
+            помочь тебе сделать то, что есть в твоей личности относительно этого, более доступным для тебя как для
+            человека. Позволь мне сделать это. Чтобы у меня получилось, мне нужно, чтобы твоя личность была открыта
+            так широко, как только возможно и так глубоко, как только возможно. Так что, пожалуйста, не пытайся
+            избавиться от своих ужасных чувств, касающихся предрассудков по поводу секса. Пожалуйста, не пытайся
+            избавиться от своих ужасных чувств, касающихся цвета моей кожи. Наоборот. Попытайся разжечь их так сильно,
+            как только можешь.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp54')" class="exp">If I do it, I’ll run away from here.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp54" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp54')">&times;</span>
+          <p>- Если я сделаю это, я просто сбегу отсюда.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp55')" class="exp">No, you won’t.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp55" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp55')">&times;</span>
+          <p>- Нет, не сбежишь.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
 
       <p style="text-align: center;">- - -</p>
 
-      <p>- <span onMouseOver="toolTip('- Блэйз, что случилось со мной?')" onMouseOut="toolTip()">*Blaise, what happened
-          to me?*</span></p>
-      <p>- <span onMouseOver="toolTip('- Пытайся почувствовать. Пытайся услышать.')" onMouseOut="toolTip()">*Try to
-          feel. Try to hear.*</span></p>
+      <p>- <span onclick="openModal('exp56')" class="exp">Blaise, what happened to me?</span></p>
+
+      <!-- The Modal -->
+      <div id="exp56" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp56')">&times;</span>
+          <p>- Блэйз, что случилось со мной?</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp57')" class="exp">Try to feel. Try to hear.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp57" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp57')">&times;</span>
+          <p>- Пытайся почувствовать. Пытайся услышать.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
 
       <div class="card-art">
         <img src="./3_1_img_art/3_1_119_09_oleg_berezytski_try.jpg" class="img"
           alt="Аз Фита Ижица. Художник: Олег Березуцкий (Россия). Абстрактное искусство">
-        <p><small><em><strong>Пытайся почувствовать…</strong><br><small>художник: Олег Березуцкий (Россия)</small></em></small></p>
+        <p><small><em><strong>Пытайся почувствовать…</strong><br><small>художник: Олег Березуцкий
+                (Россия)</small></em></small></p>
       </div>
 
       <p>Ира начала вслушиваться в свои ощущения, но тут вспомнила, что умеет включать авто-комментатор. Она включила.
         Он выдал ей что-то отдаленно напоминающее план вводной лекции по искусствоведению, соединенный с Женечкиной
-        распечаткой о силах 
-        <span onclick="openModal('otF')" class="colortext3">ОТ</span>, 
-        <span onclick="openModal('tsyF')" class="colortext3">ЦЫ</span>, 
-        <span onclick="openModal('chervF')" class="colortext3">ЧЕРВЬ</span>, 
-        <span onclick="openModal('shaF')" class="colortext3">ША</span> и 
-        <span onclick="openModal('shchaF')" class="colortext3">ЩА</span>:</p>
+        распечаткой о силах
+        <span onclick="openModal('otF')" class="colortext3">ОТ</span>,
+        <span onclick="openModal('tsyF')" class="colortext3">ЦЫ</span>,
+        <span onclick="openModal('chervF')" class="colortext3">ЧЕРВЬ</span>,
+        <span onclick="openModal('shaF')" class="colortext3">ША</span> и
+        <span onclick="openModal('shchaF')" class="colortext3">ЩА</span>:
+      </p>
       <p>«<strong>Творческий замысел. Законченность произведения. — Изначальность и Окончательность.</strong></p>
       <p><strong>Жанр, форма, композиция. Гармоничность. — Законы и Соглашения.</strong></p>
       <p><strong>Творческие методы. — Приобретения и избавления.</strong></p>
       <p><strong>Вдохновение. — Намерение.</strong></p>
       <p><strong>Средства выражения. — Шансы и средства</strong>».</p>
-      <p>- <span
-          onMouseOver="toolTip('- Знаешь, почему и у Стаса, и у меня нет предрассудков по поводу секса? — вклинился Блэйз в прямую трансляцию авто-комментатора, когда тот в третий раз повторял то же самое. — Это не безнравственность. Секс на сцене, в то время как он и я можем воспринимать, можем видеть, можем слышать то, что за сценой.')"
-          onMouseOut="toolTip()">*Do you know why both Stas and I have no prejudices about sex? — вклинился Блэйз в
-          прямую трансляцию авто-комментатора, когда тот в третий раз повторял то же самое. — It's not immorality. Sex
-          is on the scene, while he and I can perceive, can see, can hear what is behind the scene.*</span></p>
+
+      <p>- <span onclick="openModal('exp58')" class="exp">Do you know why both Stas and I have no prejudices about sex?
+          — вклинился Блэйз в прямую трансляцию авто-комментатора, когда тот в третий раз повторял то же самое. — It’s
+          not immorality. Sex is on the scene, while he and I can perceive, can see, can hear what is behind the
+          scene.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp58" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp58')">&times;</span>
+          <p>- Знаешь, почему ни у Стаса, ни у меня нет предрассудков по поводу секса? — вклинился Блэйз в прямую
+            трансляцию авто-комментатора, когда тот в третий раз повторял то же самое. — Это не безнравственность. Секс
+            на сцене, в то время как он и я можем воспринимать, можем видеть, можем слышать то, что за сценой.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Ира аж физически ощутила, как не покидавшее ее смятение сугубо человеческих чувств стало прямо на глазах таять.
       </p>
-      <p>- <span onMouseOver="toolTip('- Почему ты не сказал мне этого раньше?')" onMouseOut="toolTip()">*Why didn’t you
-          tell me this before?*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- Мне нужно было, чтобы ты была без барьеров. Теперь ты восстанавливаешь их. Идем?')"
-          onMouseOut="toolTip()">*I needed you to be without barriers. Now you are restoring them. Let’s go?*</span></p>
-      <p>- <span onMouseOver="toolTip('- Подожди немного. Мне нужно записать кое-что.')" onMouseOut="toolTip()">*Please,
-          wait a sec. I need to write down something.*</span></p>
+
+      <p>- <span onclick="openModal('exp59')" class="exp">Why didn’t you tell me this before?</span></p>
+
+      <!-- The Modal -->
+      <div id="exp59" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp59')">&times;</span>
+          <p>- Почему ты не сказал мне этого раньше?</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp60')" class="exp">I needed you to be without barriers. Now you are restoring
+          them. Let’s go?</span></p>
+
+      <!-- The Modal -->
+      <div id="exp60" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp60')">&times;</span>
+          <p>- Ты мне нужна была без барьеров. Теперь ты восстанавливаешь их. Идем?</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp61')" class="exp">Please, wait a sec. I need to write down something.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp61" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp61')">&times;</span>
+          <p>- Пожалуйста, подожди немного. Мне нужно записать кое-что.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Ира вновь включила авто-комментатор и под его диктовку записала подобие плана к вводной лекции по
-        искусствоведению, соединенное с Женечкиной распечаткой о силах 
-        <span onclick="openModal('otF')" class="colortext3">ОТ</span>, 
-        <span onclick="openModal('tsyF')" class="colortext3">ЦЫ</span>, 
-        <span onclick="openModal('chervF')" class="colortext3">ЧЕРВЬ</span>, 
-        <span onclick="openModal('shaF')" class="colortext3">ША</span> и 
-        <span onclick="openModal('shchaF')" class="colortext3">ЩА</span>.</p>
+        искусствоведению, соединенное с Женечкиной распечаткой о силах
+        <span onclick="openModal('otF')" class="colortext3">ОТ</span>,
+        <span onclick="openModal('tsyF')" class="colortext3">ЦЫ</span>,
+        <span onclick="openModal('chervF')" class="colortext3">ЧЕРВЬ</span>,
+        <span onclick="openModal('shaF')" class="colortext3">ША</span> и
+        <span onclick="openModal('shchaF')" class="colortext3">ЩА</span>.
+      </p>
 
       <p style="text-align: center;">- - -</p>
 
@@ -730,30 +1407,114 @@
         столов. На сцене, Джастин и Терри собирались уходить. Брэда и Римуса уже не было. Ира, Стас и Блэйз стояли молча
         у барной стойки, пока Джастин и Терри не прошли мимо них, попрощавшись. Как только они скрылись за дверью,
         Блэйз, вернув себе шутливо-непристойную манеру поведения, спросил Стаса:</p>
-      <p>- <span onMouseOver="toolTip('- Ну и как ты?')" onMouseOut="toolTip()">*So, how are you?*</span></p>
-      <p>- <span onMouseOver="toolTip('- Замечательно! Ты был прав! Она действительно бомба, взрыв! А как ты?')"
-          onMouseOut="toolTip()">*Wonderful! You were right! She's really a bomb, an explosion! And how are you?*</span>
-      </p>
+
+      <p>- <span onclick="openModal('exp62')" class="exp">How are you?</span></p>
+
+      <!-- The Modal -->
+      <div id="exp62" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp62')">&times;</span>
+          <p>- Как у тебя дела?</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp63')" class="exp">Wonderful! You were right. She’s really a bomb, an explosion.
+          And how are you?</span></p>
+
+      <!-- The Modal -->
+      <div id="exp63" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp63')">&times;</span>
+          <p>- Замечательно! Ты был прав. Она действительно бомба, взрыв. А как ты?</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Блэйз усмехнулся.</p>
-      <p>- <span
-          onMouseOver="toolTip('- Я завидую тебе, Стас. Ты — счастливейшая личность, которую я когда-либо встречал. Она… она невероятна! — он немного помолчал, будто в колебаниях. — Однако, не в сексе, — Блэйз посмотрел на Иру. — Извини меня, но я никогда не обманываю его.')"
-          onMouseOut="toolTip()">*I envy you, Stas. You're the happiest person I ever met. She is… she is incredible! —
-          он немного помолчал, будто в колебаниях. — However, not in sex, — Блэйз посмотрел на Иру. — Excuse me, but I
-          never lie to him.*</span></p>
-      <p>- <span onMouseOver="toolTip('- В самом деле? — спросил Стас с ехидной полуулыбкой.')"
-          onMouseOut="toolTip()">*Really? — спросил Стас с ехидной полуулыбкой.*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- Что ты имеешь в виду? — взорвался возмущением Блэйз. — Приведи ходя бы один пример, когда я тебя обманывал!')"
-          onMouseOut="toolTip()">*What do you mean? — взорвался возмущением Блэйз. — Give me at least one example when I
-          lied to you!*</span></p>
-      <p>- <span onMouseOver="toolTip('- Когда? Прямо сейчас!')" onMouseOut="toolTip()">*When? Right now!*</span></p>
+      <p>- <span onclick="openModal('exp64')" class="exp">I envy you, Stas. You’re the happiest person I ever met. She
+          is… she is incredible! — он немного помолчал, будто в колебаниях. — However, not in sex, — Блэйз посмотрел на
+          Иру. — Excuse me, but I never lie to him.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp64" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp64')">&times;</span>
+          <p>- Я завидую тебе, Стас. Ты — счастливейшый человек, которого я когда-либо встречал. Она… она невероятна! —
+            он немного помолчал, будто в колебаниях. — Однако, не в сексе, — Блэйз посмотрел на Иру. — Извини меня, но я
+            никогда не обманываю его.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp65')" class="exp">Really? — спросил Стас с ехидной полуулыбкой.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp65" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp65')">&times;</span>
+          <p>- В самом деле? — спросил Стас с ехидной полуулыбкой.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp66')" class="exp">What do you mean? — взорвался возмущением Блэйз. — Give me at
+          least one example when I lied to you!</span></p>
+
+      <!-- The Modal -->
+      <div id="exp66" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp66')">&times;</span>
+          <p>- Что ты имеешь в виду? — взорвался возмущением Блэйз. — Приведи ходя бы один пример, когда я тебя
+            обманывал!</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp67')" class="exp">When? Just now!</span></p>
+
+      <!-- The Modal -->
+      <div id="exp67" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp67')">&times;</span>
+          <p>- Когда? Только что!</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Блэйз сжал губы, с шумом втягивая в себя воздух.</p>
-      <p>- <span onMouseOver="toolTip('- Да, я сделал это! — фыркнул он и со смехом поскакал к выходу.')"
-          onMouseOut="toolTip()">*Yes, I did! — фыркнул он и со смехом поскакал к выходу.*</span></p>
-      <p>- <span
-          onMouseOver="toolTip('- Подожди! — крикнула ему вслед Ира, когда он уже взялся за ручку. — Стас, попроси всех уйти.')"
-          onMouseOut="toolTip()">*Wait! — крикнула ему вслед Ира, когда он уже взялся за ручку. — Стас, попроси всех
-          уйти.*</span></p>
+
+      <p>- <span onclick="openModal('exp68')" class="exp">Yes, I did! — фыркнул он и со смехом поскакал к выходу.</span>
+      </p>
+
+      <!-- The Modal -->
+      <div id="exp68" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp68')">&times;</span>
+          <p>- Да, я сделал это! — фыркнул он и со смехом поскакал к выходу.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
+      <p>- <span onclick="openModal('exp69')" class="exp">Wait! — крикнула ему вслед Ира, когда он уже взялся за
+          ручку. — Стас, попроси всех уйти.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp69" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp69')">&times;</span>
+          <p>- Подожди! — крикнула ему вслед Ира, когда он уже взялся за ручку. — Стас, попроси всех уйти.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
 
       <div class="card-art">
         <img src="./3_1_img/3_1_119_03_wait.jpg" class="img"
@@ -770,31 +1531,77 @@
         рояль. Ира заняла свое место, приготовившись рисовать. Блэйз и Стас заиграли.</p>
       <p>Ира не отдавала себе отчета, что она собирается делать, впав в транс еще до того, как Блэйз и Стас заиграли.
         Даже еще до того, когда они втроем поднялись на сцену. И даже до этого. Наверное, именно в тот момент, когда
-        крикнула Блэйзу <span title="Подожди!">*«Wait!»*</span>. Она в экстазе водила карандашом по бумаге, чувствуя,
+        крикнула Блэйзу «<span onclick="openModal('exp70')" class="exp">Wait!</span>». Она в экстазе водила карандашом
+        по бумаге, чувствуя,
         как звучащая в ней музыка — и та, что играли Стас с Блэйзом, и ее собственная — вырывается наружу вместе с тем,
         что рождало в ней то, что выплескивалось штрихами на бумагу. Сцена утонула в Золотистом Свете.</p>
+
+      <!-- The Modal -->
+      <div id="exp70" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp70')">&times;</span>
+          <p>Подожди!</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
 
       <p style="text-align: center;">- - -</p>
 
       <p>Стас, продолжая сидеть за роялем, и Блэйз, продолжая сжимать скрипу, смотрели на Иру в ошеломлении на грани
         мистического ужаса, а может, даже слегка за гранью. Ира встала, подошла к Блэйзу и протянула ему листок бумаги.
       </p>
-      <p>- <span onMouseOver="toolTip('- Это — твоё')" onMouseOut="toolTip()">*This is yours.*</span></p>
+
+      <p>- <span onclick="openModal('exp71')" class="exp">This is yours.</span></p>
+
+      <!-- The Modal -->
+      <div id="exp71" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp71')">&times;</span>
+          <p>- Это — тебе.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Блэйз положил скрипку на рояль, взял листок из рук Иры и опустил на него глаза.</p>
-      <p>- <span
-          onMouseOver="toolTip('- Спасибо… — дрожа всем телом, почти прошептал он через целую вечность, а затем отчаянно почти крикнул. — Стас, скажи ей! — и принялся говорить очень быстро, почти задыхаясь, и говорил очень долго. — Стас, расскажи ей все это, когда вы будете одни. Хорошо?')"
-          onMouseOut="toolTip()">*Thank you… — дрожа всем телом, почти прошептал он через целую вечность, а затем
-          отчаянно почти крикнул. — Stas, tell her! — и принялся говорить очень быстро, почти задыхаясь, и говорил очень
-          долго. — Stas, tell her all this when you're alone. Okay?*</span></p>
+
+      <p>- <span onclick="openModal('exp72')" class="exp">Thank you… — дрожа всем телом, почти прошептал он через целую
+          вечность, а затем отчаянно почти крикнул. — Stas, tell her! — и принялся говорить очень быстро, почти
+          задыхаясь, и говорил очень долго. — Stas, tell her all this when you’re alone. Okay?</span></p>
+
+      <!-- The Modal -->
+      <div id="exp72" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp72')">&times;</span>
+          <p>- Спасибо… — дрожа всем телом, почти прошептал он через целую вечность, а затем отчаянно почти крикнул. —
+            Стас, скажи ей! — и принялся говорить очень быстро, почти задыхаясь, и говорил очень долго. — Стас, расскажи
+            ей все это, когда вы будете одни. Хорошо?</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
 
       <div class="card-art">
         <img src="./3_1_img_art/3_1_119_10_arturo_pacheco_lugo_tell.jpg" class="img"
           alt="Аз Фита Ижица. Художник: Артуро Пачеко Луго (Мексика). Абстрактное искусство">
-        <p><small><em><strong>Скажи ей!</strong><br><small>художник: Артуро Пачеко Луго (Мексика)</small></em></small></p>
+        <p><small><em><strong>Скажи ей!</strong><br><small>художник: Артуро Пачеко Луго (Мексика)</small></em></small>
+        </p>
       </div>
 
-      <p>- <span onMouseOver="toolTip('- Хорошо, — ответил ему Стас, взял Иру за руку, и они ушли.')"
-          onMouseOut="toolTip()">*Okay, — ответил ему Стас, взял Иру за руку, и они ушли.*</span></p>
+      <p>- <span onclick="openModal('exp73')" class="exp">Okay, — ответил ему Стас, взял Иру за руку, и они ушли.</span>
+      </p>
+
+      <!-- The Modal -->
+      <div id="exp73" class="modal">
+        <!-- Modal content -->
+        <div class="modal-content">
+          <span class="close" onclick="closeModal('exp73')">&times;</span>
+          <p>- Хорошо, — ответил ему Стас, взял Иру за руку, и они ушли.</p>
+        </div>
+      </div>
+      <!-- End The Modal -->
+
       <p>Блэйз остался стоять на сцене, продолжая ошеломленно вглядываться в Ирин рисунок.</p>
 
       <p style="text-align: center;">- - -</p>
@@ -862,7 +1669,8 @@
       <div class="card-art">
         <img src="./3_1_img_art/3_1_119_11_al_johnson_answer.jpg" class="img"
           alt="Аз Фита Ижица. Художник: Ал Джонсон (США). Абстрактное искусство">
-        <p><small><em><strong>Один ответ на все вопросы</strong><br><small>художник: Ал Джонсон (США)</small></em></small></p>
+        <p><small><em><strong>Один ответ на все вопросы</strong><br><small>художник: Ал Джонсон
+                (США)</small></em></small></p>
       </div>
 
       <p>Понимаешь, что подмена двоичности двойственностью рядом с восприятием мира как целесообразного технического
@@ -910,7 +1718,8 @@
       <div class="card-art">
         <img src="./3_1_img_art/3_1_119_12_aydan_ugur_unal_mystery.jpg" class="img"
           alt="Аз Фита Ижица. Художник: Айдан Угур Унал (Турция). Абстрактное искусство">
-        <p><small><em><strong>…гораздо запутаннее страшнее</strong><br><small>художник: Айдан Угур Унал (Турция)</small></em></small></p>
+        <p><small><em><strong>…гораздо запутаннее страшнее</strong><br><small>художник: Айдан Угур Унал
+                (Турция)</small></em></small></p>
       </div>
 
       <p>Они некоторое время сидели молча.</p>
