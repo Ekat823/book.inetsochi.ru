@@ -1787,8 +1787,8 @@ var dictionary = `
     <p>Группа: <span class="color1"><strong>Внутренние энергии</strong></span> <em>(есть только внутри личности)</em>
     </p>
     <p>Тип 7: <strong>Энергии информационного обмена</strong>. <span class="color1">ФИТА</span> — энергия
-      информационного обмена <span class="color1">АЗ</span>. С помощью энергии <span class="color1">ФИТА</span>, <span
-        class="color1">АЗ</span> осуществляет программирование <span class="color1">ИЖИЦА</span>.</p>
+      информационного обмена <span class="color1">АЗ</span> <em>(энергия сути)</em>. С помощью энергии <span class="color1">ФИТА</span>, <span
+        class="color1">АЗ</span> осуществляет программирование <span class="color1">ИЖИЦА</span> <em>(заключенная внутри энергия течения жизни)</em>.</p>
   </div>
 </div>
 
