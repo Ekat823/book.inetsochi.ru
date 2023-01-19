@@ -1,0 +1,171 @@
+<!DOCTYpE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta hsmallp-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../book.css">
+  <script src="../book.js"></script>
+  <link rel="shortcut icon" href="../images/favicon.gif" type="image/gif">
+  <title>Чего хочет то, что называют Злом</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="dictionary"></div>
+
+    <!--navbar-->
+
+    <nav class="navbar">
+      <div><img src="../images/azNavbar.png" alt="Аз Фита Ижица" class="imgnav-mobile"></div>
+      <ul class="nav-links">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+
+          <div><img src="../images/azNavbar.png" alt="Аз Фита Ижица" class="imgnav"></div>
+
+          <li><a href="../index.html">Аз Фита Ижица</a></li>
+
+          <li onclick="openModal('chapters')" style="cursor: pointer;">Главы</li>
+
+          <li onclick="openModal('books')" style="cursor: pointer;">Книги</li>
+
+          <li><a href="../cont_site/books_az.html">о Книгах</a></li>
+
+          <li><a href="../cont_site/author_az.html">об Авторе</a></li>
+        </div>
+      </ul>
+    </nav>
+
+    <!-- The Modal Books-->
+    <div id="books" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('books')">&times;</span>
+        <ul>
+          <li>I. Прогулка по висячему Мостику</li>
+          <li class="indent"><a href="../1_1_cont/1_1_ch01.html" class="exp"><small>1. Золотистый свет</small></a></li>
+          <li class="indent"><a href="../1_2_cont/1_2_ch20.html" class="exp"><small>2. Сила расталкивания</small></a>
+          </li>
+          <li class="indent"><a href="../1_3_cont/1_3_ch33.html" class="exp"><small>3. Точка выбора</small></a></li>
+
+          <li>II. Хаос в калейдоскопе</li>
+          <li class="indent"><a href="../2_1_cont/2_1_ch53.html" class="exp"><small>4. Чудовищный розыгрыш</small></a>
+          </li>
+          <li class="indent"><a href="../2_2_cont/2_2_ch69.html" class="exp"><small>5. Крышень без компании</small></a>
+          </li>
+          <li class="indent"><a href="../2_3_cont/2_3_ch084.html" class="exp"><small>6. Иллюзия и Реальность</small></a>
+          </li>
+
+
+          <li class="opened"><strong>III. Остров бродячих собак</strong></li>
+          <li class="indent"><a href="../3_1_cont/3_1_ch102.html" class="exp"><small>7. Хранитель чистого искусства</small></a></li>
+          <li class="indent"><a href="../3_2_cont/3_2_ch120.html" class="exp"><small>8. Третий элемент</small></a></li>
+          <li class="indent-opened"><strong><small>9. Удивительный и ошеломительный</small></strong></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End The Modal Books-->
+
+    <!-- The Modal Chapters-->
+    <div id="chapters" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('chapters')">&times;</span>
+        <ul>
+          <li><a href="./3_3_ch137.html" class="exp">137. Стена правил и предрассудков</a></li>
+          <li><a href="./3_3_ch138.html" class="exp">138. Истинные мотивации</a></li>
+          <li><a href="./3_3_ch139.html" class="exp">139. Скрытая цель флоры и фауны</a></li>
+          <li><a href="./3_3_ch140.html" class="exp">140. Соответствие внутренним стремлениям</a></li>
+          <li class="opened"><strong>141. Чего хочет то, что называют Злом</strong></li>
+          <li><a href="./3_3_ch142.html" class="exp">142. Строение внутреннего мира</a></li>
+          <li><a href="./3_3_ch143.html" class="exp">143. Критерии оценки интеллекта</a></li>
+          <li><a href="./3_3_ch144.html" class="exp">144. Источник личных правил</a></li>
+          <li><a href="./3_3_ch145.html" class="exp">145. Не «каруселька»</a></li>
+          <li><a href="./3_3_ch146.html" class="exp">146. Не эфемерное чудо</a></li>
+          <li><a href="./3_3_ch147.html" class="exp">147. Плавающая граница</a></li>
+          <li><a href="./3_3_ch148.html" class="exp">148. Мотивация «ХОЧУ»</a></li>
+          <li><a href="./3_3_ch149.html" class="exp">149. Единственный способ не оставить выбора</a></li>
+          <li><a href="../cont/encl_1.html" class="exp"><small>Приложение 1. Славянская Азбука</small></a></li>
+          <li><a href="../cont/encl_2.html" class="exp"><small>Приложение 2. 43 энергии Бытия</small></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End The Modal  Chapters-->
+
+    <!--HEADER IMAGE-->
+
+    <div>
+      <img src="../images/asCoverNar.jpg" alt="Аз Фита Ижица" class="img-cover-nar">
+      <img src="../images/asCoverNarSmall.jpg" alt="Аз Фита Ижица" class="img-cover-nar-small">
+    </div>
+
+    <!--CHApTER-->
+
+    <div class="card">
+
+      <!--Title-->
+      <p style="text-align: center;">Екатерина Трубицина</p>
+      <p style="text-align: center;"><img src="../images/azNavbar.png" alt="Аз Фита Ижица" class="imgtitle"></p>
+      <p style="text-align: center; line-height: 0.7rem;">Часть III</p>
+      <h1 style="margin-top: 0.5rem;">Остров бродячих собак</h1>
+      <p style="text-align: center; line-height: 0.7rem;">Книга 9</p>
+      <h2 class="book">Удивительный и ошеломительный</h2>
+      <p style="text-align: center; line-height: 0.7rem;"><small><em>(главы 137-149)</em></small></p>
+      <!--End Of Title-->
+
+      <hr class="line">
+
+      <h3 style="align-items: center;"><small>Глава 141</small> <br><strong>Чего хочет то, что называют Злом</strong></h3>
+
+      
+
+      <p style="text-align: center;"><a class="next-chapter" href="./3_3_ch142.html">Глава 142. Строение внутреннего мира</a></p>
+
+    </div>
+
+    <!--Footer-->
+    <footer>
+      <a href="#"><button class="button">&#8593; ВВЕРХ &#8593;</button></a>
+      <p style="font-size: 0.9rem;">&#169; 2014 Екатерина Трубицина</p>
+    </footer>
+
+  </div>
+
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (d, w, c) {
+      (w[c] = w[c] || []).push(function () {
+        try {
+          w.yaCounter12928414 = new Ya.Metrika({
+            id: 12928414,
+            clickmap: true,
+            trackLinks: true
+          });
+        } catch (e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = (d.location.protocol == "hsmallps:" ? "hsmallps:" : "hsmallp:") + "//mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript>
+    <div><img src="//mc.yandex.ru/watch/12928414" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+
+</body>
+
+</html>
