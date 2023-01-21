@@ -108,7 +108,7 @@ li {
 .menu {
   display: flex;
   gap: 1em;
-  font-size: 1.17rem;
+  font-size: 1.15rem;
 }
 
 .menu li:hover {
