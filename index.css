@@ -108,13 +108,19 @@ li {
 .menu {
   display: flex;
   gap: 1em;
-  font-size: 1rem;
+  font-size: 1.17rem;
 }
 
 .menu li:hover {
   background-color: rgb(225, 224, 224);
   border-radius: 10px;
   transition: 0.3s ease;
+}
+
+.active {
+  background-color: rgb(241, 240, 240);
+  border-radius: 10px;
+  font-weight: 600;
 }
 
 .menu li {
