@@ -186,10 +186,13 @@ a {
 
 a.next-chapter {
   color: #583e03;
+  cursor: pointer;
+  text-decoration: underline;
 }
 
 a.next-chapter:hover {
-  text-decoration: underline;
+  font-weight: 700;
+  font-size: 90%;
 }
 
 li {

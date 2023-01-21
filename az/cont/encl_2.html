@@ -1,0 +1,638 @@
+<!DOCTYpE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta hsmallp-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../book.css">
+  <script src="../book.js"></script>
+  <link rel="shortcut icon" href="../images/favicon.gif" type="image/gif">
+  <title>43 энергии Бытия</title>
+</head>
+
+<body>
+
+  <div class="container">
+    <div id="dictionary"></div>
+    <!--navbar-->
+
+    <nav class="navbar">
+      <div><img src="../images/azNavbar.png" alt="Аз Фита Ижица" class="imgnav-mobile"></div>
+      <ul class="nav-links">
+        <input type="checkbox" id="checkbox_toggle" />
+        <label for="checkbox_toggle" class="hamburger">&#9776;</label>
+        <div class="menu">
+
+          <div><img src="../images/azNavbar.png" alt="Аз Фита Ижица" class="imgnav"></div>
+
+          <li><a href="../../index.html">Аз Фита Ижица</a></li>
+
+          <li onclick="openModal('books')" style="cursor: pointer;">Книги</li>
+
+          <li><a href="../../cont_site/books_az.html">о Книгах</a></li>
+
+          <li><a href="../../cont_site/author_az.html">об Авторе</a></li>
+        </div>
+      </ul>
+    </nav>
+
+    <!-- The Modal Books-->
+    <div id="books" class="modal">
+      <!-- Modal content -->
+      <div class="modal-content">
+        <span class="close" onclick="closeModal('books')">&times;</span>
+        <ul>
+          <li>I. Прогулка по висячему Мостику</li>
+          <li class="indent"><a href="../1_1_cont/1_1_ch01.html" class="exp"><small>1. Золотистый свет</small></a></li>
+          <li class="indent"><a href="../1_2_cont/1_2_ch20.html" class="exp"><small>2. Сила расталкивания</small></a>
+          </li>
+          <li class="indent"><a href="../1_3_cont/1_3_ch33.html" class="exp"><small>3. Точка выбора</small></a></li>
+
+          <li class="opened"><strong>II. Хаос в калейдоскопе</strong></li>
+          <li class="indent"><a href="../2_1_cont/2_1_ch53.html" class="exp"><small>4. Чудовищный розыгрыш</small></a>
+          </li>
+          <li class="indent"><a href="../2_2_cont/2_2_ch69.html" class="exp"><small>5. Крышень без компании</small></a>
+          </li>
+          <li class="indent"><a href="../2_3_cont/2_3_ch084.html" class="exp"><small>6. Иллюзия и Реальность</small></a>
+          </li>
+
+          <li>III. Остров бродячих собак</li>
+          <li class="indent"><a href="../3_1_cont/3_1_ch102.html" class="exp"><small>7. Хранитель чистого
+                искусства</small></a></li>
+          <li class="indent"><a href="../3_2_cont/3_2_ch120.html" class="exp"><small>8. Третий элемент</small></a></li>
+          <li class="indent"><a href="../3_3_cont/3_3_ch137.html" class="exp"><small>9. Удивительный и
+                ошеломительный</small></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- End The Modal Books-->
+
+    <!--HEADER IMAGE-->
+
+    <div>
+      <img src="../images/asCoverNar.jpg" alt="Аз Фита Ижица" class="img-cover-nar">
+      <img src="../images/asCoverNarSmall.jpg" alt="Аз Фита Ижица" class="img-cover-nar-small">
+    </div>
+
+    <!--CHApTER-->
+
+    <div class="card">
+
+      <!--Title-->
+      <p style="text-align: center;">Екатерина Трубицина</p>
+      <p style="text-align: center;"><img src="../images/az.png" alt="Аз Фита Ижица" class="imgtitle"></p>
+      <p style="text-align: center; line-height: 0.7rem;">Приложение 2</p>
+      <h1 style="margin-top: 0.5rem;">43 энергии Бытия</h1>
+      <!--End Of Title-->
+
+      <hr class="line">
+
+      <h2
+        style="align-items: center; background: linear-gradient(0.25turn, #020001, #9d752d); border-radius: 20px; color: white;">
+        <strong>Три группы энергий</strong>
+      </h2>
+
+      <br>
+
+      <div style="text-align: center;">
+        <p><span class="colortext1">1. Внутренние энергии</span><br>
+          <em><small>Энергии, которые есть только внутри личности</small></em><br>
+          5 энергий:
+        </p>
+        <p> <span onclick="openModal('az')" class="colortext1">АЗ</span>,
+          <span onclick="openModal('thita')" class="colortext1">ФИТА</span>,
+          <span onclick="openModal('izhitsa')" class="colortext1">ИЖИЦА</span>,
+          <span onclick="openModal('yu')" class="colortext1">Ю</span>,
+          <span onclick="openModal('ya')" class="colortext1">Я</span>.
+        </p>
+      </div>
+
+      <br>
+
+      <div style="text-align: center;">
+        <p><span class="colortext2">2. Внешнии энергии</span><br>
+          <em><small>Энергии, которые есть только снаружи, то есть, в окружающей личность среде</small></em><br>
+          7 энергий:
+        </p>
+        <p>
+          <span onclick="openModal('zhivete')" class="colortext2">ЖИВЕТЕ</span>,
+          <span onclick="openModal('zemlya')" class="colortext2">ЗЕМЛЯ</span>,
+          <span onclick="openModal('ludi')" class="colortext2">ЛЮДИ</span>,
+          <span onclick="openModal('nash')" class="colortext2">НАШ</span>,
+          <span onclick="openModal('on')" class="colortext2">ОН</span>,
+          <span onclick="openModal('ksi')" class="colortext2">КСИ</span>,
+          <span onclick="openModal('psi')" class="colortext2">ПСИ</span>.
+        </p>
+      </div>
+
+      <br>
+
+      <div style="text-align: center;">
+        <p><span class="colortext3">3. Зеркальные энергии</span><br>
+          <em><small>Энергии, которые есть как снаружи, так и внутри личности</small></em><br>
+          31 энергия:
+        </p>
+        <p>
+          <span onclick="openModal('buki')" class="colortext3">БУКИ</span>,
+          <span onclick="openModal('vedi')" class="colortext3">ВЕДИ</span>,
+          <span onclick="openModal('glagoli')" class="colortext3">ГЛАГОЛИ</span>,
+          <span onclick="openModal('dobro')" class="colortext3">ДОБРО</span>,
+          <span onclick="openModal('yest')" class="colortext3">ЕСТЬ</span>,
+          <span onclick="openModal('zelo')" class="colortext3">ЗЕЛО</span>,
+          <span onclick="openModal('izhe')" class="colortext3">ИЖЕ</span>,
+          <span onclick="openModal('i')" class="colortext3">И</span>,
+          <span onclick="openModal('kako')" class="colortext3">КАКО</span>,
+          <span onclick="openModal('myslete')" class="colortext3">МЫСЛЕТЕ</span>,
+          <span onclick="openModal('pokoy')" class="colortext3"> ПОКОЙ</span>,
+          <span onclick="openModal('rtsy')" class="colortext3">РЦЫ</span>,
+          <span onclick="openModal('slovoG')" class="colortext3">СЛОВО</span>,
+          <span onclick="openModal('tverdo')" class="colortext3">ТВЕРДО</span>,
+          <span onclick="openModal('uk')" class="colortext3">УК</span>,
+          <span onclick="openModal('fert')" class="colortext3">ФЕРТ</span>,
+          <span onclick="openModal('her')" class="colortext3">ХЭР</span>,
+          <span onclick="openModal('ot')" class="colortext3">ОТ</span>,
+          <span onclick="openModal('tsy')" class="colortext3">ЦЫ</span>,
+          <span onclick="openModal('cherv')" class="colortext3">ЧЕРВЬ</span>,
+          <span onclick="openModal('sha')" class="colortext3">ША</span>,
+          <span onclick="openModal('shcha')" class="colortext3">ЩА</span>,
+          <span onclick="openModal('yer')" class="colortext3">ЕР, ЕРЫ, ЕРЬ</span>,
+          <span onclick="openModal('yat')" class="colortext3">ЯТЬ</span>,
+          <span onclick="openModal('iye')" class="colortext3">ИЕ</span>,
+          <span onclick="openModal('es')" class="colortext3">ЭС</span>,
+          <span onclick="openModal('os')" class="colortext3">ОС</span>,
+          <span onclick="openModal('yes')" class="colortext3">ЕС</span>,
+          <span onclick="openModal('yos')" class="colortext3">ЁС</span>.
+        </p>
+      </div>
+
+      <br>
+      <br>
+
+      <h2
+        style="align-items: center; background: linear-gradient(0.25turn, #020001, #9d752d); border-radius: 20px; color: white;">
+        <strong>Десять типов энергий</strong>
+      </h2>
+
+      <br>
+
+      <p style="text-align: center;">1. Энергии собственной личности<br>
+        <span onclick="openModal('azG')" class="colortext1">АЗ</span>,
+        <span onclick="openModal('yaG')" class="colortext1">Я</span>
+      </p>
+      <p><span onclick="openModal('azG')" class="colortext1">АЗ</span> — энергия сути.<br>
+        <span onclick="openModal('yaG')" class="colortext1">Я</span> — энергия человеческого сознания.
+      </p>
+
+      <br>
+
+      <p style="text-align: center;">2. Энергии третьих лиц<br>
+        <span onclick="openModal('zemlyaG')" class="colortext2">ЗЕМЛЯ</span>,
+        <span onclick="openModal('ludiG')" class="colortext2">ЛЮДИ</span>,
+        <span onclick="openModal('nashG')" class="colortext2">НАШ</span>,
+        <span onclick="openModal('onG')" class="colortext2">ОН</span>
+      </p>
+      <p>Энергии объектов и субъектов, и в данном случае, как объекты и субъекты рассматриваются также все внешние
+        явления, действия и процессы.</p>
+
+      <br>
+
+      <p style="text-align: center;">3. Энергии вместилища<br>
+        <span onclick="openModal('yerG')" class="colortext3">ЕР, ЕРЫ, ЕРЬ</span>
+      </p>
+      <p>Эти энергии можно было бы назвать энергиями пространства, однако трехмерное пространство Вселенной — лишь
+        частный случай этих энергий и, к примеру, информационное пространство Интернета — это тоже лишь частный случай
+        этих энергий.</p>
+
+      <br>
+
+      <p style="text-align: center;">4. Энергии символов<br>
+        <span onclick="openModal('kakoG')" class="colortext3">КАКО</span>,
+        <span onclick="openModal('slovoG')" class="colortext3">СЛОВО</span>
+      </p>
+      <p>Очень важные энергии, определяющие и, при необходимости, меняющие кодировку всех видов информации, то есть,
+        всех видов энергий. Плодотворно работать с информацией — то есть, с любыми энергиями — возможно, только если они
+        имеют подходящую для избранной деятельности кодировку. Грубо говоря, невозможно работать со звуком, как с
+        изображением, а с изображением, как со звуком.</p>
+
+      <br>
+
+      <p style="text-align: center;">5. Энергии наличия<br>
+        <span onclick="openModal('yestG')" class="colortext3">ЕСТЬ</span>,
+        <span onclick="openModal('yatG')" class="colortext3">ЯТЬ</span>
+      </p>
+      <p><span onclick="openModal('yestG')" class="colortext3">ЕСТЬ</span> — энергия изначальной данности<br>
+        <span onclick="openModal('yatG')" class="colortext3">ЯТЬ</span> — энергия приобретенного в процессе.
+      </p>
+      <p>Если взять в качестве примера человеческие реалии:<br>
+        <span onclick="openModal('yestG')" class="colortext3">ЕСТЬ</span> — врожденные способности.<br>
+        <span onclick="openModal('yatG')" class="colortext3">ЯТЬ</span> — приобретенные навыки.
+      </p>
+      <p>Само собой, эти энергии касаются не только этого.</p>
+
+      <br>
+
+      <p style="text-align: center;">6. Энергии связи и слияния<br>
+        <span onclick="openModal('iG')" class="colortext3">И</span>,
+        <span onclick="openModal('iyeG')" class="colortext3">ИЕ</span>,
+        <span onclick="openModal('esG')" class="colortext3">ЭС</span>,
+        <span onclick="openModal('osG')" class="colortext3">ОС</span>,
+        <span onclick="openModal('yesG')" class="colortext3">ЕС</span>,
+        <span onclick="openModal('yosG')" class="colortext3">ЁС</span>
+      </p>
+      <p><span onclick="openModal('iG')" class="colortext3">И</span> способна притянуть друг к другу до
+        состояния непосредственной близости все, что угодно, независимо от качественных и количественных характеристик
+        этих элементов. То есть, с помощью этой энергии создаются условия для возможности использования в каком-либо
+        процессе двух и более элементов, независимо от их характеристик.</p>
+      <p><span onclick="openModal('iyeG')" class="colortext3">ИЕ</span> способна притягивать все, что угодно, к идее
+        создания чего-либо. К примеру, идешь в магазин и благодаря энергии
+        <span onclick="openModal('iG')" class="colortext3">И</span> собираешь вместе различные продукты, которые просто
+        приглянулись. Когда приходишь домой и вываливаешь покупки, посещает идея, какие блюда, из купленного, можно
+        приготовить, и сортируешь продукты на соответствующие кучи. Вот это вот действие энергии
+        <span onclick="openModal('iyeG')" class="colortext3">ИЕ</span>.
+      </p>
+      <p><span onclick="openModal('esG')" class="colortext3">ЭС</span> и
+        <span onclick="openModal('osG')" class="colortext3">ОС</span> формируют связи между элементами.
+      </p>
+      <p><span onclick="openModal('yesG')" class="colortext3">ЕС</span> и
+        <span onclick="openModal('yosG')" class="colortext3">ЁС</span> — объединяют элементы практически до состояния
+        единого целого.
+      </p>
+
+      <br>
+
+      <p style="text-align: center;">7. Энергии информационного обмена<br>
+        <span onclick="openModal('thitaG')" class="colortext1">ФИТА</span>,
+        <span onclick="openModal('yuG')" class="colortext1">Ю</span>,
+        <span onclick="openModal('mysleteG')" class="colortext3">МЫСЛЕТЕ</span>,
+        <span onclick="openModal('vediG')" class="colortext3">ВЕДИ</span>,
+        <span onclick="openModal('bukiG')" class="colortext3">БУКИ</span>,
+        <span onclick="openModal('ukG')" class="colortext3">УК</span>
+      </p>
+      <p><span onclick="openModal('thitaG')" class="colortext1">ФИТА</span> и
+        <span onclick="openModal('yuG')" class="colortext1">Ю</span> —
+        энергии информационного обмена <span onclick="openModal('azG')" class="colortext1">АЗ</span>. С помощью
+        энергии
+        <span onclick="openModal('yuG')" class="colortext1">Ю</span> осуществляется информационный обмен
+        <span onclick="openModal('azG')" class="colortext1">АЗ</span> с
+        <span onclick="openModal('yaG')" class="colortext1">Я</span>.
+        С помощью энергии <span onclick="openModal('thitaG')" class="colortext1">ФИТА</span>,
+        <span onclick="openModal('azG')" class="colortext1">АЗ</span> осуществляет программирование
+        <span onclick="openModal('izhitsaG')" class="colortext1">ИЖИЦА</span>.
+      </p>
+      <p><span onclick="openModal('mysleteG')" class="colortext3">МЫСЛЕТЕ</span> — энергия
+        информационного обмена с миром и информационных процессов внутри
+        <span onclick="openModal('yaG')" class="colortext1">Я</span>, то есть, сознания.
+      </p>
+      <p><span onclick="openModal('vediG')" class="colortext3">ВЕДИ</span>,
+        <span onclick="openModal('bukiG')" class="colortext3">БУКИ</span> и
+        <span onclick="openModal('ukG')" class="colortext3">УК</span> — энергии информации, притом
+        <span onclick="openModal('bukiG')" class="colortext3">БУКИ</span> и
+        <span onclick="openModal('ukG')" class="colortext3">УК</span> — это частные
+        случаи <span onclick="openModal('vediG')" class="colortext3">ВЕДИ</span>. Если не совсем понято, загляни в
+        расшифровку <span onclick="openModal('exp2')" class="exp">Славянской Азбуки</span>, которую я тебе давал. Там
+        все это есть.
+      </p>
+
+      <br>
+
+      <p style="text-align: center;">8. Энергии действий и процессов<br>
+        <span onclick="openModal('izhitsaG')" class="colortext1">ИЖИЦА</span>,
+        <span onclick="openModal('zhiveteG')" class="colortext2">ЖИВЕТЕ</span>,
+        <span onclick="openModal('glagoliG')" class="colortext3">ГЛАГОЛИ</span>,
+        <span onclick="openModal('rtsyG')" class="colortext3">РЦЫ</span>
+      </p>
+      <p>Энергия
+        <span onclick="openModal('izhitsaG')" class="colortext1">ИЖИЦА</span>
+        — заключенная внутри энергия течения жизни, программируемая
+        <span onclick="openModal('azG')" class="colortext1">АЗ</span> посредством
+        <span onclick="openModal('thitaG')" class="colortext1">ФИТА</span>.
+        То есть, это можно назвать судьбой, кармой.
+        <span onclick="openModal('izhitsaG')" class="colortext1">ИЖИЦА</span>
+        имеет постоянную прямую непосредственную связь с
+        <span onclick="openModal('zhiveteG')" class="colortext2">ЖИВЕТЕ</span>.
+      </p>
+      <p><span onclick="openModal('zhiveteG')" class="colortext2">ЖИВЕТЕ</span> —
+        энергия внешней жизни, то есть, среды обитания. Эти две энергии напоминают одну зеркальную, но только
+        напоминают, поскольку это — принципиально разные энергии.</p>
+      <p><span onclick="openModal('glagoliG')" class="colortext3">ГЛАГОЛИ</span> —
+        энергия какого-либо действия.</p>
+      <p><span onclick="openModal('rtsyG')" class="colortext3">РЦЫ</span> —
+        энергия целенаправленного намеренного действия.</p>
+      <p>Создается впечатление, будто
+        <span onclick="openModal('rtsyG')" class="colortext3">РЦЫ</span> —
+        это частный случай
+        <span onclick="openModal('glagoliG')" class="colortext3">ГЛАГОЛИ</span>,
+        но на самом деле, это не так.
+        <span onclick="openModal('glagoliG')" class="colortext3">ГЛАГОЛИ</span> и
+        <span onclick="openModal('rtsyG')" class="colortext3">РЦЫ</span>
+        — энергии, имеющие принципиальные различия, хотя воплощения действий
+        <span onclick="openModal('glagoliG')" class="colortext3">ГЛАГОЛИ</span> и
+        <span onclick="openModal('rtsyG')" class="colortext3">РЦЫ</span>
+        могут выглядеть совершенно одинаковыми.
+      </p>
+
+      <br>
+
+      <p style="text-align: center;">9. Энергии качественных характеристик<br>
+        <span onclick="openModal('otG')" class="colortext3">ОТ</span>,
+        <span onclick="openModal('tsyG')" class="colortext3">ЦЫ</span>,
+        <span onclick="openModal('chervG')" class="colortext3">ЧЕРВЬ</span>,
+        <span onclick="openModal('shaG')" class="colortext3">ША</span>,
+        <span onclick="openModal('shchaG')" class="colortext3">ЩА</span>
+      </p>
+      <p>Определяют качественные характеристики внутренних и внешних действий и процессов. В данном случае, под
+        действиями и процессами также рассматриваются внешние объекты и субъекты и внешние и
+        внутренние явления.</p>
+      <p><span onclick="openModal('otG')" class="colortext3">ОТ</span> — энергия Изначальности и Окончательности. Узкий
+        участок диапазона, который социум использует как свою составную часть, соответствует восприятию всего сущего,
+        как имеющего начало и конец.</p>
+      <p><span onclick="openModal('tsyG')" class="colortext3">ЦЫ</span> — энергия Закона и Соглашений. Узкий участок
+        диапазона, который социум использует как свою составную часть, соответствует юридическим и морально-нравственным
+        правилам.</p>
+      <p><span onclick="openModal('chervG')" class="colortext3">ЧЕРВЬ</span> — энергия Приобретений и Избавлений,
+        благодаря которой предел совершенства постепенно отодвигается, увеличивая глубину личности. Узкий участок
+        диапазона, который социум использует как свою составную часть, соответствует производственно-потребительским
+        отношениям.</p>
+      <p><span onclick="openModal('shaG')" class="colortext3">ША</span> — энергия Намерения. Сила, благодаря которой
+        согласно собственной воле решительно и с полной ответственностью идут напролом. Узкий участок диапазона, который
+        социум использует как свою составную часть, соответствует прихотям и приказам, то есть, когда согласно влиянию
+        прут напролом под ответственность третьих лиц и обстоятельств.</p>
+      <p><span onclick="openModal('shchaG')" class="colortext3">ЩА</span> — энергия Шансов и Средств, то есть, внешних,
+        не относящихся к сути дополнительных вспомогательных элементов для достижения цели. Узкий участок диапазона,
+        который социум использует как свою составную часть, соответствует смещению приоритетов и замещению в восприятии:
+        сути — наполнением, а цели — средствами к ее достижению. То есть, к примеру, человеческое воплощение,
+        человеческое тело — это нечто, принадлежащее личности, это средство к достижению определенных целей личности,
+        шанс к их достижению, который в восприятии замещает личность, суть и превращается в главную цель
+        жизнедеятельности.</p>
+
+      <br>
+
+      <p style="text-align: center;">10. Энергии количественных характеристик<br>
+        <span onclick="openModal('dobroG')" class="colortext3">ДОБРО</span>,
+        <span onclick="openModal('pokoyG')" class="colortext3">ПОКОЙ</span>,
+        <span onclick="openModal('tverdoG')" class="colortext3">ТВЕРДО</span>,
+        <span onclick="openModal('fertG')" class="colortext3">ФЕРТ</span>,
+        <span onclick="openModal('herG')" class="colortext3">ХЭР</span>,
+        <span onclick="openModal('ksiG')" class="colortext2">КСИ</span>,
+        <span onclick="openModal('psiG')" class="colortext2">ПСИ</span>,
+        <span onclick="openModal('izheG')" class="colortext3">ИЖЕ</span>,
+        <span onclick="openModal('zeloG')" class="colortext3">ЗЕЛО</span>
+      </p>
+      <p>Подразделяются на четыре группы. Определяют количественные характеристики внутренних и внешних действий и
+        процессов. Под действиями и процессами также рассматриваются внешние объекты и субъекты и внешние и внутренние
+        явления для каждой из четырех групп.</p>
+
+      <p style="text-align: center;">а) энергии, определяющие собственные количественные характеристики<br>
+        <span onclick="openModal('dobroG')" class="colortext3">ДОБРО</span>,
+        <span onclick="openModal('pokoyG')" class="colortext3">ПОКОЙ</span>,
+        <span onclick="openModal('tverdoG')" class="colortext3">ТВЕРДО</span>,
+        <span onclick="openModal('fertG')" class="colortext3">ФЕРТ</span>,
+        <span onclick="openModal('herG')" class="colortext3">ХЭР</span>
+      </p>
+      <p>Каждая из этих энергий имеет абсолютную величину, любые отклонение от которой направлены в сторону убывания.
+      </p>
+      <p><span onclick="openModal('dobroG')" class="colortext3">ДОБРО</span> — энергия правды, истины, согласия. Ее
+        количество определяет степень целесообразности, оптимальности, эффективности и своевременности действия или
+        процесса.</p>
+      <p><span onclick="openModal('pokoyG')" class="colortext3">ПОКОЙ</span> — энергия направления и соотношения сил.
+        Если на физическое тело действуют противоположно направленные силы одинаковой величины, это тело не сдвигается с
+        места. Здесь тот же самый принцип.</p>
+      <p><span onclick="openModal('tverdoG')" class="colortext3">ТВЕРДО</span> —
+        энергия изменчивости. Абсолютная величина соответствует постоянству и неизменности.</p>
+      <p><span onclick="openModal('fertG')" class="colortext3">ФЕРТ</span> — энергия удачи, успеха. Ее количество
+        определяет степень запрограммированной, то есть, интуитивной, автоматической, машинальной, сознательно не
+        контролируемой способности оптимально управлять элементами, доступными для управления, и оптимально
+        подстраиваться под элементы недоступные для управления.</p>
+      <p><span onclick="openModal('herG')" class="colortext3">ХЭР</span> — энергия защиты.
+      </p>
+
+      <p style="text-align: center;">б) энергии точек – точек отсчета в каком-либо процессе и точек зрения на
+        совершаемые действия и протекающие процессы<br>
+        <span onclick="openModal('ksiG')" class="colortext2">КСИ</span>,
+        <span onclick="openModal('psiG')" class="colortext2">ПСИ</span>
+      </p>
+      <p><span onclick="openModal('ksiG')" class="colortext2">КСИ</span> — точка зрения, соответствующая конкретным
+        условиям. В самом широком смысле — точка зрения, соответствующая условиям конкретного мира. В широком смысле для
+        нашего нынешнего, так сказать, места пребывания — точка зрения, соответствующая условиям жизни во Вселенной в
+        зоне человеческого восприятия. В менее широком смысле — объективная точка зрения. В самом узком смысле — одна из
+        конкретных объективных точек зрения на конкретный элемент в конкретных условиях.</p>
+      <p><span onclick="openModal('psiG')" class="colortext2">ПСИ</span> — точка зрения сути. В широком смысле — точка
+        зрения без привязки к реалиям конкретного мира. В узком смысле — субъективная точка зрения. С одной стороны,
+        кажется, будто форма и содержание явлений и процессов зависит от энергии точек зрения и точек отсчета лишь
+        пассивно. То есть, естественно, что с разных точек зрения и с разных точек отсчета любое явление будет выглядеть
+        по-разному. Однако использование энергии точек зрения и точек отсчета способно кардинально вилять на любые
+        процессы.
+      </p>
+
+      <p style="text-align: center;">в) энергия, определяющая степень и качество зависимости конкретного действия или
+        процесса от других действий или процессов<br>
+        <span onclick="openModal('izheG')" class="colortext3">ИЖЕ</span>.
+      </p>
+      <p>Так или иначе, то есть, либо непосредственно, либо опосредованно все взаимосвязано, а следовательно, зависит
+        друг от друга. Однако качество зависимости может быть разным.</p>
+      <p>Например: слуга зависит от хозяина, но и хозяин зависит от слуги.
+        <span onclick="openModal('izheG')" class="colortext3">ИЖЕ</span> слуга умеет использовать
+        зависимость хозяина от себя, то он управляет им, а не наоборот, как предполагает человеческая логика.
+      </p>
+      <p>Умело обращаясь с энергией
+        <span onclick="openModal('izheG')" class="colortext3">ИЖЕ</span>, можно изменять многое до точности
+        наоборот и даже переводить в совершенно иное качество.
+      </p>
+
+      <p style="text-align: center;">г) энергия катализатора процессов<br>
+        <span onclick="openModal('zeloG')" class="colortext3">ЗЕЛО</span>.
+      </p>
+      <p>Энергия <span onclick="openModal('zeloG')" class="colortext3">ЗЕЛО</span> увеличивает интенсивность и мощность
+        любой другой энергии и, само собой, любых процессов, действий, явлений, то есть, любых элементов. И она может
+        только увеличивать. То есть, она не умеет уменьшать. Однако прикладывать ее можно к чему угодно. То есть, ее
+        можно приложить как к наполнению стакана, так и к его опустошению. То есть, с помощью этой энергии
+        можно, к примеру, увеличивать страдания, а можно увеличивать наслаждение.</p>
+
+      <br>
+
+      <h2
+        style="align-items: center; background: linear-gradient(0.25turn, #020001, #9d752d); border-radius: 20px; color: white;">
+        <strong>Обновление и переподключение зеркальных энергий</strong>
+      </h2>
+
+      <br>
+
+      <div style="text-align: center;">
+        <p><strong>Все три процесса</strong><br>
+          <em>9 энергий</em><br>
+          <span onclick="openModal('zeloFull')" class="colortext3">ЗЕЛО</span>,
+          <span onclick="openModal('dobroFull')" class="colortext3">ДОБРО</span>,
+          <span onclick="openModal('pokoyFull')" class="colortext3">ПОКОЙ</span>,
+          <span onclick="openModal('tverdoFull')" class="colortext3">ТВЕРДО</span>,
+          <span onclick="openModal('fertFull')" class="colortext3">ФЕРТ</span>,
+          <span onclick="openModal('herFull')" class="colortext3">ХЭР</span>,
+          <span onclick="openModal('уerFull')" class="colortext3">ЕР, ЕРЫ, ЕРЬ</span>
+        </p>
+      </div>
+
+      <br>
+
+      <div style="text-align: center;">
+        <p><strong>Только творчество и восприятие произведений творчества</strong><br>
+          <em>5 энергий</em><br>
+          <span onclick="openModal('iFull')" class="colortext3">И</span>,
+          <span onclick="openModal('kakoFull')" class="colortext3">КАКО</span>,
+          <span onclick="openModal('yatFull')" class="colortext3">ЯТЬ</span>,
+          <span onclick="openModal('esFull')" class="colortext3">ЭС</span>,
+          <span onclick="openModal('osFull')" class="colortext3">ОС</span>
+        </p>
+      </div>
+
+      <br>
+
+      <div style="text-align: center;">
+        <p><strong>Только творчество</strong><br>
+          <em>9 энергий</em><br>
+          <span onclick="openModal('bukiFull')" class="colortext3">БУКИ</span>,
+          <span onclick="openModal('vediFull')" class="colortext3">ВЕДИ</span>,
+          <span onclick="openModal('yestFull')" class="colortext3">ЕСТЬ</span>,
+          <span onclick="openModal('izheFull')" class="colortext3">ИЖЕ</span>,
+          <span onclick="openModal('rtsyFull')" class="colortext3">РЦЫ</span>,
+          <span onclick="openModal('slovoFull')" class="colortext3">СЛОВО</span>,
+          <span onclick="openModal('iyeFull')" class="colortext3">ИЕ</span>,
+          <span onclick="openModal('yesFull')" class="colortext3">ЕС</span>,
+          <span onclick="openModal('yosFull')" class="colortext3">ЁС</span>
+        </p>
+      </div>
+
+      <br>
+
+      <div style="text-align: center;">
+        <p><strong>Только восприятия произведений творчества</strong><br>
+          <em>3 энергии</em><br>
+        <span onclick="openModal('glagoliFull')" class="colortext3">ГЛАГОЛИ</span>,
+        <span onclick="openModal('mysleteFull')" class="colortext3">МЫСЛЕТЕ</span>,
+        <span onclick="openModal('ukFull')" class="colortext3">УК</span></strong>
+      </p>
+    </div>
+
+    <br>
+
+    <div style="text-align: center;">
+      <p><strong>Только секс</strong><br>
+        <em>5 энергий</em><br>
+        <span onclick="openModal('otFull')" class="colortext3">ОТ</span>,
+        <span onclick="openModal('tsyFull')" class="colortext3">ЦЫ</span>,
+        <span onclick="openModal('chervFull')" class="colortext3">ЧЕРВЬ</span>,
+        <span onclick="openModal('shaFull')" class="colortext3">ША</span>,
+        <span onclick="openModal('shchaFull')" class="colortext3">ЩА</span>
+      </p>
+    </div>
+
+      <p>Таким образом, в процессе секса массовый обрыв нитей может произойти на 14-ти уровнях, в процессе восприятия
+        произведений творчества — на 17-ти уровнях и в процессе творчества — на 23-х уровнях. Безусловно, в каждом
+        конкретном случае массовый обрыв нитей необязательно происходит на всех уровнях, на которых может произойти. По
+        собственным ощущениям можно понять насколько глобально происходит массовый обрыв: чем ярче переживание самого
+        процесса и венчающего его пикового состояния — то есть, оргазма, катарсиса или экстаза — тем большее количество
+        уровней подверглось разрыву соединений.</p>
+      <p>Как ты заметила, наибольшее количество соединений может подвергнуться массовому обновлению или переподключению
+        в процессе творчества. И это еще не всё! Если в процессе творчества происходит массовый обрыв коммуникативных
+        нитей сразу на всех 23-х уровнях, это само по себе очень сильно затрагивает энергии
+        <span onclick="openModal('thitaFull')" class="colortext1">ФИТА</span> и
+        <span onclick="openModal('yuFull')" class="colortext1">Ю</span>, то есть,
+        энергии информационного обмена
+        <span onclick="openModal('azFull')" class="colortext1">АЗ</span>. А если происходит еще и
+        переподключение на всех 23-х уровнях, это способно оказать кардинальное влияние на
+        <span onclick="openModal('thitaFull')" class="colortext1">ФИТА</span> и
+        <span onclick="openModal('yuFull')" class="colortext1">Ю</span>, а через них — на
+        <span onclick="openModal('azFull')" class="colortext1">АЗ</span>,
+        <span onclick="openModal('yaFull')" class="colortext1">Я</span> и
+        <span onclick="openModal('izhitsaFull')" class="colortext1">ИЖИЦА</span>. На уровне
+        <span onclick="openModal('yaFull')" class="colortext1">Я</span> это переживается, как ярчайшее озарение. На
+        уровне
+        <span onclick="openModal('izhitsaFull')" class="colortext1">ИЖИЦА</span> это что-то вроде изменения судьбы,
+        кармы.
+      </p>
+
+      <p>Да, кстати, маленькое уточнение — я, как мне кажется, упустил это — под творчеством я имею в виду не только
+        искусство, а абсолютно любой вид деятельности, совершаемый в особом состоянии. То есть, <strong>творчество —
+          это
+          не вид деятельности. Творчество — это способ деятельности.</strong></p>
+
+      <div class="card-art">
+        <img src="./2_3_img_art/2_3_85_08_muriel_massin_creativity.jpg" class="img"
+          alt="Аз Фита Ижица. Художник: Мюриэль Массин (Франция). Абстрактное искусство">
+        <p><small><em><strong>Творчество — это способ деятельности</strong><br><small>художник: Мюриэль Массин
+                (Франция)</small></em></small>
+        </p>
+      </div>
+
+      <p>Теоретически к творчеству способны все люди, однако подавляющее большинство если и допускают в свою жизнь
+        творчество, то лишь в сфере хобби. Во всей своей остальной деятельности они усиленно и самоотверженно
+        трудятся,
+        но не творят, выпуская в мир продукты труда, но не произведения творчества.</p>
+      <p>В чем разница между продуктом труда и произведением творчества? Во вложенных энергиях. Энергетический состав
+        продукта труда позволяет им лишь пользоваться, то есть, удовлетворять свои жизненные потребности. С другой
+        стороны, произведение творчества, благодаря своему энергетическому составу, дает возможность наслаждаться, то
+        есть, включать процесс восприятия произведения творчества со всеми вытекающими возможностями. На самом деле,
+        продукты труда в чистом виде встречаются крайне редко. Почему? Ну, к примеру, утюг, изготовленный в процессе
+        трудовой деятельности. Да, этот конкретный утюг изготовлен в процессе трудовой деятельности, но его идея
+        рождена
+        творческим процессом, а потому пусть в малых дозах, но он несет в себе заложенные творчеством энергии.</p>
+      <p>Таким образом…</p>
+      <p>- Жень, подожди. На сегодня, я думаю, хватит. Не скажу, что это все слишком сложно для моего понимания, но
+        все
+        же информации по перебору — боюсь, запутаюсь. Когда ты мне сможешь дать письменный вариант?</p>
+      <p>- Да хоть сейчас.</p>
+      <p>- Давай!</p>
+      <p>- Тебе в бумажном или в электронном виде? — спросил Женечка поднимаясь.</p>
+      <p>- Естественно, лучше в электронном.</p>
+      <p>В течение десяти минут Женечка принес Ире флэшку, Ира скопировала ее содержимое к себе в компьютер, который
+        почему-то слегка затормозил с этим процессом, и вернула Женечке.</p>
+      <p>- Догадываюсь, что если мы сейчас с Даной отравимся на прогулку и не возьмем тебя с собой, ты будешь вне себя
+        от восторга, — слащаво улыбаясь, без тени сомнения предположил Женечка.</p>
+      <p>- Истинно! — подтвердила Ира.</p>
+
+      <p style="text-align: center;"><a class="next-chapter" href="./2_3_ch086.html">Глава 86. Системы символов</a>
+      </p>
+
+    </div>
+
+    <!--Footer-->
+    <footer>
+      <a href="#"><button class="button">&#8593; ВВЕРХ &#8593;</button></a>
+      <p style="font-size: 0.9rem;">&#169; 2014 Екатерина Трубицина</p>
+    </footer>
+
+  </div>
+
+
+  <!-- Yandex.Metrika counter -->
+  <script type="text/javascript">
+    (function (d, w, c) {
+      (w[c] = w[c] || []).push(function () {
+        try {
+          w.yaCounter12928414 = new Ya.Metrika({
+            id: 12928414,
+            clickmap: true,
+            trackLinks: true
+          });
+        } catch (e) { }
+      });
+
+      var n = d.getElementsByTagName("script")[0],
+        s = d.createElement("script"),
+        f = function () { n.parentNode.insertBefore(s, n); };
+      s.type = "text/javascript";
+      s.async = true;
+      s.src = (d.location.protocol == "hsmallps:" ? "hsmallps:" : "hsmallp:") + "//mc.yandex.ru/metrika/watch.js";
+
+      if (w.opera == "[object Opera]") {
+        d.addEventListener("DOMContentLoaded", f, false);
+      } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+  </script>
+  <noscript>
+    <div><img src="//mc.yandex.ru/watch/12928414" style="position:absolute; left:-9999px;" alt="" /></div>
+  </noscript>
+  <!-- /Yandex.Metrika counter -->
+
+</body>
+
+</html>
